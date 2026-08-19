@@ -1,0 +1,785 @@
+{
+  "schema_version": 1,
+  "mode": "offline_synthetic_fixed_evidence",
+  "network_access": false,
+  "scenario_count": 9,
+  "status_counts": {
+    "pass": 9
+  },
+  "label_counts": {
+    "confirmed_hallucination": 2,
+    "indeterminate": 1,
+    "not_hallucination": 4,
+    "probable_hallucination": 2
+  },
+  "languages": [
+    "Go",
+    "Java",
+    "JavaScript",
+    "Python",
+    "Rust",
+    "TypeScript"
+  ],
+  "all_target_languages_covered": true,
+  "all_target_labels_covered": true,
+  "canonical_csv_persisted": 0,
+  "results": [
+    {
+      "scenario_id": "parent_preexisting",
+      "language": "TypeScript",
+      "input_summary": "The version was published after author time, but the same package query existed in the first parent.",
+      "package": "rq2-parent-preexisting",
+      "query_kind": "exact",
+      "query_value": "1.0.0",
+      "capture_points": [
+        "rq2_stage1_extract.run_stage1",
+        "rq2_stage2_build.run_stage2",
+        "rq2_stage3_apply.run_stage3",
+        "build_final_adjudication.py",
+        "apply_commented_manifest_corrections.py"
+      ],
+      "expected": {
+        "stage3_registry_status": "published_after_author_date",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "basis_contains": "preexisted in first parent",
+        "flags_include": [
+          "parent_preexisting"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "actual": {
+        "stage3_registry_status": "published_after_author_date",
+        "raw_final_label": "not_hallucination",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "adjudication_basis": "same package and query preexisted in first parent",
+        "evidence_flags": [
+          "parent_preexisting"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "checks": [
+        {
+          "field": "stage3_registry_status",
+          "expected": "published_after_author_date",
+          "actual": "published_after_author_date",
+          "passed": true
+        },
+        {
+          "field": "final_label",
+          "expected": "not_hallucination",
+          "actual": "not_hallucination",
+          "passed": true
+        },
+        {
+          "field": "confidence",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "field": "commented_manifest_corrections",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "field": "basis_contains",
+          "expected": "preexisted in first parent",
+          "actual": "same package and query preexisted in first parent",
+          "passed": true
+        },
+        {
+          "field": "flags_include",
+          "expected": [
+            "parent_preexisting"
+          ],
+          "actual": [
+            "parent_preexisting"
+          ],
+          "passed": true
+        },
+        {
+          "field": "comment_guard_preserves_expected_label",
+          "expected": "not_hallucination",
+          "actual": "not_hallucination",
+          "passed": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "scenario_id": "future_gt_24h",
+      "language": "JavaScript",
+      "input_summary": "The first matching npm version was published 48 hours after committer time.",
+      "package": "rq2-future-gt24",
+      "query_kind": "exact",
+      "query_value": "1.0.0",
+      "capture_points": [
+        "rq2_stage1_extract.run_stage1",
+        "rq2_stage2_build.run_stage2",
+        "rq2_stage3_apply.run_stage3",
+        "build_final_adjudication.py",
+        "apply_commented_manifest_corrections.py"
+      ],
+      "expected": {
+        "stage3_registry_status": "published_after_author_date",
+        "final_label": "confirmed_hallucination",
+        "confidence": "high",
+        "basis_contains": "more than 24h",
+        "flags_include": [
+          "fresh_postdate_gt_24h"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "actual": {
+        "stage3_registry_status": "published_after_author_date",
+        "raw_final_label": "confirmed_hallucination",
+        "final_label": "confirmed_hallucination",
+        "confidence": "high",
+        "adjudication_basis": "first satisfying public version was published more than 24h after committer time",
+        "evidence_flags": [
+          "fresh_postdate_gt_24h"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "checks": [
+        {
+          "field": "stage3_registry_status",
+          "expected": "published_after_author_date",
+          "actual": "published_after_author_date",
+          "passed": true
+        },
+        {
+          "field": "final_label",
+          "expected": "confirmed_hallucination",
+          "actual": "confirmed_hallucination",
+          "passed": true
+        },
+        {
+          "field": "confidence",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "field": "commented_manifest_corrections",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "field": "basis_contains",
+          "expected": "more than 24h",
+          "actual": "first satisfying public version was published more than 24h after committer time",
+          "passed": true
+        },
+        {
+          "field": "flags_include",
+          "expected": [
+            "fresh_postdate_gt_24h"
+          ],
+          "actual": [
+            "fresh_postdate_gt_24h"
+          ],
+          "passed": true
+        },
+        {
+          "field": "comment_guard_preserves_expected_label",
+          "expected": "confirmed_hallucination",
+          "actual": "confirmed_hallucination",
+          "passed": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "scenario_id": "future_le_24h",
+      "language": "JavaScript",
+      "input_summary": "The first matching npm version was published 12 hours after committer time without coordinated-release evidence.",
+      "package": "rq2-future-le24",
+      "query_kind": "exact",
+      "query_value": "1.0.0",
+      "capture_points": [
+        "rq2_stage1_extract.run_stage1",
+        "rq2_stage2_build.run_stage2",
+        "rq2_stage3_apply.run_stage3",
+        "build_final_adjudication.py",
+        "apply_commented_manifest_corrections.py"
+      ],
+      "expected": {
+        "stage3_registry_status": "published_after_author_date",
+        "final_label": "probable_hallucination",
+        "confidence": "medium",
+        "basis_contains": "within 24h",
+        "flags_include": [
+          "fresh_postdate_le_24h"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "actual": {
+        "stage3_registry_status": "published_after_author_date",
+        "raw_final_label": "probable_hallucination",
+        "final_label": "probable_hallucination",
+        "confidence": "medium",
+        "adjudication_basis": "first satisfying public version was published within 24h after committer time",
+        "evidence_flags": [
+          "fresh_postdate_le_24h"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "checks": [
+        {
+          "field": "stage3_registry_status",
+          "expected": "published_after_author_date",
+          "actual": "published_after_author_date",
+          "passed": true
+        },
+        {
+          "field": "final_label",
+          "expected": "probable_hallucination",
+          "actual": "probable_hallucination",
+          "passed": true
+        },
+        {
+          "field": "confidence",
+          "expected": "medium",
+          "actual": "medium",
+          "passed": true
+        },
+        {
+          "field": "commented_manifest_corrections",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "field": "basis_contains",
+          "expected": "within 24h",
+          "actual": "first satisfying public version was published within 24h after committer time",
+          "passed": true
+        },
+        {
+          "field": "flags_include",
+          "expected": [
+            "fresh_postdate_le_24h"
+          ],
+          "actual": [
+            "fresh_postdate_le_24h"
+          ],
+          "passed": true
+        },
+        {
+          "field": "comment_guard_preserves_expected_label",
+          "expected": "probable_hallucination",
+          "actual": "probable_hallucination",
+          "passed": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "scenario_id": "coordinated_release",
+      "language": "JavaScript",
+      "input_summary": "The matching version appeared 12 hours later, with repository ownership and workflow evidence of a coordinated release.",
+      "package": "rq2-coordinated-release",
+      "query_kind": "exact",
+      "query_value": "1.0.0",
+      "capture_points": [
+        "rq2_stage1_extract.run_stage1",
+        "rq2_stage2_build.run_stage2",
+        "rq2_stage3_apply.run_stage3",
+        "build_final_adjudication.py",
+        "apply_commented_manifest_corrections.py"
+      ],
+      "expected": {
+        "stage3_registry_status": "published_after_author_date",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "basis_contains": "systematic local, resolved, timing, or official-registry explanation",
+        "flags_include": [
+          "owned_package_release_workflow_possible"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "actual": {
+        "stage3_registry_status": "published_after_author_date",
+        "raw_final_label": "not_hallucination",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "adjudication_basis": "systematic local, resolved, timing, or official-registry explanation",
+        "evidence_flags": [
+          "owned_package_release_workflow_possible"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "checks": [
+        {
+          "field": "stage3_registry_status",
+          "expected": "published_after_author_date",
+          "actual": "published_after_author_date",
+          "passed": true
+        },
+        {
+          "field": "final_label",
+          "expected": "not_hallucination",
+          "actual": "not_hallucination",
+          "passed": true
+        },
+        {
+          "field": "confidence",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "field": "commented_manifest_corrections",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "field": "basis_contains",
+          "expected": "systematic local, resolved, timing, or official-registry explanation",
+          "actual": "systematic local, resolved, timing, or official-registry explanation",
+          "passed": true
+        },
+        {
+          "field": "flags_include",
+          "expected": [
+            "owned_package_release_workflow_possible"
+          ],
+          "actual": [
+            "owned_package_release_workflow_possible"
+          ],
+          "passed": true
+        },
+        {
+          "field": "comment_guard_preserves_expected_label",
+          "expected": "not_hallucination",
+          "actual": "not_hallucination",
+          "passed": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "scenario_id": "current_version_absent",
+      "language": "TypeScript",
+      "input_summary": "The npm package exists, but exact version 999.999.999 is absent from a fresh official snapshot.",
+      "package": "left-pad",
+      "query_kind": "exact",
+      "query_value": "999.999.999",
+      "capture_points": [
+        "rq2_stage1_extract.run_stage1",
+        "rq2_stage2_build.run_stage2",
+        "rq2_stage3_apply.run_stage3",
+        "build_final_adjudication.py",
+        "apply_commented_manifest_corrections.py"
+      ],
+      "expected": {
+        "stage3_registry_status": "current_absent_unknown",
+        "final_label": "probable_hallucination",
+        "confidence": "medium",
+        "basis_contains": "no requested version/range",
+        "flags_include": [
+          "current_version_absent"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "actual": {
+        "stage3_registry_status": "current_absent_unknown",
+        "raw_final_label": "probable_hallucination",
+        "final_label": "probable_hallucination",
+        "confidence": "medium",
+        "adjudication_basis": "package exists but fresh official registry has no requested version/range",
+        "evidence_flags": [
+          "current_version_absent"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "checks": [
+        {
+          "field": "stage3_registry_status",
+          "expected": "current_absent_unknown",
+          "actual": "current_absent_unknown",
+          "passed": true
+        },
+        {
+          "field": "final_label",
+          "expected": "probable_hallucination",
+          "actual": "probable_hallucination",
+          "passed": true
+        },
+        {
+          "field": "confidence",
+          "expected": "medium",
+          "actual": "medium",
+          "passed": true
+        },
+        {
+          "field": "commented_manifest_corrections",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "field": "basis_contains",
+          "expected": "no requested version/range",
+          "actual": "package exists but fresh official registry has no requested version/range",
+          "passed": true
+        },
+        {
+          "field": "flags_include",
+          "expected": [
+            "current_version_absent"
+          ],
+          "actual": [
+            "current_version_absent"
+          ],
+          "passed": true
+        },
+        {
+          "field": "comment_guard_preserves_expected_label",
+          "expected": "probable_hallucination",
+          "actual": "probable_hallucination",
+          "passed": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "scenario_id": "repeated_current_absence",
+      "language": "Python",
+      "input_summary": "The PyPI package is absent in Stage 3 and a repeated current query, while deletion, private sources, and coverage gaps remain possible.",
+      "package": "rq2-repeated-absence",
+      "query_kind": "exact",
+      "query_value": "1.0.0",
+      "capture_points": [
+        "rq2_stage1_extract.run_stage1",
+        "rq2_stage2_build.run_stage2",
+        "rq2_stage3_apply.run_stage3",
+        "build_final_adjudication.py",
+        "apply_commented_manifest_corrections.py"
+      ],
+      "expected": {
+        "stage3_registry_status": "current_absent_unknown",
+        "final_label": "indeterminate",
+        "confidence": "low",
+        "basis_contains": "remains unresolved",
+        "flags_include": [],
+        "commented_manifest_corrections": 0
+      },
+      "actual": {
+        "stage3_registry_status": "current_absent_unknown",
+        "raw_final_label": "indeterminate",
+        "final_label": "indeterminate",
+        "confidence": "low",
+        "adjudication_basis": "present-day absence, import mapping, private registry, deletion, or coverage remains unresolved",
+        "evidence_flags": [],
+        "commented_manifest_corrections": 0
+      },
+      "checks": [
+        {
+          "field": "stage3_registry_status",
+          "expected": "current_absent_unknown",
+          "actual": "current_absent_unknown",
+          "passed": true
+        },
+        {
+          "field": "final_label",
+          "expected": "indeterminate",
+          "actual": "indeterminate",
+          "passed": true
+        },
+        {
+          "field": "confidence",
+          "expected": "low",
+          "actual": "low",
+          "passed": true
+        },
+        {
+          "field": "commented_manifest_corrections",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "field": "basis_contains",
+          "expected": "remains unresolved",
+          "actual": "present-day absence, import mapping, private registry, deletion, or coverage remains unresolved",
+          "passed": true
+        },
+        {
+          "field": "flags_include",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "field": "comment_guard_preserves_expected_label",
+          "expected": "indeterminate",
+          "actual": "indeterminate",
+          "passed": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "scenario_id": "cargo_no_matching_version",
+      "language": "Rust",
+      "input_summary": "serde exists on crates.io, but no version satisfies the newly added ^999.0.0 range.",
+      "package": "serde",
+      "query_kind": "range",
+      "query_value": "^999.0.0",
+      "capture_points": [
+        "rq2_stage1_extract.run_stage1",
+        "rq2_stage2_build.run_stage2",
+        "rq2_stage3_apply.run_stage3",
+        "build_final_adjudication.py",
+        "apply_commented_manifest_corrections.py"
+      ],
+      "expected": {
+        "stage3_registry_status": "no_matching_version_before_author_date",
+        "final_label": "confirmed_hallucination",
+        "confidence": "high",
+        "basis_contains": "no satisfying version",
+        "flags_include": [
+          "fresh_no_matching_version"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "actual": {
+        "stage3_registry_status": "no_matching_version_before_author_date",
+        "raw_final_label": "confirmed_hallucination",
+        "final_label": "confirmed_hallucination",
+        "confidence": "high",
+        "adjudication_basis": "versioned manifest change has no satisfying version in fresh public registry history",
+        "evidence_flags": [
+          "fresh_no_matching_version"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "checks": [
+        {
+          "field": "stage3_registry_status",
+          "expected": "no_matching_version_before_author_date",
+          "actual": "no_matching_version_before_author_date",
+          "passed": true
+        },
+        {
+          "field": "final_label",
+          "expected": "confirmed_hallucination",
+          "actual": "confirmed_hallucination",
+          "passed": true
+        },
+        {
+          "field": "confidence",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "field": "commented_manifest_corrections",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "field": "basis_contains",
+          "expected": "no satisfying version",
+          "actual": "versioned manifest change has no satisfying version in fresh public registry history",
+          "passed": true
+        },
+        {
+          "field": "flags_include",
+          "expected": [
+            "fresh_no_matching_version"
+          ],
+          "actual": [
+            "fresh_no_matching_version"
+          ],
+          "passed": true
+        },
+        {
+          "field": "comment_guard_preserves_expected_label",
+          "expected": "confirmed_hallucination",
+          "actual": "confirmed_hallucination",
+          "passed": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "scenario_id": "go_local_workspace",
+      "language": "Go",
+      "input_summary": "The Go proxy misses the module, but workspace and local-module context explain it.",
+      "package": "example.invalid/local-module",
+      "query_kind": "exact",
+      "query_value": "v1.0.0",
+      "capture_points": [
+        "rq2_stage1_extract.run_stage1",
+        "rq2_stage2_build.run_stage2",
+        "rq2_stage3_apply.run_stage3",
+        "build_final_adjudication.py",
+        "apply_commented_manifest_corrections.py"
+      ],
+      "expected": {
+        "stage3_registry_status": "current_absent_unknown",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "basis_contains": "same-commit local/workspace",
+        "flags_include": [
+          "explicit_workspace_or_local_context"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "actual": {
+        "stage3_registry_status": "current_absent_unknown",
+        "raw_final_label": "not_hallucination",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "adjudication_basis": "same-commit local/workspace/non-registry or resolved-lock evidence",
+        "evidence_flags": [
+          "explicit_workspace_or_local_context"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "checks": [
+        {
+          "field": "stage3_registry_status",
+          "expected": "current_absent_unknown",
+          "actual": "current_absent_unknown",
+          "passed": true
+        },
+        {
+          "field": "final_label",
+          "expected": "not_hallucination",
+          "actual": "not_hallucination",
+          "passed": true
+        },
+        {
+          "field": "confidence",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "field": "commented_manifest_corrections",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "field": "basis_contains",
+          "expected": "same-commit local/workspace",
+          "actual": "same-commit local/workspace/non-registry or resolved-lock evidence",
+          "passed": true
+        },
+        {
+          "field": "flags_include",
+          "expected": [
+            "explicit_workspace_or_local_context"
+          ],
+          "actual": [
+            "explicit_workspace_or_local_context"
+          ],
+          "passed": true
+        },
+        {
+          "field": "comment_guard_preserves_expected_label",
+          "expected": "not_hallucination",
+          "actual": "not_hallucination",
+          "passed": true
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "scenario_id": "maven_vendor_match",
+      "language": "Java",
+      "input_summary": "Central and Google miss the artifact, but the declared public vendor repository resolves the same Maven GAV.",
+      "package": "org.mule.connectors:mule-http-connector",
+      "query_kind": "exact",
+      "query_value": "1.7.3",
+      "capture_points": [
+        "rq2_stage1_extract.run_stage1",
+        "rq2_stage2_build.run_stage2",
+        "rq2_stage3_apply.run_stage3",
+        "build_final_adjudication.py",
+        "apply_commented_manifest_corrections.py"
+      ],
+      "expected": {
+        "stage3_registry_status": "current_absent_unknown",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "basis_contains": "resolved-lock evidence",
+        "flags_include": [
+          "resolved_version_present"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "actual": {
+        "stage3_registry_status": "current_absent_unknown",
+        "raw_final_label": "not_hallucination",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "adjudication_basis": "same-commit local/workspace/non-registry or resolved-lock evidence",
+        "evidence_flags": [
+          "resolved_version_present"
+        ],
+        "commented_manifest_corrections": 0
+      },
+      "checks": [
+        {
+          "field": "stage3_registry_status",
+          "expected": "current_absent_unknown",
+          "actual": "current_absent_unknown",
+          "passed": true
+        },
+        {
+          "field": "final_label",
+          "expected": "not_hallucination",
+          "actual": "not_hallucination",
+          "passed": true
+        },
+        {
+          "field": "confidence",
+          "expected": "high",
+          "actual": "high",
+          "passed": true
+        },
+        {
+          "field": "commented_manifest_corrections",
+          "expected": 0,
+          "actual": 0,
+          "passed": true
+        },
+        {
+          "field": "basis_contains",
+          "expected": "resolved-lock evidence",
+          "actual": "same-commit local/workspace/non-registry or resolved-lock evidence",
+          "passed": true
+        },
+        {
+          "field": "flags_include",
+          "expected": [
+            "resolved_version_present"
+          ],
+          "actual": [
+            "resolved_version_present"
+          ],
+          "passed": true
+        },
+        {
+          "field": "comment_guard_preserves_expected_label",
+          "expected": "not_hallucination",
+          "actual": "not_hallucination",
+          "passed": true
+        }
+      ],
+      "status": "pass"
+    }
+  ]
+}

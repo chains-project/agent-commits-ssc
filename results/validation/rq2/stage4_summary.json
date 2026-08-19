@@ -1,0 +1,5086 @@
+{
+  "schema_version": 2,
+  "mode": "offline_synthetic_fixed_evidence",
+  "network_access": false,
+  "scenario_count": 49,
+  "status_counts": {
+    "pass": 49
+  },
+  "results": [
+    {
+      "scenario_id": "i0_m0_code_only",
+      "language": "TypeScript",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Adds ordinary TypeScript code without an external import or dependency declaration.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0
+        },
+        "episodes": []
+      },
+      "actual": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": []
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "i0_m1_manifest_only",
+      "language": "TypeScript",
+      "execution_mode": "offline_and_live",
+      "input_summary": "Adds left-pad 1.3.0 to package.json without a source import.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "builtin_import_control",
+      "language": "TypeScript",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Adds a Node.js fs import without a dependency declaration.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0
+        },
+        "episodes": []
+      },
+      "actual": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": []
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "relative_import_control",
+      "language": "TypeScript",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Adds a relative ./local import without a dependency declaration.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0
+        },
+        "episodes": []
+      },
+      "actual": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": []
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "i1_m0_no_manifest",
+      "language": "TypeScript",
+      "execution_mode": "offline_and_live",
+      "input_summary": "Adds a directly mapped npm import when the child tree has no manifest.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "rq2-no-manifest-control",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "rq2-no-manifest-control",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "exists_before_commit",
+      "language": "TypeScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Adds a left-pad import and an exact 1.3.0 manifest dependency.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "published_after_commit_candidate",
+      "language": "TypeScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Places left-pad 1.3.0 before its synthetic publication time.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "published_after_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "history_validation_required"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "published_after_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "history_validation_required"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "missing_npm_package",
+      "language": "TypeScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Uses a collision-resistant npm fixture name confirmed absent before the run.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "rq2-slopsquat-fixture-20260729-7f3b9c21",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "rq2-slopsquat-fixture-20260729-7f3b9c21",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "missing_npm_version",
+      "language": "TypeScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Uses the existing left-pad package with absent exact version 999.999.999.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "999.999.999",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_requested_version_absent",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "999.999.999",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_requested_version_absent",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "manifest_mismatch",
+      "language": "TypeScript",
+      "execution_mode": "offline_and_live",
+      "input_summary": "Adds an axios import while the manifest adds left-pad 1.3.0.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "axios",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "axios",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "range_only",
+      "language": "TypeScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Adds left-pad with range ^1.3.0 and no exact lockfile resolution.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "range",
+            "query_value": "^1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "range",
+            "query_value": "^1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "npm_first_party",
+      "language": "TypeScript",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Imports the local npm workspace package name.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "first_party_excluded",
+            "ecosystem": "npm",
+            "package": "@rq2/local-workspace",
+            "query_kind": "excluded",
+            "query_value": "",
+            "registry_status": "excluded",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "first_party"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "first_party_excluded",
+            "ecosystem": "npm",
+            "package": "@rq2/local-workspace",
+            "query_kind": "excluded",
+            "query_value": "",
+            "registry_status": "excluded",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "first_party"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "private_local_dependency",
+      "language": "TypeScript",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Aligns an import with a file:../rq2-private-local dependency.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "private_or_local_excluded",
+            "ecosystem": "npm",
+            "package": "rq2-private-local",
+            "query_kind": "excluded",
+            "query_value": "",
+            "registry_status": "excluded",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "private_or_local"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "private_or_local_excluded",
+            "ecosystem": "npm",
+            "package": "rq2-private-local",
+            "query_kind": "excluded",
+            "query_value": "",
+            "registry_status": "excluded",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "private_or_local"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "npm_alias_target",
+      "language": "TypeScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Maps an npm alias declaration to the real left-pad 1.3.0 target.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_alias",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "npm_alias"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_alias",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "npm_alias"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "manifest_lock_resolved",
+      "language": "TypeScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Adds left-pad ^1.3.0 with a changed lockfile resolving 1.3.0.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_and_lock",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_and_lock",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "lockfile_only",
+      "language": "TypeScript",
+      "execution_mode": "offline_and_live",
+      "input_summary": "Adds a left-pad import with lockfile evidence but no direct manifest addition.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "lockfile_only_observed",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "possible_transitive_dependency"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "lockfile_only_observed",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "possible_transitive_dependency"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "mapping_unknown_java",
+      "language": "Java",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Adds a Java import without reliable namespace-to-artifact evidence.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "mapping_uncertain",
+            "ecosystem": "Maven",
+            "package": "",
+            "query_kind": "unresolved",
+            "query_value": "",
+            "registry_status": "cannot_compare",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "mapping_uncertain"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "Java"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "mapping_uncertain",
+            "ecosystem": "Maven",
+            "package": "",
+            "query_kind": "unresolved",
+            "query_value": "",
+            "registry_status": "cannot_compare",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "mapping_uncertain"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "unchanged_missing_dependency",
+      "language": "TypeScript",
+      "execution_mode": "offline_and_live",
+      "input_summary": "Adds an import whose dependency exists only in an unchanged child manifest.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "matched_existing_manifest",
+            "ecosystem": "npm",
+            "package": "rq2-slopsquat-fixture-20260729-7f3b9c21",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "matched_existing_manifest",
+            "ecosystem": "npm",
+            "package": "rq2-slopsquat-fixture-20260729-7f3b9c21",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "known_public_advisory",
+      "language": "TypeScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Adds minimist 0.0.8 with an advisory published before author time.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "minimist",
+            "query_kind": "exact",
+            "query_value": "0.0.8",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "active_before_or_at_author_date",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "minimist",
+            "query_kind": "exact",
+            "query_value": "0.0.8",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "active_before_or_at_author_date",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "known_malicious_advisory",
+      "language": "TypeScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Adds event-stream 3.3.6 with pre-commit malicious-advisory evidence.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "event-stream",
+            "query_kind": "exact",
+            "query_value": "3.3.6",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "active_before_or_at_author_date",
+            "reasons": [
+              "historical_advisory_precedes_current_absence",
+              "malicious_advisory_active",
+              "registry_package_not_found_at_query"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "event-stream",
+            "query_kind": "exact",
+            "query_value": "3.3.6",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "active_before_or_at_author_date",
+            "reasons": [
+              "historical_advisory_precedes_current_absence",
+              "malicious_advisory_active",
+              "registry_package_not_found_at_query"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "python_alias_exists",
+      "language": "Python",
+      "execution_mode": "live_integration",
+      "input_summary": "Maps cv2 to opencv-python 4.10.0.84.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_alias",
+            "ecosystem": "PyPI",
+            "package": "opencv-python",
+            "query_kind": "exact",
+            "query_value": "4.10.0.84",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "Python"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_alias",
+            "ecosystem": "PyPI",
+            "package": "opencv-python",
+            "query_kind": "exact",
+            "query_value": "4.10.0.84",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "missing_pypi_package",
+      "language": "Python",
+      "execution_mode": "live_integration",
+      "input_summary": "Uses a collision-resistant PyPI fixture confirmed absent before the run.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_normalized",
+            "ecosystem": "PyPI",
+            "package": "rq2-slopsquat-fixture-py-20260729-7f3b9c21",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "Python"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_normalized",
+            "ecosystem": "PyPI",
+            "package": "rq2-slopsquat-fixture-py-20260729-7f3b9c21",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "multilang_python_in_typescript_repo",
+      "language": "Python",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Adds a Python requests import and declaration in a TypeScript-primary repository.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "detected_languages": [
+            "Python"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "PyPI",
+            "package": "requests",
+            "query_kind": "exact",
+            "query_value": "2.32.3",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "Python"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "PyPI",
+            "package": "requests",
+            "query_kind": "exact",
+            "query_value": "2.32.3",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "multilang_java_in_python_repo",
+      "language": "Java",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Adds a Java import and Maven dependency in a Python-primary repository.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "detected_languages": [
+            "Java"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_unique_coordinate",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "exact",
+            "query_value": "3.14.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "resolved_unique_module_coordinate"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "Java"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_unique_coordinate",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "exact",
+            "query_value": "3.14.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "resolved_unique_module_coordinate"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "multiple_imports_single_line_javascript",
+      "language": "JavaScript",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Adds left-pad and axios requires on one JavaScript line.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0,
+            1
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "axios",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0,
+            1
+          ],
+          "detected_languages": [
+            "JavaScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "axios",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "manifest_only_python_exact",
+      "language": "Python",
+      "execution_mode": "offline_and_live",
+      "input_summary": "Adds requests 2.32.3 to requirements.txt without a Python import.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "PyPI",
+            "package": "requests",
+            "query_kind": "exact",
+            "query_value": "2.32.3",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "PyPI",
+            "package": "requests",
+            "query_kind": "exact",
+            "query_value": "2.32.3",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "manifest_only_rust_exact",
+      "language": "Rust",
+      "execution_mode": "offline_and_live",
+      "input_summary": "Adds serde 1.0.203 to Cargo.toml without a Rust use statement.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Cargo",
+            "package": "serde",
+            "query_kind": "range",
+            "query_value": "1.0.203",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Cargo",
+            "package": "serde",
+            "query_kind": "range",
+            "query_value": "1.0.203",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "manifest_only_go_exact",
+      "language": "Go",
+      "execution_mode": "offline_and_live",
+      "input_summary": "Adds testify v1.9.0 to go.mod without a Go import.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Go",
+            "package": "github.com/stretchr/testify",
+            "query_kind": "exact",
+            "query_value": "v1.9.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Go",
+            "package": "github.com/stretchr/testify",
+            "query_kind": "exact",
+            "query_value": "v1.9.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "manifest_only_java_exact",
+      "language": "Java",
+      "execution_mode": "offline_and_live",
+      "input_summary": "Adds commons-lang3 3.14.0 to pom.xml without a Java import.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "exact",
+            "query_value": "3.14.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "exact",
+            "query_value": "3.14.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "javascript_name_only_exists",
+      "language": "JavaScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Adds an axios import without manifest or version evidence.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "axios",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "JavaScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "axios",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "range_no_match",
+      "language": "TypeScript",
+      "execution_mode": "live_integration",
+      "input_summary": "Uses a valid left-pad range with no published matching version.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "range",
+            "query_value": "^999.0.0",
+            "registry_status": "no_matching_version_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "history_validation_required"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "range",
+            "query_value": "^999.0.0",
+            "registry_status": "no_matching_version_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "history_validation_required"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "unsupported_range_syntax",
+      "language": "TypeScript",
+      "execution_mode": "offline_unit",
+      "input_summary": "Adds left-pad with invalid range syntax.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "range",
+            "query_value": ">=1 <",
+            "registry_status": "cannot_compare",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "unsupported_range_syntax"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "range",
+            "query_value": ">=1 <",
+            "registry_status": "cannot_compare",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "unsupported_range_syntax"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "java_maven_property_resolved",
+      "language": "Java",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Resolves a Maven property to commons-lang3 3.14.0 within the project.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "exact",
+            "query_value": "3.14.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "resolved_local_maven_property"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "exact",
+            "query_value": "3.14.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "resolved_local_maven_property"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "java_maven_property_unresolved",
+      "language": "Java",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Uses a Maven version property that has no project definition.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "version_unresolved"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "version_unresolved"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "java_gradle_catalog_resolved",
+      "language": "Java",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Resolves a Gradle version-catalog alias to commons-lang3 3.14.0.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "exact",
+            "query_value": "3.14.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "resolved_local_gradle_catalog"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "exact",
+            "query_value": "3.14.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "resolved_local_gradle_catalog"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "java_mapping_one_candidate",
+      "language": "Java",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Maps a Java import to one verifiable artifact candidate in the module manifest.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_unique_coordinate",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "exact",
+            "query_value": "3.14.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "resolved_unique_module_coordinate"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "Java"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_unique_coordinate",
+            "ecosystem": "Maven",
+            "package": "org.apache.commons:commons-lang3",
+            "query_kind": "exact",
+            "query_value": "3.14.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "resolved_unique_module_coordinate"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "java_mapping_multiple_candidates",
+      "language": "Java",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Leaves a Java import unresolved when two artifact candidates are present.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "mapping_uncertain",
+            "ecosystem": "Maven",
+            "package": "",
+            "query_kind": "unresolved",
+            "query_value": "",
+            "registry_status": "cannot_compare",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "mapping_uncertain",
+              "multiple_package_candidates"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "Java"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "mapping_uncertain",
+            "ecosystem": "Maven",
+            "package": "",
+            "query_kind": "unresolved",
+            "query_value": "",
+            "registry_status": "cannot_compare",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "mapping_uncertain",
+              "multiple_package_candidates"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "python_alias_mapping_failed",
+      "language": "Python",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Adds an unknown Python import root with no reliable distribution mapping.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "mapping_uncertain",
+            "ecosystem": "PyPI",
+            "package": "",
+            "query_kind": "unresolved",
+            "query_value": "",
+            "registry_status": "cannot_compare",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "mapping_uncertain",
+              "python_alias_not_found"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "Python"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "mapping_uncertain",
+            "ecosystem": "PyPI",
+            "package": "",
+            "query_kind": "unresolved",
+            "query_value": "",
+            "registry_status": "cannot_compare",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "mapping_uncertain",
+              "python_alias_not_found"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "osv_withdrawn_before_commit",
+      "language": "TypeScript",
+      "execution_mode": "offline_unit",
+      "input_summary": "Uses an advisory published and withdrawn before author time.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "withdrawn_before_author_date",
+            "reasons": [
+              "advisory_withdrawn_before_commit"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "withdrawn_before_author_date",
+            "reasons": [
+              "advisory_withdrawn_before_commit"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "osv_hydration_failed",
+      "language": "TypeScript",
+      "execution_mode": "offline_unit",
+      "input_summary": "Keeps registry evidence when full OSV record hydration fails.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "hydration_incomplete",
+            "reasons": [
+              "osv_hydration_failed"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "hydration_incomplete",
+            "reasons": [
+              "osv_hydration_failed"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "tsx_extension_overrides_index_hint",
+      "language": "TypeScript",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Routes a .tsx file as TypeScript despite a TSX index hint.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0,
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 1,
+          "manifest_events": 0,
+          "import_ordinals": [
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "duplicate_events_single_episode",
+      "language": "TypeScript",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Links duplicate left-pad import events and one manifest event to a single episode.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [],
+            "linked_import_events": 2,
+            "registry_query_count": 1
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 1,
+          "import_ordinals": [
+            0,
+            0
+          ],
+          "detected_languages": [
+            "TypeScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [],
+            "linked_import_events": 2,
+            "registry_query_count": 1
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "javascript_six_family_matrix",
+      "language": "JavaScript",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Exercises JavaScript builtin, matched, mismatch, workspace-alias, and registry-absence cases.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 3,
+          "manifest_events": 3
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "axios",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "minimist",
+            "query_kind": "exact",
+            "query_value": "0.0.8",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "rq2-js-missing-20260811",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "mapping_uncertain",
+            "ecosystem": "npm",
+            "package": "",
+            "query_kind": "unresolved",
+            "query_value": "",
+            "registry_status": "cannot_compare",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "possible_workspace_alias"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 3,
+          "manifest_events": 3,
+          "import_ordinals": [
+            0,
+            0,
+            0
+          ],
+          "detected_languages": [
+            "JavaScript"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "query_kind": "exact",
+            "query_value": "1.3.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "npm",
+            "package": "axios",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "minimist",
+            "query_kind": "exact",
+            "query_value": "0.0.8",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "npm",
+            "package": "rq2-js-missing-20260811",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "mapping_uncertain",
+            "ecosystem": "npm",
+            "package": "",
+            "query_kind": "unresolved",
+            "query_value": "",
+            "registry_status": "cannot_compare",
+            "advisory_status": "not_queried",
+            "reasons": [
+              "possible_workspace_alias"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "python_six_family_matrix",
+      "language": "Python",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Exercises Python standard-library, relative, alias, mismatch, and PyPI-absence cases.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 3
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_alias",
+            "ecosystem": "PyPI",
+            "package": "opencv-python",
+            "query_kind": "exact",
+            "query_value": "4.10.0.84",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "PyPI",
+            "package": "numpy",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "PyPI",
+            "package": "requests",
+            "query_kind": "exact",
+            "query_value": "2.32.3",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "PyPI",
+            "package": "rq2-py-missing-20260811",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 3,
+          "import_ordinals": [
+            0,
+            0
+          ],
+          "detected_languages": [
+            "Python"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_alias",
+            "ecosystem": "PyPI",
+            "package": "opencv-python",
+            "query_kind": "exact",
+            "query_value": "4.10.0.84",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "PyPI",
+            "package": "numpy",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "PyPI",
+            "package": "requests",
+            "query_kind": "exact",
+            "query_value": "2.32.3",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "PyPI",
+            "package": "rq2-py-missing-20260811",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "rust_six_family_matrix",
+      "language": "Rust",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Exercises Rust standard-library, crate, range, mismatch, and registry-absence cases.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 3
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "Cargo",
+            "package": "serde",
+            "query_kind": "range",
+            "query_value": "1.0.203",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "Cargo",
+            "package": "regex",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Cargo",
+            "package": "anyhow",
+            "query_kind": "range",
+            "query_value": "1.0.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Cargo",
+            "package": "rq2-rust-missing-20260811",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 3,
+          "import_ordinals": [
+            0,
+            0
+          ],
+          "detected_languages": [
+            "Rust"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "Cargo",
+            "package": "serde",
+            "query_kind": "range",
+            "query_value": "1.0.203",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "Cargo",
+            "package": "regex",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Cargo",
+            "package": "anyhow",
+            "query_kind": "range",
+            "query_value": "1.0.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Cargo",
+            "package": "rq2-rust-missing-20260811",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "go_six_family_matrix",
+      "language": "Go",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Exercises Go standard-library, local, module-prefix, mismatch, and proxy-absence cases.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 3
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "Go",
+            "package": "github.com/stretchr/testify",
+            "query_kind": "exact",
+            "query_value": "v1.9.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "Go",
+            "package": "golang.org/x/text",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Go",
+            "package": "example.invalid/rq2-missing",
+            "query_kind": "exact",
+            "query_value": "v1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Go",
+            "package": "github.com/google/uuid",
+            "query_kind": "exact",
+            "query_value": "v1.6.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 3,
+          "import_ordinals": [
+            0,
+            0
+          ],
+          "detected_languages": [
+            "Go"
+          ]
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "ecosystem": "Go",
+            "package": "github.com/stretchr/testify",
+            "query_kind": "exact",
+            "query_value": "v1.9.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "ecosystem": "Go",
+            "package": "golang.org/x/text",
+            "query_kind": "name_only",
+            "query_value": "",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Go",
+            "package": "example.invalid/rq2-missing",
+            "query_kind": "exact",
+            "query_value": "v1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Go",
+            "package": "github.com/google/uuid",
+            "query_kind": "exact",
+            "query_value": "v1.6.0",
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "java_entry_control",
+      "language": "Java",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Exercises Java java.* and javax.* import controls.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0
+        },
+        "episodes": []
+      },
+      "actual": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": []
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "java_registry_absence",
+      "language": "Java",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Exercises a fixed Maven exact-dependency absence case.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Maven",
+            "package": "org.synthetic:rq2-missing",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "actual": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "ecosystem": "Maven",
+            "package": "org.synthetic:rq2-missing",
+            "query_kind": "exact",
+            "query_value": "1.0.0",
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "scenario_id": "java_gradle_local_project_control",
+      "language": "Java",
+      "execution_mode": "offline_pipeline",
+      "input_summary": "Treats a Gradle local-project dependency as non-external.",
+      "capture_points": [
+        {
+          "stage": "Stage 1 parser/routing",
+          "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+          "functions": [
+            "parse_unified_diff",
+            "actual_changed_languages",
+            "extract_source_imports",
+            "extract_manifest_additions"
+          ]
+        },
+        {
+          "stage": "Stage 2 alignment/linker",
+          "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+          "functions": [
+            "select_manifests",
+            "plan_manifest",
+            "build_episode_tables"
+          ]
+        },
+        {
+          "stage": "Stage 3 registry/advisory",
+          "file": "scripts/hallucination/rq2_stage3_apply.py",
+          "functions": [
+            "evaluate_registry",
+            "evaluate_advisory",
+            "run_stage3"
+          ]
+        },
+        {
+          "stage": "Stage 4 oracle compare",
+          "file": "tests/run_rq2_stage4_synthetic_chain.py",
+          "functions": [
+            "_evaluate_scenario",
+            "_scenario_status"
+          ]
+        }
+      ],
+      "expected": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0
+        },
+        "episodes": []
+      },
+      "actual": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0,
+          "import_ordinals": [],
+          "detected_languages": []
+        },
+        "episodes": []
+      },
+      "status": "pass"
+    }
+  ],
+  "v1_retained_count": 22,
+  "v1_regression": [
+    {
+      "scenario_id": "i0_m0_code_only",
+      "migration": "unchanged_control",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "i0_m1_manifest_only",
+      "migration": "expected_behavior_changed",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "builtin_import_control",
+      "migration": "unchanged_control",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "relative_import_control",
+      "migration": "unchanged_control",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "i1_m0_no_manifest",
+      "migration": "expected_behavior_changed",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "exists_before_commit",
+      "migration": "split_evidence_axes",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "published_after_commit_candidate",
+      "migration": "label_renamed",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "missing_npm_package",
+      "migration": "reason_normalized",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "missing_npm_version",
+      "migration": "reason_normalized",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "manifest_mismatch",
+      "migration": "one_row_to_two_episodes",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "range_only",
+      "migration": "expected_behavior_changed",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "npm_first_party",
+      "migration": "reason_normalized",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "private_local_dependency",
+      "migration": "reason_normalized",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "npm_alias_target",
+      "migration": "split_identity_fields",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "manifest_lock_resolved",
+      "migration": "episode_deduplication",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "lockfile_only",
+      "migration": "quadrant_refined",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "mapping_unknown_java",
+      "migration": "coverage_expanded",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "unchanged_missing_dependency",
+      "migration": "expected_behavior_changed",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "known_public_advisory",
+      "migration": "split_evidence_axes",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "known_malicious_advisory",
+      "migration": "precedence_changed",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "python_alias_exists",
+      "migration": "coverage_expanded",
+      "status": "pass"
+    },
+    {
+      "scenario_id": "missing_pypi_package",
+      "migration": "reason_normalized",
+      "status": "pass"
+    }
+  ],
+  "target_languages": [
+    "TypeScript",
+    "Python",
+    "JavaScript",
+    "Rust",
+    "Go",
+    "Java"
+  ],
+  "coverage_matrix": {
+    "TypeScript": {
+      "C1": [
+        "i0_m0_code_only",
+        "builtin_import_control",
+        "relative_import_control"
+      ],
+      "C2": [
+        "i1_m0_no_manifest"
+      ],
+      "C3": [
+        "i0_m1_manifest_only"
+      ],
+      "C4": [
+        "exists_before_commit"
+      ],
+      "C5": [
+        "manifest_mismatch"
+      ],
+      "C6": [
+        "range_only",
+        "range_no_match",
+        "unsupported_range_syntax"
+      ],
+      "C7": [
+        "npm_first_party",
+        "private_local_dependency"
+      ],
+      "C8": [
+        "missing_npm_package",
+        "missing_npm_version",
+        "known_public_advisory"
+      ]
+    },
+    "JavaScript": {
+      "C1": [
+        "javascript_six_family_matrix"
+      ],
+      "C2": [
+        "javascript_six_family_matrix"
+      ],
+      "C3": [
+        "javascript_six_family_matrix"
+      ],
+      "C4": [
+        "javascript_six_family_matrix"
+      ],
+      "C5": [
+        "javascript_six_family_matrix"
+      ],
+      "C6": [
+        "javascript_six_family_matrix"
+      ],
+      "C7": [
+        "javascript_six_family_matrix"
+      ],
+      "C8": [
+        "javascript_six_family_matrix"
+      ]
+    },
+    "Python": {
+      "C1": [
+        "python_six_family_matrix"
+      ],
+      "C2": [
+        "python_six_family_matrix"
+      ],
+      "C3": [
+        "python_six_family_matrix"
+      ],
+      "C4": [
+        "python_six_family_matrix"
+      ],
+      "C5": [
+        "python_six_family_matrix"
+      ],
+      "C6": [
+        "python_six_family_matrix"
+      ],
+      "C7": [
+        "python_six_family_matrix"
+      ],
+      "C8": [
+        "python_six_family_matrix"
+      ]
+    },
+    "Rust": {
+      "C1": [
+        "rust_six_family_matrix"
+      ],
+      "C2": [
+        "rust_six_family_matrix"
+      ],
+      "C3": [
+        "rust_six_family_matrix"
+      ],
+      "C4": [
+        "rust_six_family_matrix"
+      ],
+      "C5": [
+        "rust_six_family_matrix"
+      ],
+      "C6": [
+        "rust_six_family_matrix"
+      ],
+      "C7": [
+        "rust_six_family_matrix"
+      ],
+      "C8": [
+        "rust_six_family_matrix"
+      ]
+    },
+    "Go": {
+      "C1": [
+        "go_six_family_matrix"
+      ],
+      "C2": [
+        "go_six_family_matrix"
+      ],
+      "C3": [
+        "go_six_family_matrix"
+      ],
+      "C4": [
+        "go_six_family_matrix"
+      ],
+      "C5": [
+        "go_six_family_matrix"
+      ],
+      "C6": [
+        "go_six_family_matrix"
+      ],
+      "C7": [
+        "go_six_family_matrix"
+      ],
+      "C8": [
+        "go_six_family_matrix"
+      ]
+    },
+    "Java": {
+      "C1": [
+        "java_entry_control"
+      ],
+      "C2": [
+        "mapping_unknown_java"
+      ],
+      "C3": [
+        "manifest_only_java_exact"
+      ],
+      "C4": [
+        "java_mapping_one_candidate"
+      ],
+      "C5": [
+        "java_mapping_multiple_candidates"
+      ],
+      "C6": [
+        "java_maven_property_resolved",
+        "java_maven_property_unresolved"
+      ],
+      "C7": [
+        "java_mapping_multiple_candidates"
+      ],
+      "C8": [
+        "java_registry_absence"
+      ]
+    }
+  },
+  "in_scope_count": 49,
+  "in_scope_pass_count": 49,
+  "canonical_csv_persisted": 0
+}

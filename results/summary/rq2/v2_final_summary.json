@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "source_candidate_cases": 74618,
+  "queryable_unique_episode_denominator": 1364856,
+  "label_counts": {
+    "indeterminate": 52093,
+    "not_hallucination": 21821,
+    "probable_hallucination": 382,
+    "confirmed_hallucination": 322
+  },
+  "strict_episode_prevalence": {
+    "count": 322,
+    "denominator": 1364856,
+    "proportion": 0.00023592232440638425,
+    "percent": 0.023592232440638426,
+    "wilson_95_low_percent": 0.021152513871576115,
+    "wilson_95_high_percent": 0.026313272661365853
+  },
+  "sensitivity_episode_prevalence": {
+    "count": 704,
+    "denominator": 1364856,
+    "proportion": 0.0005158053303791756,
+    "percent": 0.051580533037917556,
+    "wilson_95_low_percent": 0.047909311597789134,
+    "wilson_95_high_percent": 0.055532918581073586
+  },
+  "candidate_determinate_fraction": {
+    "count": 22525,
+    "denominator": 74618,
+    "proportion": 0.3018708622584363,
+    "percent": 30.18708622584363,
+    "wilson_95_low_percent": 29.85872735303537,
+    "wilson_95_high_percent": 30.51748499718276
+  },
+  "strict_among_determinate_candidates": {
+    "count": 322,
+    "denominator": 22525,
+    "proportion": 0.014295227524972254,
+    "percent": 1.4295227524972254,
+    "wilson_95_low_percent": 1.2825778702318567,
+    "wilson_95_high_percent": 1.5930314237695686
+  },
+  "sensitivity_among_determinate_candidates": {
+    "count": 704,
+    "denominator": 22525,
+    "proportion": 0.03125416204217536,
+    "percent": 3.125416204217536,
+    "wilson_95_low_percent": 2.906053120178277,
+    "wilson_95_high_percent": 3.360764733732792
+  },
+  "confirmed_unique_commits": 262,
+  "sensitivity_unique_commits": 509,
+  "all_corpus_commits": 343756,
+  "by_original_registry_status": {
+    "confirmed_hallucination": {
+      "current_absent_unknown": 1,
+      "no_matching_version_before_author_date": 266,
+      "published_after_author_date": 55
+    },
+    "indeterminate": {
+      "current_absent_unknown": 51147,
+      "no_matching_version_before_author_date": 4,
+      "published_after_author_date": 942
+    },
+    "not_hallucination": {
+      "current_absent_unknown": 19518,
+      "no_matching_version_before_author_date": 157,
+      "published_after_author_date": 2146
+    },
+    "probable_hallucination": {
+      "current_absent_unknown": 357,
+      "published_after_author_date": 25
+    }
+  },
+  "by_ecosystem": {
+    "confirmed_hallucination": {
+      "Maven": 1,
+      "npm": 192,
+      "PyPI": 118,
+      "Cargo": 11
+    },
+    "indeterminate": {
+      "PyPI": 28330,
+      "npm": 12806,
+      "Cargo": 5230,
+      "Go": 4367,
+      "Maven": 1360
+    },
+    "not_hallucination": {
+      "Maven": 6465,
+      "Go": 7999,
+      "npm": 2092,
+      "Cargo": 2998,
+      "PyPI": 2267
+    },
+    "probable_hallucination": {
+      "PyPI": 269,
+      "npm": 77,
+      "Maven": 31,
+      "Cargo": 5
+    }
+  },
+  "by_agent": {
+    "confirmed_hallucination": {
+      "cursor": 163,
+      "claude": 49,
+      "copilot": 108,
+      "codex": 2
+    },
+    "indeterminate": {
+      "cursor": 15834,
+      "claude": 11582,
+      "copilot": 23047,
+      "codex": 1630
+    },
+    "not_hallucination": {
+      "cursor": 6199,
+      "copilot": 10854,
+      "claude": 4143,
+      "codex": 625
+    },
+    "probable_hallucination": {
+      "copilot": 141,
+      "claude": 100,
+      "cursor": 135,
+      "codex": 6
+    }
+  },
+  "adjudication_basis_counts": {
+    "present-day absence, import mapping, private registry, deletion, or coverage remains unresolved": 50566,
+    "official Maven artifact predates author time": 5358,
+    "same-commit local/workspace/non-registry or resolved-lock evidence": 4503,
+    "package exists but fresh official registry has no requested version/range": 326,
+    "fresh official registry match predates author time": 3480,
+    "Python standard-library import": 1054,
+    "Go subpackage/internal/local module was queried as a registry module": 3956,
+    "version may come from an alternate package index": 156,
+    "patch contains path/workspace/custom-registry/lock/package-definition evidence": 726,
+    "Maven coordinate exists but name-only signal has no version time": 425,
+    "Rust crate matches repository package": 308,
+    "wheel evidence proves the candidate distribution provides the import": 128,
+    "Maven coordinate exists but requested version is absent from Central and Google": 31,
+    "project's own Maven release train": 2,
+    "project's own package release train": 1,
+    "Maven exact version published more than 24h after committer time": 1,
+    "Maven artifact predates committer time": 1,
+    "same-commit manifest verifies alternate Python distribution": 1,
+    "systematic local, resolved, timing, or official-registry explanation": 1416,
+    "versioned manifest change has no satisfying version in fresh public registry history": 266,
+    "fresh official registry match predates committer time": 14,
+    "same package and query preexisted in first parent": 588,
+    "path/workspace/custom-registry/lock or package-definition evidence": 285,
+    "weak or import-only temporal signal after conservative exclusions": 946,
+    "first satisfying public version was published more than 24h after committer time": 55,
+    "first satisfying public version was published within 24h after committer time": 25
+  },
+  "by_language": [
+    {
+      "language": "TypeScript",
+      "queryable_episode_observations": 789170,
+      "confirmed_hallucination": 190,
+      "indeterminate": 10757,
+      "not_hallucination": 2035,
+      "probable_hallucination": 75,
+      "strict_percent": 0.02407592787358871,
+      "strict_wilson_95_low_percent": 0.02088760858849129,
+      "strict_wilson_95_high_percent": 0.027750782429531714,
+      "sensitivity_percent": 0.0335795836131632,
+      "sensitivity_wilson_95_low_percent": 0.02977321360592273,
+      "sensitivity_wilson_95_high_percent": 0.03787239636942389
+    },
+    {
+      "language": "Python",
+      "queryable_episode_observations": 320493,
+      "confirmed_hallucination": 118,
+      "indeterminate": 28330,
+      "not_hallucination": 2267,
+      "probable_hallucination": 269,
+      "strict_percent": 0.03681827684223993,
+      "strict_wilson_95_low_percent": 0.030748356506498053,
+      "strict_wilson_95_high_percent": 0.044085909481583564,
+      "sensitivity_percent": 0.12075146727073602,
+      "sensitivity_wilson_95_low_percent": 0.10931126305878155,
+      "sensitivity_wilson_95_high_percent": 0.1333873717483998
+    },
+    {
+      "language": "JavaScript",
+      "queryable_episode_observations": 510825,
+      "confirmed_hallucination": 191,
+      "indeterminate": 2731,
+      "not_hallucination": 974,
+      "probable_hallucination": 76,
+      "strict_percent": 0.03739049576665199,
+      "strict_wilson_95_low_percent": 0.03245128572773926,
+      "strict_wilson_95_high_percent": 0.0430811485253486,
+      "sensitivity_percent": 0.052268389370136545,
+      "sensitivity_wilson_95_low_percent": 0.0463649358623923,
+      "sensitivity_wilson_95_high_percent": 0.05892306183263427
+    },
+    {
+      "language": "Rust",
+      "queryable_episode_observations": 47439,
+      "confirmed_hallucination": 11,
+      "indeterminate": 5230,
+      "not_hallucination": 2998,
+      "probable_hallucination": 5,
+      "strict_percent": 0.02318767259006303,
+      "strict_wilson_95_low_percent": 0.012948549403462342,
+      "strict_wilson_95_high_percent": 0.041520065936797,
+      "sensitivity_percent": 0.033727523767364403,
+      "sensitivity_wilson_95_low_percent": 0.020762460326644753,
+      "sensitivity_wilson_95_high_percent": 0.05478415053940907
+    },
+    {
+      "language": "Go",
+      "queryable_episode_observations": 53566,
+      "confirmed_hallucination": 0,
+      "indeterminate": 4367,
+      "not_hallucination": 7999,
+      "probable_hallucination": 0,
+      "strict_percent": 0.0,
+      "strict_wilson_95_low_percent": 0.0,
+      "strict_wilson_95_high_percent": 0.007170935578831359,
+      "sensitivity_percent": 0.0,
+      "sensitivity_wilson_95_low_percent": 0.0,
+      "sensitivity_wilson_95_high_percent": 0.007170935578831359
+    },
+    {
+      "language": "Java",
+      "queryable_episode_observations": 22563,
+      "confirmed_hallucination": 1,
+      "indeterminate": 1360,
+      "not_hallucination": 6465,
+      "probable_hallucination": 31,
+      "strict_percent": 0.004432034747152418,
+      "strict_wilson_95_low_percent": 0.0007823672454112111,
+      "strict_wilson_95_high_percent": 0.025102774152659258,
+      "sensitivity_percent": 0.14182511190887737,
+      "sensitivity_wilson_95_low_percent": 0.10048418433397785,
+      "sensitivity_wilson_95_high_percent": 0.20014033569240341
+    }
+  ],
+  "validation": {
+    "row_count_matches_candidates": true,
+    "case_ids_unique": true,
+    "episode_ids_unique": true,
+    "labels_valid": true,
+    "confirmed_basis_valid": true,
+    "probable_has_basis": true,
+    "status": "pass"
+  },
+  "notes": [
+    "The primary denominator is unique episodes with exact, range, or name-only query kind.",
+    "Language rows are observations and can overlap because one episode may appear in JavaScript and TypeScript.",
+    "Agent counts are distributions, not agent-specific rates; agent-specific queryable denominators were not reconstructed here.",
+    "Java uses the audited stage12 repair v3 product selected explicitly for the v2 canonical view."
+  ]
+}

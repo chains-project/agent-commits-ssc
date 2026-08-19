@@ -1,0 +1,1194 @@
+{
+  "schema_version": 2,
+  "date": "2026-08-03",
+  "status": "expected_behavior_frozen_before_production_implementation",
+  "target_languages": ["TypeScript", "Python", "JavaScript", "Rust", "Go", "Java"],
+  "time_field": "author_date",
+  "scenario_count": 49,
+  "notes": [
+    "These scenarios are locally constructed commit-format fixtures, not real agent commits.",
+    "Offline deterministic scenarios may inject fixed evidence; live-integration scenarios must not fabricate network responses."
+  ],
+  "scenarios": [
+    {
+      "id": "i0_m0_code_only", "origin": "retained_v1", "category": "entry_control",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds ordinary TypeScript code without an external import or dependency declaration.",
+      "input": {"source_events": [], "manifest_events": [], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": false, "import_events": 0, "manifest_events": 0}, "episodes": []}
+    },
+    {
+      "id": "i0_m1_manifest_only", "origin": "retained_v1", "category": "manifest_only",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_and_live", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds left-pad 1.3.0 to package.json without a source import.",
+      "input": {"source_events": [], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "1.3.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "1.3.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "builtin_import_control", "origin": "retained_v1", "category": "entry_control",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds a Node.js fs import without a dependency declaration.",
+      "input": {"source_events": [{"path": "src/index.ts", "added_line": "import fs from 'fs';", "target": "fs", "kind": "builtin", "language": "TypeScript"}], "manifest_events": [], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": false, "import_events": 0, "manifest_events": 0}, "episodes": []}
+    },
+    {
+      "id": "relative_import_control", "origin": "retained_v1", "category": "entry_control",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds a relative ./local import without a dependency declaration.",
+      "input": {"source_events": [{"path": "src/index.ts", "added_line": "import value from './local';", "target": "./local", "kind": "relative", "language": "TypeScript"}], "manifest_events": [], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": false, "import_events": 0, "manifest_events": 0}, "episodes": []}
+    },
+    {
+      "id": "i1_m0_no_manifest", "origin": "retained_v1", "category": "import_only",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_and_live", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds a directly mapped npm import when the child tree has no manifest.",
+      "input": {"source_events": [{"path": "src/index.ts", "added_line": "import value from 'rq2-no-manifest-control';", "target": "rq2-no-manifest-control", "kind": "external", "language": "TypeScript"}], "manifest_events": [], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 0}, "episodes": [{"quadrant": "I+M-", "alignment_status": "no_matching_manifest", "query": {"ecosystem": "npm", "package": "rq2-no-manifest-control", "kind": "name_only", "value": ""}, "registry_status": "current_absent_unknown", "advisory_status": "none_observed", "reasons": ["unknown_deleted_or_unpublished_possible", "registry_package_not_found_at_query"]}]}
+    },
+    {
+      "id": "exists_before_commit", "origin": "retained_v1", "category": "exact_version",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds a left-pad import and an exact 1.3.0 manifest dependency.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "left-pad", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "1.3.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "1.3.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "published_after_commit_candidate", "origin": "retained_v1", "category": "exact_version",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "live_integration", "author_date": "2015-01-01T00:00:00Z",
+      "input_summary": "Places left-pad 1.3.0 before its synthetic publication time.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "left-pad", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "1.3.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "1.3.0"}, "registry_status": "published_after_author_date", "advisory_status": "none_observed", "reasons": ["history_validation_required"]}]}
+    },
+    {
+      "id": "missing_npm_package", "origin": "retained_v1", "category": "current_absence",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Uses a collision-resistant npm fixture name confirmed absent before the run.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "rq2-slopsquat-fixture-20260729-7f3b9c21", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "rq2-slopsquat-fixture-20260729-7f3b9c21", "version_spec": "1.0.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest", "query": {"ecosystem": "npm", "package": "rq2-slopsquat-fixture-20260729-7f3b9c21", "kind": "exact", "value": "1.0.0"}, "registry_status": "current_absent_unknown", "advisory_status": "none_observed", "reasons": ["unknown_deleted_or_unpublished_possible", "registry_package_not_found_at_query"]}]}
+    },
+    {
+      "id": "missing_npm_version", "origin": "retained_v1", "category": "current_absence",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Uses the existing left-pad package with absent exact version 999.999.999.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "left-pad", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "999.999.999", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "999.999.999"}, "registry_status": "current_absent_unknown", "advisory_status": "none_observed", "reasons": ["unknown_deleted_or_unpublished_possible", "registry_requested_version_absent"]}]}
+    },
+    {
+      "id": "manifest_mismatch", "origin": "retained_v1", "category": "dual_goal_split",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_and_live", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds an axios import while the manifest adds left-pad 1.3.0.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "axios", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "1.3.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M-", "alignment_status": "no_matching_manifest", "query": {"ecosystem": "npm", "package": "axios", "kind": "name_only", "value": ""}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": ["manifest_does_not_explain_import"]}, {"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "1.3.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "range_only", "origin": "retained_v1", "category": "version_range",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds left-pad with range ^1.3.0 and no exact lockfile resolution.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "left-pad", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "^1.3.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "range", "value": "^1.3.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "npm_first_party", "origin": "retained_v1", "category": "strong_exclusion",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Imports the local npm workspace package name.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "@rq2/local-workspace", "kind": "external", "language": "TypeScript"}], "manifest_events": [], "tree_dependencies": [{"path": "package.json", "package_identity": "@rq2/local-workspace", "version_spec": "0.1.0"}]},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 0}, "episodes": [{"quadrant": "I+M-", "alignment_status": "first_party_excluded", "query": {"ecosystem": "npm", "package": "@rq2/local-workspace", "kind": "excluded", "value": ""}, "registry_status": "excluded", "advisory_status": "not_queried", "reasons": ["first_party"]}]}
+    },
+    {
+      "id": "private_local_dependency", "origin": "retained_v1", "category": "strong_exclusion",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Aligns an import with a file:../rq2-private-local dependency.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "rq2-private-local", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "rq2-private-local", "version_spec": "file:../rq2-private-local", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "private_or_local_excluded", "query": {"ecosystem": "npm", "package": "rq2-private-local", "kind": "excluded", "value": ""}, "registry_status": "excluded", "advisory_status": "not_queried", "reasons": ["private_or_local"]}]}
+    },
+    {
+      "id": "npm_alias_target", "origin": "retained_v1", "category": "package_alias",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Maps an npm alias declaration to the real left-pad 1.3.0 target.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "rq2-alias-name", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "rq2-alias-name", "target_package": "left-pad", "version_spec": "1.3.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest_alias", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "1.3.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": ["npm_alias"]}]}
+    },
+    {
+      "id": "manifest_lock_resolved", "origin": "retained_v1", "category": "manifest_and_lock",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds left-pad ^1.3.0 with a changed lockfile resolving 1.3.0.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "left-pad", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "^1.3.0", "resolved_version": "1.3.0", "source_type": "both"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest_and_lock", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "1.3.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "lockfile_only", "origin": "retained_v1", "category": "lockfile_only",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_and_live", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds a left-pad import with lockfile evidence but no direct manifest addition.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "left-pad", "kind": "external", "language": "TypeScript"}], "manifest_events": [], "tree_dependencies": [{"path": "package-lock.json", "package": "left-pad", "version_spec": "1.3.0", "source_type": "lockfile_only", "changed": true}]},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 0}, "episodes": [{"quadrant": "I+M-", "alignment_status": "lockfile_only_observed", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "1.3.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": ["possible_transitive_dependency"]}]}
+    },
+    {
+      "id": "mapping_unknown_java", "origin": "retained_v1", "category": "java_mapping",
+      "language": "Java", "repo_primary_language": "Java", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds a Java import without reliable namespace-to-artifact evidence.",
+      "input": {"source_events": [{"path": "src/main/java/demo/App.java", "target": "com.synthetic.vendor.Widget", "kind": "external", "language": "Java"}], "manifest_events": [], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 0}, "episodes": [{"quadrant": "I+M-", "alignment_status": "mapping_uncertain", "query": {"ecosystem": "Maven", "package": "", "kind": "unresolved", "value": ""}, "registry_status": "cannot_compare", "advisory_status": "not_queried", "reasons": ["mapping_uncertain"]}]}
+    },
+    {
+      "id": "unchanged_missing_dependency", "origin": "retained_v1", "category": "introduced_import_existing_manifest",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_and_live", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds an import whose dependency exists only in an unchanged child manifest.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "rq2-slopsquat-fixture-20260729-7f3b9c21", "kind": "external", "language": "TypeScript"}], "manifest_events": [], "tree_dependencies": [{"path": "package.json", "package": "rq2-slopsquat-fixture-20260729-7f3b9c21", "version_spec": "1.0.0", "source_type": "direct_manifest", "changed": false}]},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 0}, "episodes": [{"quadrant": "I+M-", "alignment_status": "matched_existing_manifest", "query": {"ecosystem": "npm", "package": "rq2-slopsquat-fixture-20260729-7f3b9c21", "kind": "exact", "value": "1.0.0"}, "registry_status": "current_absent_unknown", "advisory_status": "none_observed", "reasons": ["unknown_deleted_or_unpublished_possible", "registry_package_not_found_at_query"]}]}
+    },
+    {
+      "id": "known_public_advisory", "origin": "retained_v1", "category": "advisory_precedence",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds minimist 0.0.8 with an advisory published before author time.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "minimist", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "minimist", "version_spec": "0.0.8", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest", "query": {"ecosystem": "npm", "package": "minimist", "kind": "exact", "value": "0.0.8"}, "registry_status": "exists_before_author_date", "advisory_status": "active_before_or_at_author_date", "reasons": []}]}
+    },
+    {
+      "id": "known_malicious_advisory", "origin": "retained_v1", "category": "advisory_precedence",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds event-stream 3.3.6 with pre-commit malicious-advisory evidence.",
+      "input": {"source_events": [{"path": "src/index.ts", "target": "event-stream", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "event-stream", "version_spec": "3.3.6", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest", "query": {"ecosystem": "npm", "package": "event-stream", "kind": "exact", "value": "3.3.6"}, "registry_status": "current_absent_unknown", "advisory_status": "active_before_or_at_author_date", "reasons": ["historical_advisory_precedes_current_absence", "malicious_advisory_active", "registry_package_not_found_at_query"]}]}
+    },
+    {
+      "id": "python_alias_exists", "origin": "retained_v1", "category": "python_alias",
+      "language": "Python", "repo_primary_language": "Python", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Maps cv2 to opencv-python 4.10.0.84.",
+      "input": {"source_events": [{"path": "src/app.py", "target": "cv2", "kind": "external", "language": "Python"}], "manifest_events": [{"path": "requirements.txt", "ecosystem": "PyPI", "package": "opencv-python", "version_spec": "==4.10.0.84", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest_alias", "query": {"ecosystem": "PyPI", "package": "opencv-python", "kind": "exact", "value": "4.10.0.84"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "missing_pypi_package", "origin": "retained_v1", "category": "current_absence",
+      "language": "Python", "repo_primary_language": "Python", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Uses a collision-resistant PyPI fixture confirmed absent before the run.",
+      "input": {"source_events": [{"path": "src/app.py", "target": "rq2_slopsquat_fixture_py_20260729_7f3b9c21", "kind": "external", "language": "Python"}], "manifest_events": [{"path": "requirements.txt", "ecosystem": "PyPI", "package": "rq2-slopsquat-fixture-py-20260729-7f3b9c21", "version_spec": "==1.0.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest_normalized", "query": {"ecosystem": "PyPI", "package": "rq2-slopsquat-fixture-py-20260729-7f3b9c21", "kind": "exact", "value": "1.0.0"}, "registry_status": "current_absent_unknown", "advisory_status": "none_observed", "reasons": ["unknown_deleted_or_unpublished_possible", "registry_package_not_found_at_query"]}]}
+    },
+    {
+      "id": "multilang_python_in_typescript_repo", "origin": "new_v2", "category": "actual_file_language",
+      "language": "Python", "repo_primary_language": "TypeScript", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds a Python requests import and declaration in a TypeScript-primary repository.",
+      "input": {"source_events": [{"path": "tools/check.py", "target": "requests", "kind": "external", "language": "Python"}], "manifest_events": [{"path": "requirements.txt", "ecosystem": "PyPI", "package": "requests", "version_spec": "==2.32.3", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1, "detected_languages": ["Python"]}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest", "query": {"ecosystem": "PyPI", "package": "requests", "kind": "exact", "value": "2.32.3"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "multilang_java_in_python_repo", "origin": "new_v2", "category": "actual_file_language",
+      "language": "Java", "repo_primary_language": "Python", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds a Java import and Maven dependency in a Python-primary repository.",
+      "input": {"source_events": [{"path": "java/src/App.java", "target": "org.apache.commons.lang3.StringUtils", "kind": "external", "language": "Java"}], "manifest_events": [{"path": "java/pom.xml", "ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "version_spec": "3.14.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1, "detected_languages": ["Java"]}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest_unique_coordinate", "query": {"ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "kind": "exact", "value": "3.14.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": ["resolved_unique_module_coordinate"]}]}
+    },
+    {
+      "id": "multiple_imports_single_line_javascript", "origin": "new_v2", "category": "event_identity",
+      "language": "JavaScript", "repo_primary_language": "JavaScript", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds left-pad and axios requires on one JavaScript line.",
+      "input": {"source_events": [{"path": "src/index.js", "added_line": "const a=require('left-pad'), b=require('axios');", "targets": ["left-pad", "axios"], "kind": "external", "language": "JavaScript"}], "manifest_events": [], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 2, "manifest_events": 0, "import_ordinals": [0, 1]}, "episodes": [{"quadrant": "I+M-", "alignment_status": "no_matching_manifest", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "name_only", "value": ""}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}, {"quadrant": "I+M-", "alignment_status": "no_matching_manifest", "query": {"ecosystem": "npm", "package": "axios", "kind": "name_only", "value": ""}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "manifest_only_python_exact", "origin": "new_v2", "category": "manifest_only",
+      "language": "Python", "repo_primary_language": "Python", "execution_mode": "offline_and_live", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds requests 2.32.3 to requirements.txt without a Python import.",
+      "input": {"source_events": [], "manifest_events": [{"path": "requirements.txt", "ecosystem": "PyPI", "package": "requests", "version_spec": "==2.32.3", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "PyPI", "package": "requests", "kind": "exact", "value": "2.32.3"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "manifest_only_rust_exact", "origin": "new_v2", "category": "manifest_only",
+      "language": "Rust", "repo_primary_language": "Rust", "execution_mode": "offline_and_live", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds serde 1.0.203 to Cargo.toml without a Rust use statement.",
+      "input": {"source_events": [], "manifest_events": [{"path": "Cargo.toml", "ecosystem": "Cargo", "package": "serde", "version_spec": "1.0.203", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "Cargo", "package": "serde", "kind": "range", "value": "1.0.203"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "manifest_only_go_exact", "origin": "new_v2", "category": "manifest_only",
+      "language": "Go", "repo_primary_language": "Go", "execution_mode": "offline_and_live", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds testify v1.9.0 to go.mod without a Go import.",
+      "input": {"source_events": [], "manifest_events": [{"path": "go.mod", "ecosystem": "Go", "package": "github.com/stretchr/testify", "version_spec": "v1.9.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "Go", "package": "github.com/stretchr/testify", "kind": "exact", "value": "v1.9.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "manifest_only_java_exact", "origin": "new_v2", "category": "manifest_only",
+      "language": "Java", "repo_primary_language": "Java", "execution_mode": "offline_and_live", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds commons-lang3 3.14.0 to pom.xml without a Java import.",
+      "input": {"source_events": [], "manifest_events": [{"path": "pom.xml", "ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "version_spec": "3.14.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "kind": "exact", "value": "3.14.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "javascript_name_only_exists", "origin": "new_v2", "category": "name_only",
+      "language": "JavaScript", "repo_primary_language": "JavaScript", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds an axios import without manifest or version evidence.",
+      "input": {"source_events": [{"path": "src/index.js", "target": "axios", "kind": "external", "language": "JavaScript"}], "manifest_events": [], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 0}, "episodes": [{"quadrant": "I+M-", "alignment_status": "no_matching_manifest", "query": {"ecosystem": "npm", "package": "axios", "kind": "name_only", "value": ""}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "range_no_match", "origin": "new_v2", "category": "version_range",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "live_integration", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Uses a valid left-pad range with no published matching version.",
+      "input": {"source_events": [], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "^999.0.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "range", "value": "^999.0.0"}, "registry_status": "no_matching_version_before_author_date", "advisory_status": "none_observed", "reasons": ["history_validation_required"]}]}
+    },
+    {
+      "id": "unsupported_range_syntax", "origin": "new_v2", "category": "version_range",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_unit", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds left-pad with invalid range syntax.",
+      "input": {"source_events": [], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": ">=1 <", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "range", "value": ">=1 <"}, "registry_status": "cannot_compare", "advisory_status": "none_observed", "reasons": ["unsupported_range_syntax"]}]}
+    },
+    {
+      "id": "java_maven_property_resolved", "origin": "new_v2", "category": "java_version_resolution",
+      "language": "Java", "repo_primary_language": "Java", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Resolves a Maven property to commons-lang3 3.14.0 within the project.",
+      "input": {"source_events": [], "manifest_events": [{"path": "pom.xml", "ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "version_spec": "${commons.version}", "resolved_version": "3.14.0", "resolution_source": "local_maven_property", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "kind": "exact", "value": "3.14.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": ["resolved_local_maven_property"]}]}
+    },
+    {
+      "id": "java_maven_property_unresolved", "origin": "new_v2", "category": "java_version_resolution",
+      "language": "Java", "repo_primary_language": "Java", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Uses a Maven version property that has no project definition.",
+      "input": {"source_events": [], "manifest_events": [{"path": "pom.xml", "ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "version_spec": "${commons.version}", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "kind": "name_only", "value": ""}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": ["version_unresolved"]}]}
+    },
+    {
+      "id": "java_gradle_catalog_resolved", "origin": "new_v2", "category": "java_version_resolution",
+      "language": "Java", "repo_primary_language": "Java", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Resolves a Gradle version-catalog alias to commons-lang3 3.14.0.",
+      "input": {"source_events": [], "manifest_events": [{"path": "build.gradle", "ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "version_spec": "libs.commons.lang3", "resolved_version": "3.14.0", "resolution_source": "local_gradle_version_catalog", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "kind": "exact", "value": "3.14.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": ["resolved_local_gradle_catalog"]}]}
+    },
+    {
+      "id": "java_mapping_one_candidate", "origin": "new_v2", "category": "java_mapping",
+      "language": "Java", "repo_primary_language": "Java", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Maps a Java import to one verifiable artifact candidate in the module manifest.",
+      "input": {"source_events": [{"path": "src/main/java/App.java", "target": "org.apache.commons.lang3.StringUtils", "kind": "external", "language": "Java"}], "manifest_events": [{"path": "pom.xml", "ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "version_spec": "3.14.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest_unique_coordinate", "query": {"ecosystem": "Maven", "package": "org.apache.commons:commons-lang3", "kind": "exact", "value": "3.14.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": ["resolved_unique_module_coordinate"]}]}
+    },
+    {
+      "id": "java_mapping_multiple_candidates", "origin": "new_v2", "category": "java_mapping",
+      "language": "Java", "repo_primary_language": "Java", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Leaves a Java import unresolved when two artifact candidates are present.",
+      "input": {"source_events": [{"path": "src/main/java/App.java", "target": "com.example.shared.Widget", "kind": "external", "language": "Java"}], "manifest_events": [], "tree_dependencies": [{"path": "pom.xml", "candidate_packages": ["com.example:shared-core", "com.example:shared-api"]}]},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 0}, "episodes": [{"quadrant": "I+M-", "alignment_status": "mapping_uncertain", "query": {"ecosystem": "Maven", "package": "", "kind": "unresolved", "value": ""}, "registry_status": "cannot_compare", "advisory_status": "not_queried", "reasons": ["mapping_uncertain", "multiple_package_candidates"]}]}
+    },
+    {
+      "id": "python_alias_mapping_failed", "origin": "new_v2", "category": "python_alias",
+      "language": "Python", "repo_primary_language": "Python", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Adds an unknown Python import root with no reliable distribution mapping.",
+      "input": {"source_events": [{"path": "src/app.py", "target": "rq2_unknown_import_root", "kind": "external", "language": "Python"}], "manifest_events": [], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 0}, "episodes": [{"quadrant": "I+M-", "alignment_status": "mapping_uncertain", "query": {"ecosystem": "PyPI", "package": "", "kind": "unresolved", "value": ""}, "registry_status": "cannot_compare", "advisory_status": "not_queried", "reasons": ["mapping_uncertain", "python_alias_not_found"]}]}
+    },
+    {
+      "id": "osv_withdrawn_before_commit", "origin": "new_v2", "category": "advisory_lifecycle",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_unit", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Uses an advisory published and withdrawn before author time.",
+      "input": {"source_events": [], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "1.3.0", "source_type": "direct_manifest"}], "tree_dependencies": [], "evidence_fixture": {"published": "2020-01-01T00:00:00Z", "withdrawn": "2021-01-01T00:00:00Z"}},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "1.3.0"}, "registry_status": "exists_before_author_date", "advisory_status": "withdrawn_before_author_date", "reasons": ["advisory_withdrawn_before_commit"]}]}
+    },
+    {
+      "id": "osv_hydration_failed", "origin": "new_v2", "category": "advisory_infrastructure",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_unit", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Keeps registry evidence when full OSV record hydration fails.",
+      "input": {"source_events": [], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "1.3.0", "source_type": "direct_manifest"}], "tree_dependencies": [], "evidence_fixture": {"osv_id": "SYNTHETIC-HYDRATION-FAILURE", "hydration_status": "failed"}},
+      "expected": {"stage1": {"candidate": true, "import_events": 0, "manifest_events": 1}, "episodes": [{"quadrant": "I-M+", "alignment_status": "not_applicable_manifest_only", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "1.3.0"}, "registry_status": "exists_before_author_date", "advisory_status": "hydration_incomplete", "reasons": ["osv_hydration_failed"]}]}
+    },
+    {
+      "id": "tsx_extension_overrides_index_hint", "origin": "new_v2", "category": "actual_file_language",
+      "language": "TypeScript", "repo_primary_language": "Python", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Routes a .tsx file as TypeScript despite a TSX index hint.",
+      "input": {"source_events": [{"path": "src/App.tsx", "target": "left-pad", "kind": "external", "language": "TypeScript"}], "manifest_events": [], "tree_dependencies": [], "commit_languages_hint": "TSX"},
+      "expected": {"stage1": {"candidate": true, "import_events": 1, "manifest_events": 0, "detected_languages": ["TypeScript"]}, "episodes": [{"quadrant": "I+M-", "alignment_status": "no_matching_manifest", "query": {"ecosystem": "npm", "package": "left-pad", "kind": "name_only", "value": ""}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "duplicate_events_single_episode", "origin": "new_v2", "category": "episode_deduplication",
+      "language": "TypeScript", "repo_primary_language": "TypeScript", "execution_mode": "offline_pipeline", "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Links duplicate left-pad import events and one manifest event to a single episode.",
+      "input": {"source_events": [{"path": "src/a.ts", "target": "left-pad", "kind": "external", "language": "TypeScript"}, {"path": "src/b.ts", "target": "left-pad", "kind": "external", "language": "TypeScript"}], "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "1.3.0", "source_type": "direct_manifest"}], "tree_dependencies": []},
+      "expected": {"stage1": {"candidate": true, "import_events": 2, "manifest_events": 1}, "episodes": [{"quadrant": "I+M+", "alignment_status": "matched_manifest", "linked_import_events": 2, "linked_manifest_events": 1, "registry_query_count": 1, "query": {"ecosystem": "npm", "package": "left-pad", "kind": "exact", "value": "1.3.0"}, "registry_status": "exists_before_author_date", "advisory_status": "none_observed", "reasons": []}]}
+    },
+    {
+      "id": "javascript_six_family_matrix",
+      "origin": "new_phase3_20260811",
+      "category": "common_family_matrix",
+      "language": "JavaScript",
+      "repo_primary_language": "JavaScript",
+      "execution_mode": "offline_pipeline",
+      "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Exercises JavaScript builtin, matched, mismatch, workspace-alias, and registry-absence cases.",
+      "capture_points": [
+        "stage1_parser_routing",
+        "stage2_alignment_linking",
+        "stage3_registry_advisory",
+        "oracle_compare"
+      ],
+      "input": {
+        "source_events": [
+          {
+            "path": "src/matrix.js",
+            "target": "fs",
+            "kind": "external",
+            "language": "JavaScript"
+          },
+          {
+            "path": "src/matrix.js",
+            "target": "left-pad",
+            "kind": "external",
+            "language": "JavaScript"
+          },
+          {
+            "path": "src/matrix.js",
+            "target": "axios",
+            "kind": "external",
+            "language": "JavaScript"
+          },
+          {
+            "path": "src/matrix.js",
+            "target": "$lib/server",
+            "kind": "external",
+            "language": "JavaScript"
+          }
+        ],
+        "manifest_events": [
+          {
+            "path": "package.json",
+            "ecosystem": "npm",
+            "package": "left-pad",
+            "version_spec": "1.3.0",
+            "source_type": "direct_manifest"
+          },
+          {
+            "path": "package.json",
+            "ecosystem": "npm",
+            "package": "minimist",
+            "version_spec": "0.0.8",
+            "source_type": "direct_manifest"
+          },
+          {
+            "path": "package.json",
+            "ecosystem": "npm",
+            "package": "rq2-js-missing-20260811",
+            "version_spec": "1.0.0",
+            "source_type": "direct_manifest"
+          }
+        ],
+        "tree_dependencies": []
+      },
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 3,
+          "manifest_events": 3
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "query": {
+              "ecosystem": "npm",
+              "package": "left-pad",
+              "kind": "exact",
+              "value": "1.3.0"
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "query": {
+              "ecosystem": "npm",
+              "package": "axios",
+              "kind": "name_only",
+              "value": ""
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "mapping_uncertain",
+            "query": {
+              "ecosystem": "npm",
+              "package": "",
+              "kind": "unresolved",
+              "value": ""
+            },
+        "registry_status": "cannot_compare",
+        "advisory_status": "not_queried",
+        "reasons": [
+          "possible_workspace_alias"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "query": {
+              "ecosystem": "npm",
+              "package": "minimist",
+              "kind": "exact",
+              "value": "0.0.8"
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "query": {
+              "ecosystem": "npm",
+              "package": "rq2-js-missing-20260811",
+              "kind": "exact",
+              "value": "1.0.0"
+            },
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "python_six_family_matrix",
+      "origin": "new_phase3_20260811",
+      "category": "common_family_matrix",
+      "language": "Python",
+      "repo_primary_language": "Python",
+      "execution_mode": "offline_pipeline",
+      "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Exercises Python standard-library, relative, alias, mismatch, and PyPI-absence cases.",
+      "capture_points": [
+        "stage1_parser_routing",
+        "stage2_alignment_linking",
+        "stage3_registry_advisory",
+        "oracle_compare"
+      ],
+      "input": {
+        "source_events": [
+          {
+            "path": "src/matrix.py",
+            "target": "sys",
+            "kind": "external",
+            "language": "Python"
+          },
+          {
+            "path": "src/matrix.py",
+            "target": "cv2",
+            "kind": "external",
+            "language": "Python"
+          },
+          {
+            "path": "src/matrix.py",
+            "target": "numpy",
+            "kind": "external",
+            "language": "Python"
+          },
+          {
+            "path": "src/matrix.py",
+            "target": ".local",
+            "kind": "external",
+            "language": "Python"
+          }
+        ],
+        "manifest_events": [
+          {
+            "path": "requirements.txt",
+            "ecosystem": "PyPI",
+            "package": "opencv-python",
+            "version_spec": "==4.10.0.84",
+            "source_type": "direct_manifest"
+          },
+          {
+            "path": "requirements.txt",
+            "ecosystem": "PyPI",
+            "package": "requests",
+            "version_spec": "==2.32.3",
+            "source_type": "direct_manifest"
+          },
+          {
+            "path": "requirements.txt",
+            "ecosystem": "PyPI",
+            "package": "rq2-py-missing-20260811",
+            "version_spec": "==1.0.0",
+            "source_type": "direct_manifest"
+          }
+        ],
+        "tree_dependencies": []
+      },
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 3
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest_alias",
+            "query": {
+              "ecosystem": "PyPI",
+              "package": "opencv-python",
+              "kind": "exact",
+              "value": "4.10.0.84"
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "query": {
+              "ecosystem": "PyPI",
+              "package": "numpy",
+              "kind": "name_only",
+              "value": ""
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "query": {
+              "ecosystem": "PyPI",
+              "package": "requests",
+              "kind": "exact",
+              "value": "2.32.3"
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "query": {
+              "ecosystem": "PyPI",
+              "package": "rq2-py-missing-20260811",
+              "kind": "exact",
+              "value": "1.0.0"
+            },
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rust_six_family_matrix",
+      "origin": "new_phase3_20260811",
+      "category": "common_family_matrix",
+      "language": "Rust",
+      "repo_primary_language": "Rust",
+      "execution_mode": "offline_pipeline",
+      "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Exercises Rust standard-library, crate, range, mismatch, and registry-absence cases.",
+      "capture_points": [
+        "stage1_parser_routing",
+        "stage2_alignment_linking",
+        "stage3_registry_advisory",
+        "oracle_compare"
+      ],
+      "input": {
+        "source_events": [
+          {
+            "path": "src/lib.rs",
+            "target": "std",
+            "kind": "external",
+            "language": "Rust"
+          },
+          {
+            "path": "src/lib.rs",
+            "target": "crate",
+            "kind": "external",
+            "language": "Rust"
+          },
+          {
+            "path": "src/lib.rs",
+            "target": "serde",
+            "kind": "external",
+            "language": "Rust"
+          },
+          {
+            "path": "src/lib.rs",
+            "target": "regex",
+            "kind": "external",
+            "language": "Rust"
+          }
+        ],
+        "manifest_events": [
+          {
+            "path": "Cargo.toml",
+            "ecosystem": "Cargo",
+            "package": "serde",
+            "version_spec": "1.0.203",
+            "source_type": "direct_manifest"
+          },
+          {
+            "path": "Cargo.toml",
+            "ecosystem": "Cargo",
+            "package": "anyhow",
+            "version_spec": "1.0.0",
+            "source_type": "direct_manifest"
+          },
+          {
+            "path": "Cargo.toml",
+            "ecosystem": "Cargo",
+            "package": "rq2-rust-missing-20260811",
+            "version_spec": "=1.0.0",
+            "source_type": "direct_manifest"
+          }
+        ],
+        "tree_dependencies": []
+      },
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 3
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "query": {
+              "ecosystem": "Cargo",
+              "package": "serde",
+              "kind": "range",
+              "value": "1.0.203"
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "query": {
+              "ecosystem": "Cargo",
+              "package": "regex",
+              "kind": "name_only",
+              "value": ""
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "query": {
+              "ecosystem": "Cargo",
+              "package": "anyhow",
+              "kind": "range",
+              "value": "1.0.0"
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "query": {
+              "ecosystem": "Cargo",
+              "package": "rq2-rust-missing-20260811",
+              "kind": "exact",
+              "value": "1.0.0"
+            },
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "go_six_family_matrix",
+      "origin": "new_phase3_20260811",
+      "category": "common_family_matrix",
+      "language": "Go",
+      "repo_primary_language": "Go",
+      "execution_mode": "offline_pipeline",
+      "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Exercises Go standard-library, local, module-prefix, mismatch, and proxy-absence cases.",
+      "capture_points": [
+        "stage1_parser_routing",
+        "stage2_alignment_linking",
+        "stage3_registry_advisory",
+        "oracle_compare"
+      ],
+      "input": {
+        "source_events": [
+          {
+            "path": "matrix.go",
+            "target": "fmt",
+            "kind": "external",
+            "language": "Go"
+          },
+          {
+            "path": "matrix.go",
+            "target": "./local",
+            "kind": "external",
+            "language": "Go"
+          },
+          {
+            "path": "matrix.go",
+            "target": "github.com/stretchr/testify/assert",
+            "kind": "external",
+            "language": "Go"
+          },
+          {
+            "path": "matrix.go",
+            "target": "golang.org/x/text",
+            "kind": "external",
+            "language": "Go"
+          }
+        ],
+        "manifest_events": [
+          {
+            "path": "go.mod",
+            "ecosystem": "Go",
+            "package": "github.com/stretchr/testify",
+            "version_spec": "v1.9.0",
+            "source_type": "direct_manifest"
+          },
+          {
+            "path": "go.mod",
+            "ecosystem": "Go",
+            "package": "github.com/google/uuid",
+            "version_spec": "v1.6.0",
+            "source_type": "direct_manifest"
+          },
+          {
+            "path": "go.mod",
+            "ecosystem": "Go",
+            "package": "example.invalid/rq2-missing",
+            "version_spec": "v1.0.0",
+            "source_type": "direct_manifest"
+          }
+        ],
+        "tree_dependencies": []
+      },
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 2,
+          "manifest_events": 3
+        },
+        "episodes": [
+          {
+            "quadrant": "I+M+",
+            "alignment_status": "matched_manifest",
+            "query": {
+              "ecosystem": "Go",
+              "package": "github.com/stretchr/testify",
+              "kind": "exact",
+              "value": "v1.9.0"
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I+M-",
+            "alignment_status": "no_matching_manifest",
+            "query": {
+              "ecosystem": "Go",
+              "package": "golang.org/x/text",
+              "kind": "name_only",
+              "value": ""
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "manifest_does_not_explain_import"
+            ]
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "query": {
+              "ecosystem": "Go",
+              "package": "github.com/google/uuid",
+              "kind": "exact",
+              "value": "v1.6.0"
+            },
+            "registry_status": "exists_before_author_date",
+            "advisory_status": "none_observed",
+            "reasons": []
+          },
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "query": {
+              "ecosystem": "Go",
+              "package": "example.invalid/rq2-missing",
+              "kind": "exact",
+              "value": "v1.0.0"
+            },
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "java_entry_control",
+      "origin": "new_phase3_20260811",
+      "category": "common_family_matrix",
+      "language": "Java",
+      "repo_primary_language": "Java",
+      "execution_mode": "offline_pipeline",
+      "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Exercises Java java.* and javax.* import controls.",
+      "capture_points": [
+        "stage1_parser_routing",
+        "stage2_alignment_linking",
+        "stage3_registry_advisory",
+        "oracle_compare"
+      ],
+      "input": {
+        "source_events": [
+          {
+            "path": "src/main/java/Control.java",
+            "target": "java.util.List",
+            "kind": "external",
+            "language": "Java"
+          },
+          {
+            "path": "src/main/java/Control.java",
+            "target": "javax.net.SocketFactory",
+            "kind": "external",
+            "language": "Java"
+          }
+        ],
+        "manifest_events": [],
+        "tree_dependencies": []
+      },
+      "expected": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0
+        },
+        "episodes": []
+      }
+    },
+    {
+      "id": "java_registry_absence",
+      "origin": "new_phase3_20260811",
+      "category": "common_family_matrix",
+      "language": "Java",
+      "repo_primary_language": "Java",
+      "execution_mode": "offline_pipeline",
+      "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Exercises a fixed Maven exact-dependency absence case.",
+      "capture_points": [
+        "stage1_parser_routing",
+        "stage2_alignment_linking",
+        "stage3_registry_advisory",
+        "oracle_compare"
+      ],
+      "input": {
+        "source_events": [],
+        "manifest_events": [
+          {
+            "path": "pom.xml",
+            "ecosystem": "Maven",
+            "package": "org.synthetic:rq2-missing",
+            "version_spec": "1.0.0",
+            "source_type": "direct_manifest"
+          }
+        ],
+        "tree_dependencies": []
+      },
+      "expected": {
+        "stage1": {
+          "candidate": true,
+          "import_events": 0,
+          "manifest_events": 1
+        },
+        "episodes": [
+          {
+            "quadrant": "I-M+",
+            "alignment_status": "not_applicable_manifest_only",
+            "query": {
+              "ecosystem": "Maven",
+              "package": "org.synthetic:rq2-missing",
+              "kind": "exact",
+              "value": "1.0.0"
+            },
+            "registry_status": "current_absent_unknown",
+            "advisory_status": "none_observed",
+            "reasons": [
+              "registry_package_not_found_at_query",
+              "unknown_deleted_or_unpublished_possible"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "java_gradle_local_project_control",
+      "origin": "new_phase16_20260814",
+      "category": "entry_control",
+      "language": "Java",
+      "repo_primary_language": "Java",
+      "execution_mode": "offline_pipeline",
+      "author_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Treats a Gradle local-project dependency as non-external.",
+      "input": {
+        "source_events": [],
+        "manifest_events": [
+          {
+            "path": "build.gradle.kts",
+            "added_line": "implementation(project(\":client:feature:timeline\"))"
+          }
+        ],
+        "tree_dependencies": []
+      },
+      "expected": {
+        "stage1": {
+          "candidate": false,
+          "import_events": 0,
+          "manifest_events": 0
+        },
+        "episodes": []
+      }
+    }
+  ],
+
+  "capture_point_definitions": {
+    "stage1_parser_routing": {
+      "stage": "Stage 1 parser/routing",
+      "file": "scripts/hallucination/rq2_stage1_manifest_diff.py",
+      "functions": [
+        "parse_unified_diff",
+        "actual_changed_languages",
+        "extract_source_imports",
+        "extract_manifest_additions"
+      ]
+    },
+    "stage2_alignment_linking": {
+      "stage": "Stage 2 alignment/linker",
+      "file": "scripts/hallucination/rq2_stage2_episode_linker.py",
+      "functions": [
+        "select_manifests",
+        "plan_manifest",
+        "build_episode_tables"
+      ]
+    },
+    "stage3_registry_advisory": {
+      "stage": "Stage 3 registry/advisory",
+      "file": "scripts/hallucination/rq2_stage3_apply.py",
+      "functions": [
+        "evaluate_registry",
+        "evaluate_advisory",
+        "run_stage3"
+      ]
+    },
+    "oracle_compare": {
+      "stage": "Stage 4 oracle compare",
+      "file": "tests/run_rq2_stage4_synthetic_chain.py",
+      "functions": [
+        "_evaluate_scenario",
+        "_scenario_status"
+      ]
+    }
+  },
+  "default_capture_points": [
+    "stage1_parser_routing",
+    "stage2_alignment_linking",
+    "stage3_registry_advisory",
+    "oracle_compare"
+  ],
+  "coverage_matrix": {
+    "TypeScript": {
+      "C1": [
+        "i0_m0_code_only",
+        "builtin_import_control",
+        "relative_import_control"
+      ],
+      "C2": [
+        "i1_m0_no_manifest"
+      ],
+      "C3": [
+        "i0_m1_manifest_only"
+      ],
+      "C4": [
+        "exists_before_commit"
+      ],
+      "C5": [
+        "manifest_mismatch"
+      ],
+      "C6": [
+        "range_only",
+        "range_no_match",
+        "unsupported_range_syntax"
+      ],
+      "C7": [
+        "npm_first_party",
+        "private_local_dependency"
+      ],
+      "C8": [
+        "missing_npm_package",
+        "missing_npm_version",
+        "known_public_advisory"
+      ]
+    },
+    "JavaScript": {
+      "C1": [
+        "javascript_six_family_matrix"
+      ],
+      "C2": [
+        "javascript_six_family_matrix"
+      ],
+      "C3": [
+        "javascript_six_family_matrix"
+      ],
+      "C4": [
+        "javascript_six_family_matrix"
+      ],
+      "C5": [
+        "javascript_six_family_matrix"
+      ],
+      "C6": [
+        "javascript_six_family_matrix"
+      ],
+      "C7": [
+        "javascript_six_family_matrix"
+      ],
+      "C8": [
+        "javascript_six_family_matrix"
+      ]
+    },
+    "Python": {
+      "C1": [
+        "python_six_family_matrix"
+      ],
+      "C2": [
+        "python_six_family_matrix"
+      ],
+      "C3": [
+        "python_six_family_matrix"
+      ],
+      "C4": [
+        "python_six_family_matrix"
+      ],
+      "C5": [
+        "python_six_family_matrix"
+      ],
+      "C6": [
+        "python_six_family_matrix"
+      ],
+      "C7": [
+        "python_six_family_matrix"
+      ],
+      "C8": [
+        "python_six_family_matrix"
+      ]
+    },
+    "Rust": {
+      "C1": [
+        "rust_six_family_matrix"
+      ],
+      "C2": [
+        "rust_six_family_matrix"
+      ],
+      "C3": [
+        "rust_six_family_matrix"
+      ],
+      "C4": [
+        "rust_six_family_matrix"
+      ],
+      "C5": [
+        "rust_six_family_matrix"
+      ],
+      "C6": [
+        "rust_six_family_matrix"
+      ],
+      "C7": [
+        "rust_six_family_matrix"
+      ],
+      "C8": [
+        "rust_six_family_matrix"
+      ]
+    },
+    "Go": {
+      "C1": [
+        "go_six_family_matrix"
+      ],
+      "C2": [
+        "go_six_family_matrix"
+      ],
+      "C3": [
+        "go_six_family_matrix"
+      ],
+      "C4": [
+        "go_six_family_matrix"
+      ],
+      "C5": [
+        "go_six_family_matrix"
+      ],
+      "C6": [
+        "go_six_family_matrix"
+      ],
+      "C7": [
+        "go_six_family_matrix"
+      ],
+      "C8": [
+        "go_six_family_matrix"
+      ]
+    },
+    "Java": {
+      "C1": [
+        "java_entry_control"
+      ],
+      "C2": [
+        "mapping_unknown_java"
+      ],
+      "C3": [
+        "manifest_only_java_exact"
+      ],
+      "C4": [
+        "java_mapping_one_candidate"
+      ],
+      "C5": [
+        "java_mapping_multiple_candidates"
+      ],
+      "C6": [
+        "java_maven_property_resolved",
+        "java_maven_property_unresolved"
+      ],
+      "C7": [
+        "java_mapping_multiple_candidates"
+      ],
+      "C8": [
+        "java_registry_absence"
+      ]
+    }
+  }
+}

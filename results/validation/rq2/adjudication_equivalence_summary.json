@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scenario_count": 9,
+  "status_counts": {
+    "pass": 9
+  },
+  "network_access": false,
+  "canonical_csv_persisted": 0,
+  "results": [
+    {
+      "scenario_id": "parent_preexisting",
+      "status": "pass",
+      "mismatches": []
+    },
+    {
+      "scenario_id": "future_gt_24h",
+      "status": "pass",
+      "mismatches": []
+    },
+    {
+      "scenario_id": "future_le_24h",
+      "status": "pass",
+      "mismatches": []
+    },
+    {
+      "scenario_id": "coordinated_release",
+      "status": "pass",
+      "mismatches": []
+    },
+    {
+      "scenario_id": "current_version_absent",
+      "status": "pass",
+      "mismatches": []
+    },
+    {
+      "scenario_id": "repeated_current_absence",
+      "status": "pass",
+      "mismatches": []
+    },
+    {
+      "scenario_id": "cargo_no_matching_version",
+      "status": "pass",
+      "mismatches": []
+    },
+    {
+      "scenario_id": "go_local_workspace",
+      "status": "pass",
+      "mismatches": []
+    },
+    {
+      "scenario_id": "maven_vendor_match",
+      "status": "pass",
+      "mismatches": []
+    }
+  ]
+}

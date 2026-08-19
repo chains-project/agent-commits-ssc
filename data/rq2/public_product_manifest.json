@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "complete": true,
+  "generated_utc": "2026-08-16T07:36:43.338508+00:00",
+  "canonical_root": "external://rq2-canonical-v2",
+  "canonical_experiment_rerun_for_export": false,
+  "public_projection": {
+    "reports_included": false,
+    "citation_file_included": false
+  },
+  "public_files": {
+    "data/rq2/v2_native_adjudication.csv": {
+      "sha256": "5a1402b65594eb707d39ea64f980747ef191ad67e1818f60fd58923891ebcd00",
+      "rows": 74618
+    },
+    "results/summary/rq2/v2_final_summary.json": {
+      "sha256": "7ce2b93c681735b12ecb1971bd1e9e156f9ed287177d8cc81a12b83b4b2014eb"
+    },
+    "results/summary/rq2/v2_final_by_language.csv": {
+      "sha256": "64043085887e4191fef1ae17a119ae39d9b2bee51b8d49576c4a549cb1050486"
+    },
+    "data/rq2/canonical_table_index.json": {
+      "sha256": "49af5404f01dc4f28d790c69945aa42067b2eeaf1029b7e18275fb91b0f48f7c",
+      "tables": 24
+    }
+  },
+  "external_provenance_sha256": {
+    "python_pipeline_completion.json": "dea0f1e6b1de96eedfc6417297f4648edf5eee1b3d7ad512e2055b685b398acf",
+    "python_stage1_final_audit_v2.json": "baf487f3cea483b663aa72a8ddcc28b9a4a315c59ddd183a5125ddc253ec51c9",
+    "python_stage1_manifest_delta_v2.json": "cf225335b41358a6dce36235f5ec875235d4adf52070ff8f9b7cca15b9c989ce",
+    "dual_review_summary.json": "8176b3a115c9b90ab9c023c1e5b46227b5661a2e7379524cedd1c9bb615c720a",
+    "dual_review_output_verification.json": "59296d7af7b143a2fc7276f764cba153954350c4e81f9c790b3fff9e6f9b2a10",
+    "ai_consensus_overlay_summary.json": "7c9fcf5f914840b73e6f759242d060dea8b02d0eced38d05c382113f1a3d4d53",
+    "native_postprocess_complete.json": "a96be60ed284cb452cab12be980be74ce4113f7f1355a5e4a3f7ab0af26cf1f0",
+    "candidate_delta_complete.json": "d74b9c9222d77f24db0b1b644b4b972cb923bb46749adea7127f6de1f07002fc",
+    "pep508_canonical_audit_complete.json": "a298bfbba9bd4ecfbf50dd48adfae604a0a3455351729e6ce2a387d39bdda460",
+    "evidence_scope_audit_complete.json": "1768583b2033ac694baf0a9a23fa30b503fe102962245f747dfa6f490cbfa56f",
+    "incremental_evidence_adjudication_complete.json": "2e2914fa45551756d19dbb25a150a0370b47ef5925b85c79406ec528617ca2e6",
+    "final_analysis_verified.json": "dacccf6c0e813992fff90ae806aa5099815a42a7a23a5d62d7172f712a49d355"
+  }
+}

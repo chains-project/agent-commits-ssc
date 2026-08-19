@@ -1,0 +1,859 @@
+{
+  "schema_version": 2,
+  "generated_utc": "2026-08-16T07:29:23.611118+00:00",
+  "canonical_root": "external://rq2-canonical-v2",
+  "hashes_recomputed": true,
+  "languages": {
+    "TypeScript": {
+      "language": "TypeScript",
+      "selected_path": "external://rq2-canonical-v2/TypeScript",
+      "checks": {
+        "stage1_complete": true,
+        "stage2_complete": true,
+        "stage3_complete": true,
+        "table_count_four": true,
+        "stage3_invariants": true,
+        "commits.csv_valid": true,
+        "events.csv_valid": true,
+        "episodes.csv_valid": true,
+        "episode_event_links.csv_valid": true
+      },
+      "stage3_invariant_checks": {
+        "network_access_false": true,
+        "four_canonical_tables_only": true,
+        "protected_tables_unchanged": true,
+        "all_queryable_episodes_processed": true
+      },
+      "tables": {
+        "commits.csv": {
+          "sha256": "955cf4b8b6802ba3c84cff3a5c406ceae23d6a4a218252a49cedf0f42bf9aeb9",
+          "bytes": 31391078,
+          "row_count": 182624,
+          "fields": [
+            "commit_id",
+            "repo",
+            "sha",
+            "author_date",
+            "agent",
+            "repo_primary_language",
+            "actual_changed_languages",
+            "import_event_count",
+            "manifest_event_count",
+            "dependency_quadrant",
+            "schema_version"
+          ],
+          "primary_key": [
+            "commit_id"
+          ],
+          "actual_sha256": "955cf4b8b6802ba3c84cff3a5c406ceae23d6a4a218252a49cedf0f42bf9aeb9",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "events.csv": {
+          "sha256": "e19be22aaf562bca2c329fd55d308c5add2626fe75090a79308a0841e39d8685",
+          "bytes": 419878649,
+          "row_count": 2237985,
+          "fields": [
+            "event_id",
+            "commit_id",
+            "event_type",
+            "path",
+            "actual_language",
+            "ecosystem",
+            "new_line_number",
+            "event_ordinal",
+            "raw_target",
+            "package_candidate",
+            "version_spec",
+            "event_status",
+            "reason_codes",
+            "schema_version"
+          ],
+          "primary_key": [
+            "event_id"
+          ],
+          "actual_sha256": "e19be22aaf562bca2c329fd55d308c5add2626fe75090a79308a0841e39d8685",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episodes.csv": {
+          "sha256": "3ff87e9f92d82a8a7bb5a219e4bccf608f46ad4f606039e1e460bfb540f5e226",
+          "bytes": 235882759,
+          "row_count": 835622,
+          "fields": [
+            "episode_id",
+            "commit_id",
+            "ecosystem",
+            "package_name",
+            "dependency_quadrant",
+            "alignment_status",
+            "query_kind",
+            "query_value",
+            "resolution_source",
+            "registry_status",
+            "advisory_status",
+            "reason_codes",
+            "evidence_ids",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id"
+          ],
+          "actual_sha256": "3ff87e9f92d82a8a7bb5a219e4bccf608f46ad4f606039e1e460bfb540f5e226",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episode_event_links.csv": {
+          "sha256": "d418f5dca472ecca4f3b875e89b9c22bb73ad7828c3384cbb892e213d6c1ea5b",
+          "bytes": 204795974,
+          "row_count": 2249738,
+          "fields": [
+            "episode_id",
+            "event_id",
+            "link_method",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id",
+            "event_id"
+          ],
+          "actual_sha256": "d418f5dca472ecca4f3b875e89b9c22bb73ad7828c3384cbb892e213d6c1ea5b",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        }
+      },
+      "stage3_registry_statuses": {
+        "cannot_compare": 42791,
+        "current_absent_unknown": 12233,
+        "excluded": 9479,
+        "exists_before_author_date": 770295,
+        "no_matching_version_before_author_date": 199,
+        "published_after_author_date": 625
+      },
+      "complete": true,
+      "source_product": "rq2_phase9_hardened_full_20260811_v1",
+      "source_variant": "TypeScript"
+    },
+    "Python": {
+      "language": "Python",
+      "selected_path": "external://rq2-canonical-v2/Python",
+      "checks": {
+        "stage1_complete": true,
+        "stage2_complete": true,
+        "stage3_complete": true,
+        "table_count_four": true,
+        "stage3_invariants": true,
+        "commits.csv_valid": true,
+        "events.csv_valid": true,
+        "episodes.csv_valid": true,
+        "episode_event_links.csv_valid": true
+      },
+      "stage3_invariant_checks": {
+        "network_access_false": true,
+        "four_canonical_tables_only": true,
+        "protected_tables_unchanged": true,
+        "all_queryable_episodes_processed": true
+      },
+      "tables": {
+        "commits.csv": {
+          "sha256": "e178f1ef0d54bf87fba086744fabcb4671919e3eba4d13ee6cedd6c1ed4f5ac7",
+          "bytes": 18098182,
+          "row_count": 108992,
+          "fields": [
+            "commit_id",
+            "repo",
+            "sha",
+            "author_date",
+            "agent",
+            "repo_primary_language",
+            "actual_changed_languages",
+            "import_event_count",
+            "manifest_event_count",
+            "dependency_quadrant",
+            "schema_version"
+          ],
+          "primary_key": [
+            "commit_id"
+          ],
+          "actual_sha256": "e178f1ef0d54bf87fba086744fabcb4671919e3eba4d13ee6cedd6c1ed4f5ac7",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "events.csv": {
+          "sha256": "bd8f9469f14afcc989eca9afdf990025169798aa7f9e4365ad73238e3915dcd0",
+          "bytes": 358813592,
+          "row_count": 1802816,
+          "fields": [
+            "event_id",
+            "commit_id",
+            "event_type",
+            "path",
+            "actual_language",
+            "ecosystem",
+            "new_line_number",
+            "event_ordinal",
+            "raw_target",
+            "package_candidate",
+            "version_spec",
+            "event_status",
+            "reason_codes",
+            "schema_version"
+          ],
+          "primary_key": [
+            "event_id"
+          ],
+          "actual_sha256": "bd8f9469f14afcc989eca9afdf990025169798aa7f9e4365ad73238e3915dcd0",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episodes.csv": {
+          "sha256": "55abe0a0ed0f9c147425a280d41f89ef126dd0693a042c80085ee78ae727d6cf",
+          "bytes": 130468868,
+          "row_count": 492385,
+          "fields": [
+            "episode_id",
+            "commit_id",
+            "ecosystem",
+            "package_name",
+            "dependency_quadrant",
+            "alignment_status",
+            "query_kind",
+            "query_value",
+            "resolution_source",
+            "registry_status",
+            "advisory_status",
+            "reason_codes",
+            "evidence_ids",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id"
+          ],
+          "actual_sha256": "55abe0a0ed0f9c147425a280d41f89ef126dd0693a042c80085ee78ae727d6cf",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episode_event_links.csv": {
+          "sha256": "b3006718222d58e200874caa22cf14c07c06b9c90312b8569a33fddda3e39b28",
+          "bytes": 164761637,
+          "row_count": 1821874,
+          "fields": [
+            "episode_id",
+            "event_id",
+            "link_method",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id",
+            "event_id"
+          ],
+          "actual_sha256": "b3006718222d58e200874caa22cf14c07c06b9c90312b8569a33fddda3e39b28",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        }
+      },
+      "stage3_registry_statuses": {
+        "cannot_compare": 147094,
+        "current_absent_unknown": 29584,
+        "excluded": 30920,
+        "exists_before_author_date": 283387,
+        "no_matching_version_before_author_date": 111,
+        "published_after_author_date": 1289
+      },
+      "complete": true,
+      "source_product": "rq2_targeted_python_pep508_20260816_v2",
+      "source_variant": "Python"
+    },
+    "JavaScript": {
+      "language": "JavaScript",
+      "selected_path": "external://rq2-canonical-v2/JavaScript",
+      "checks": {
+        "stage1_complete": true,
+        "stage2_complete": true,
+        "stage3_complete": true,
+        "table_count_four": true,
+        "stage3_invariants": true,
+        "commits.csv_valid": true,
+        "events.csv_valid": true,
+        "episodes.csv_valid": true,
+        "episode_event_links.csv_valid": true
+      },
+      "stage3_invariant_checks": {
+        "network_access_false": true,
+        "four_canonical_tables_only": true,
+        "protected_tables_unchanged": true,
+        "all_queryable_episodes_processed": true
+      },
+      "tables": {
+        "commits.csv": {
+          "sha256": "46f59133e3462a6927b84a89cee494963a0b2d73ec06e800b3a265da42ce83b9",
+          "bytes": 12567237,
+          "row_count": 73775,
+          "fields": [
+            "commit_id",
+            "repo",
+            "sha",
+            "author_date",
+            "agent",
+            "repo_primary_language",
+            "actual_changed_languages",
+            "import_event_count",
+            "manifest_event_count",
+            "dependency_quadrant",
+            "schema_version"
+          ],
+          "primary_key": [
+            "commit_id"
+          ],
+          "actual_sha256": "46f59133e3462a6927b84a89cee494963a0b2d73ec06e800b3a265da42ce83b9",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "events.csv": {
+          "sha256": "c814eeda47cc803a180aaf295cb279a6fde0cf079e795590aada0cb23d1c4bce",
+          "bytes": 151610546,
+          "row_count": 826574,
+          "fields": [
+            "event_id",
+            "commit_id",
+            "event_type",
+            "path",
+            "actual_language",
+            "ecosystem",
+            "new_line_number",
+            "event_ordinal",
+            "raw_target",
+            "package_candidate",
+            "version_spec",
+            "event_status",
+            "reason_codes",
+            "schema_version"
+          ],
+          "primary_key": [
+            "event_id"
+          ],
+          "actual_sha256": "c814eeda47cc803a180aaf295cb279a6fde0cf079e795590aada0cb23d1c4bce",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episodes.csv": {
+          "sha256": "0acae861caf16a5e49fd5328f056507cb21541cdf6d9c2b5cfd29a7b594fb93e",
+          "bytes": 151556767,
+          "row_count": 521354,
+          "fields": [
+            "episode_id",
+            "commit_id",
+            "ecosystem",
+            "package_name",
+            "dependency_quadrant",
+            "alignment_status",
+            "query_kind",
+            "query_value",
+            "resolution_source",
+            "registry_status",
+            "advisory_status",
+            "reason_codes",
+            "evidence_ids",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id"
+          ],
+          "actual_sha256": "0acae861caf16a5e49fd5328f056507cb21541cdf6d9c2b5cfd29a7b594fb93e",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episode_event_links.csv": {
+          "sha256": "7fa29242eb97b7ced124ce03b1b5de65f5d92cf25b49609f89d7b14c8ba7c19c",
+          "bytes": 75503304,
+          "row_count": 828527,
+          "fields": [
+            "episode_id",
+            "event_id",
+            "link_method",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id",
+            "event_id"
+          ],
+          "actual_sha256": "7fa29242eb97b7ced124ce03b1b5de65f5d92cf25b49609f89d7b14c8ba7c19c",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        }
+      },
+      "stage3_registry_statuses": {
+        "cannot_compare": 10451,
+        "current_absent_unknown": 3422,
+        "excluded": 4684,
+        "exists_before_author_date": 502247,
+        "no_matching_version_before_author_date": 192,
+        "published_after_author_date": 358
+      },
+      "complete": true,
+      "source_product": "rq2_phase9_hardened_full_20260811_v1",
+      "source_variant": "JavaScript"
+    },
+    "Rust": {
+      "language": "Rust",
+      "selected_path": "external://rq2-canonical-v2/Rust",
+      "checks": {
+        "stage1_complete": true,
+        "stage2_complete": true,
+        "stage3_complete": true,
+        "table_count_four": true,
+        "stage3_invariants": true,
+        "commits.csv_valid": true,
+        "events.csv_valid": true,
+        "episodes.csv_valid": true,
+        "episode_event_links.csv_valid": true
+      },
+      "stage3_invariant_checks": {
+        "network_access_false": true,
+        "four_canonical_tables_only": true,
+        "protected_tables_unchanged": true,
+        "all_queryable_episodes_processed": true
+      },
+      "tables": {
+        "commits.csv": {
+          "sha256": "e632cbfca6f609d47664108bbbc982d8cc58056ff12fe533561323bc1599f073",
+          "bytes": 2404194,
+          "row_count": 15149,
+          "fields": [
+            "commit_id",
+            "repo",
+            "sha",
+            "author_date",
+            "agent",
+            "repo_primary_language",
+            "actual_changed_languages",
+            "import_event_count",
+            "manifest_event_count",
+            "dependency_quadrant",
+            "schema_version"
+          ],
+          "primary_key": [
+            "commit_id"
+          ],
+          "actual_sha256": "e632cbfca6f609d47664108bbbc982d8cc58056ff12fe533561323bc1599f073",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "events.csv": {
+          "sha256": "ea14917a0ca6d55f1559967b3d6053cbd77c7d625490191cddd690350b00291e",
+          "bytes": 33082861,
+          "row_count": 168203,
+          "fields": [
+            "event_id",
+            "commit_id",
+            "event_type",
+            "path",
+            "actual_language",
+            "ecosystem",
+            "new_line_number",
+            "event_ordinal",
+            "raw_target",
+            "package_candidate",
+            "version_spec",
+            "event_status",
+            "reason_codes",
+            "schema_version"
+          ],
+          "primary_key": [
+            "event_id"
+          ],
+          "actual_sha256": "ea14917a0ca6d55f1559967b3d6053cbd77c7d625490191cddd690350b00291e",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episodes.csv": {
+          "sha256": "861ca0b6e9ab63359ce9bb16684f2bb19f35c7a0fe8181682f4a613717dcd33c",
+          "bytes": 17207605,
+          "row_count": 60051,
+          "fields": [
+            "episode_id",
+            "commit_id",
+            "ecosystem",
+            "package_name",
+            "dependency_quadrant",
+            "alignment_status",
+            "query_kind",
+            "query_value",
+            "resolution_source",
+            "registry_status",
+            "advisory_status",
+            "reason_codes",
+            "evidence_ids",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id"
+          ],
+          "actual_sha256": "861ca0b6e9ab63359ce9bb16684f2bb19f35c7a0fe8181682f4a613717dcd33c",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episode_event_links.csv": {
+          "sha256": "f00406a14f4d73fa16ae0e21b7711c5d316b4a528b7a673ad1f9e07c5bc5f129",
+          "bytes": 15290820,
+          "row_count": 168748,
+          "fields": [
+            "episode_id",
+            "event_id",
+            "link_method",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id",
+            "event_id"
+          ],
+          "actual_sha256": "f00406a14f4d73fa16ae0e21b7711c5d316b4a528b7a673ad1f9e07c5bc5f129",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        }
+      },
+      "stage3_registry_statuses": {
+        "cannot_compare": 4503,
+        "current_absent_unknown": 7204,
+        "excluded": 10180,
+        "exists_before_author_date": 37124,
+        "no_matching_version_before_author_date": 113,
+        "published_after_author_date": 927
+      },
+      "complete": true,
+      "source_product": "rq2_phase9_hardened_full_20260811_v1",
+      "source_variant": "Rust"
+    },
+    "Go": {
+      "language": "Go",
+      "selected_path": "external://rq2-canonical-v2/Go",
+      "checks": {
+        "stage1_complete": true,
+        "stage2_complete": true,
+        "stage3_complete": true,
+        "table_count_four": true,
+        "stage3_invariants": true,
+        "commits.csv_valid": true,
+        "events.csv_valid": true,
+        "episodes.csv_valid": true,
+        "episode_event_links.csv_valid": true
+      },
+      "stage3_invariant_checks": {
+        "network_access_false": true,
+        "four_canonical_tables_only": true,
+        "protected_tables_unchanged": true,
+        "all_queryable_episodes_processed": true
+      },
+      "tables": {
+        "commits.csv": {
+          "sha256": "6d9cdd6cadd02e344871686c1a270194397c17b38f1504439dd1be487ca7a6ae",
+          "bytes": 1415052,
+          "row_count": 9113,
+          "fields": [
+            "commit_id",
+            "repo",
+            "sha",
+            "author_date",
+            "agent",
+            "repo_primary_language",
+            "actual_changed_languages",
+            "import_event_count",
+            "manifest_event_count",
+            "dependency_quadrant",
+            "schema_version"
+          ],
+          "primary_key": [
+            "commit_id"
+          ],
+          "actual_sha256": "6d9cdd6cadd02e344871686c1a270194397c17b38f1504439dd1be487ca7a6ae",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "events.csv": {
+          "sha256": "9dcb7b7490bf7c6e674789dc2a1f6e31069b147d3f08bca48a0a6cd1d59297df",
+          "bytes": 32427787,
+          "row_count": 137728,
+          "fields": [
+            "event_id",
+            "commit_id",
+            "event_type",
+            "path",
+            "actual_language",
+            "ecosystem",
+            "new_line_number",
+            "event_ordinal",
+            "raw_target",
+            "package_candidate",
+            "version_spec",
+            "event_status",
+            "reason_codes",
+            "schema_version"
+          ],
+          "primary_key": [
+            "event_id"
+          ],
+          "actual_sha256": "9dcb7b7490bf7c6e674789dc2a1f6e31069b147d3f08bca48a0a6cd1d59297df",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episodes.csv": {
+          "sha256": "8597d9700e1ebdabfc68f4381549c4724ead58437f6c7515717c4b421d70f1c1",
+          "bytes": 19961841,
+          "row_count": 66360,
+          "fields": [
+            "episode_id",
+            "commit_id",
+            "ecosystem",
+            "package_name",
+            "dependency_quadrant",
+            "alignment_status",
+            "query_kind",
+            "query_value",
+            "resolution_source",
+            "registry_status",
+            "advisory_status",
+            "reason_codes",
+            "evidence_ids",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id"
+          ],
+          "actual_sha256": "8597d9700e1ebdabfc68f4381549c4724ead58437f6c7515717c4b421d70f1c1",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episode_event_links.csv": {
+          "sha256": "3bf1ebeaf8de11fb6e6d62fbd578333013fe2d27ebb6d71601b889921fb86625",
+          "bytes": 12561675,
+          "row_count": 138673,
+          "fields": [
+            "episode_id",
+            "event_id",
+            "link_method",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id",
+            "event_id"
+          ],
+          "actual_sha256": "3bf1ebeaf8de11fb6e6d62fbd578333013fe2d27ebb6d71601b889921fb86625",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        }
+      },
+      "stage3_registry_statuses": {
+        "cannot_compare": 212,
+        "current_absent_unknown": 12086,
+        "excluded": 12778,
+        "exists_before_author_date": 41004,
+        "published_after_author_date": 280
+      },
+      "complete": true,
+      "source_product": "rq2_phase9_hardened_full_20260811_v1",
+      "source_variant": "Go"
+    },
+    "Java": {
+      "language": "Java",
+      "selected_path": "external://rq2-canonical-v2/Java",
+      "checks": {
+        "stage1_complete": true,
+        "stage2_complete": true,
+        "stage3_complete": true,
+        "table_count_four": true,
+        "stage3_invariants": true,
+        "commits.csv_valid": true,
+        "events.csv_valid": true,
+        "episodes.csv_valid": true,
+        "episode_event_links.csv_valid": true
+      },
+      "stage3_invariant_checks": {
+        "network_access_false": true,
+        "four_canonical_tables_only": true,
+        "protected_tables_unchanged": true,
+        "all_queryable_episodes_processed": true
+      },
+      "tables": {
+        "commits.csv": {
+          "sha256": "7d507bcd2d84f244d8a0da68527ed01f54f4f8cf4137b8dfe582980e18a9cd28",
+          "bytes": 2021143,
+          "row_count": 12466,
+          "fields": [
+            "commit_id",
+            "repo",
+            "sha",
+            "author_date",
+            "agent",
+            "repo_primary_language",
+            "actual_changed_languages",
+            "import_event_count",
+            "manifest_event_count",
+            "dependency_quadrant",
+            "schema_version"
+          ],
+          "primary_key": [
+            "commit_id"
+          ],
+          "actual_sha256": "7d507bcd2d84f244d8a0da68527ed01f54f4f8cf4137b8dfe582980e18a9cd28",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "events.csv": {
+          "sha256": "fcd3cf5496331df741b0a6725692e76ed4cf405bfff25e0ad890906d2a00af76",
+          "bytes": 142381798,
+          "row_count": 541169,
+          "fields": [
+            "event_id",
+            "commit_id",
+            "event_type",
+            "path",
+            "actual_language",
+            "ecosystem",
+            "new_line_number",
+            "event_ordinal",
+            "raw_target",
+            "package_candidate",
+            "version_spec",
+            "event_status",
+            "reason_codes",
+            "schema_version"
+          ],
+          "primary_key": [
+            "event_id"
+          ],
+          "actual_sha256": "fcd3cf5496331df741b0a6725692e76ed4cf405bfff25e0ad890906d2a00af76",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episodes.csv": {
+          "sha256": "209b5b3d25c7909b4f0dce7d40ac410346f497402c2466818c894676319e77d9",
+          "bytes": 37094692,
+          "row_count": 177735,
+          "fields": [
+            "episode_id",
+            "commit_id",
+            "ecosystem",
+            "package_name",
+            "dependency_quadrant",
+            "alignment_status",
+            "query_kind",
+            "query_value",
+            "resolution_source",
+            "registry_status",
+            "advisory_status",
+            "reason_codes",
+            "evidence_ids",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id"
+          ],
+          "actual_sha256": "209b5b3d25c7909b4f0dce7d40ac410346f497402c2466818c894676319e77d9",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        },
+        "episode_event_links.csv": {
+          "sha256": "d623a91cd2470d4685ae8ca35a074352aad582ab352a2db5040e5ff8f6b419eb",
+          "bytes": 50792055,
+          "row_count": 541799,
+          "fields": [
+            "episode_id",
+            "event_id",
+            "link_method",
+            "schema_version"
+          ],
+          "primary_key": [
+            "episode_id",
+            "event_id"
+          ],
+          "actual_sha256": "d623a91cd2470d4685ae8ca35a074352aad582ab352a2db5040e5ff8f6b419eb",
+          "checks": {
+            "exists": true,
+            "bytes_match": true,
+            "sha256_match": true
+          }
+        }
+      },
+      "stage3_registry_statuses": {
+        "cannot_compare": 152140,
+        "current_absent_unknown": 7848,
+        "excluded": 4627,
+        "exists_before_author_date": 13111,
+        "published_after_author_date": 9
+      },
+      "complete": true,
+      "source_product": "Java",
+      "source_variant": ".phase16_stage12_repair_v3"
+    }
+  },
+  "complete": true
+}

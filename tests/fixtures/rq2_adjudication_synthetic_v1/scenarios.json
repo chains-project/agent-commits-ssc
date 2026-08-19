@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "scenario_count": 9,
+  "target_languages": ["TypeScript", "JavaScript", "Python", "Rust", "Go", "Java"],
+  "target_labels": ["confirmed_hallucination", "probable_hallucination", "not_hallucination", "indeterminate"],
+  "capture_points": [
+    "rq2_stage1_extract.run_stage1",
+    "rq2_stage2_build.run_stage2",
+    "rq2_stage3_apply.run_stage3",
+    "build_final_adjudication_repaired_v6.py",
+    "apply_commented_manifest_corrections.py"
+  ],
+  "scenarios": [
+    {
+      "id": "parent_preexisting",
+      "language": "TypeScript",
+      "repo_primary_language": "TypeScript",
+      "author_date": "2026-07-01T00:00:00Z",
+      "committer_date": "2026-07-01T00:00:00Z",
+      "input_summary": "The version was published after author time, but the same package query existed in the first parent.",
+      "input": {
+        "source_events": [{"path": "src/index.ts", "target": "rq2-parent-preexisting", "kind": "external", "language": "TypeScript"}],
+        "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "rq2-parent-preexisting", "version_spec": "1.0.0", "source_type": "direct_manifest"}],
+        "tree_dependencies": []
+      },
+      "registry": {"lookup_status": "ok", "versions": [{"version": "1.0.0", "published_at": "2026-07-03T00:00:00Z"}]},
+      "adjudication_inputs": {
+        "temporal_queue": {"parent_state": "package_and_query_preexisting", "exclusion_flags": [], "strong_review_candidate": true}
+      },
+      "expected": {
+        "stage3_registry_status": "published_after_author_date",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "basis_contains": "preexisted in first parent",
+        "flags_include": ["parent_preexisting"],
+        "commented_manifest_corrections": 0
+      }
+    },
+    {
+      "id": "future_gt_24h",
+      "language": "JavaScript",
+      "repo_primary_language": "JavaScript",
+      "author_date": "2026-07-01T00:00:00Z",
+      "committer_date": "2026-07-01T00:00:00Z",
+      "input_summary": "The first matching npm version was published 48 hours after committer time.",
+      "input": {
+        "source_events": [{"path": "src/index.js", "target": "rq2-future-gt24", "kind": "external", "language": "JavaScript"}],
+        "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "rq2-future-gt24", "version_spec": "1.0.0", "source_type": "direct_manifest"}],
+        "tree_dependencies": []
+      },
+      "registry": {"lookup_status": "ok", "versions": [{"version": "1.0.0", "published_at": "2026-07-03T00:00:00Z"}]},
+      "adjudication_inputs": {
+        "temporal_queue": {"parent_state": "package_and_query_absent", "exclusion_flags": [], "strong_review_candidate": true},
+        "temporal_requery": {"effective_package_name": "rq2-future-gt24", "fresh_decision": "fresh_matching_published_after_committer", "fresh_publish_after_committer_seconds": "172800"}
+      },
+      "expected": {
+        "stage3_registry_status": "published_after_author_date",
+        "final_label": "confirmed_hallucination",
+        "confidence": "high",
+        "basis_contains": "more than 24h",
+        "flags_include": ["fresh_postdate_gt_24h"],
+        "commented_manifest_corrections": 0
+      }
+    },
+    {
+      "id": "future_le_24h",
+      "language": "JavaScript",
+      "repo_primary_language": "JavaScript",
+      "author_date": "2026-07-01T00:00:00Z",
+      "committer_date": "2026-07-01T00:00:00Z",
+      "input_summary": "The first matching npm version was published 12 hours after committer time without coordinated-release evidence.",
+      "input": {
+        "source_events": [{"path": "src/index.js", "target": "rq2-future-le24", "kind": "external", "language": "JavaScript"}],
+        "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "rq2-future-le24", "version_spec": "1.0.0", "source_type": "direct_manifest"}],
+        "tree_dependencies": []
+      },
+      "registry": {"lookup_status": "ok", "versions": [{"version": "1.0.0", "published_at": "2026-07-01T12:00:00Z"}]},
+      "adjudication_inputs": {
+        "temporal_queue": {"parent_state": "package_and_query_absent", "exclusion_flags": [], "strong_review_candidate": true},
+        "temporal_requery": {"effective_package_name": "rq2-future-le24", "fresh_decision": "fresh_matching_published_after_committer", "fresh_publish_after_committer_seconds": "43200"}
+      },
+      "expected": {
+        "stage3_registry_status": "published_after_author_date",
+        "final_label": "probable_hallucination",
+        "confidence": "medium",
+        "basis_contains": "within 24h",
+        "flags_include": ["fresh_postdate_le_24h"],
+        "commented_manifest_corrections": 0
+      }
+    },
+    {
+      "id": "coordinated_release",
+      "language": "JavaScript",
+      "repo_primary_language": "JavaScript",
+      "author_date": "2026-07-01T00:00:00Z",
+      "committer_date": "2026-07-01T00:00:00Z",
+      "input_summary": "The matching version appeared 12 hours later, with repository ownership and workflow evidence of a coordinated release.",
+      "input": {
+        "source_events": [{"path": "src/index.js", "target": "rq2-coordinated-release", "kind": "external", "language": "JavaScript"}],
+        "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "rq2-coordinated-release", "version_spec": "1.0.0", "source_type": "direct_manifest"}],
+        "tree_dependencies": []
+      },
+      "registry": {"lookup_status": "ok", "versions": [{"version": "1.0.0", "published_at": "2026-07-01T12:00:00Z"}]},
+      "adjudication_inputs": {
+        "temporal_queue": {"parent_state": "package_and_query_absent", "exclusion_flags": ["owned_package_release_workflow_possible"], "strong_review_candidate": true},
+        "temporal_requery": {"effective_package_name": "rq2-coordinated-release", "fresh_decision": "fresh_matching_published_after_committer", "fresh_publish_after_committer_seconds": "43200"}
+      },
+      "expected": {
+        "stage3_registry_status": "published_after_author_date",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "basis_contains": "systematic local, resolved, timing, or official-registry explanation",
+        "flags_include": ["owned_package_release_workflow_possible"],
+        "commented_manifest_corrections": 0
+      }
+    },
+    {
+      "id": "current_version_absent",
+      "language": "TypeScript",
+      "repo_primary_language": "TypeScript",
+      "author_date": "2026-07-01T00:00:00Z",
+      "committer_date": "2026-07-01T00:00:00Z",
+      "input_summary": "The npm package exists, but exact version 999.999.999 is absent from a fresh official snapshot.",
+      "input": {
+        "source_events": [{"path": "src/index.ts", "target": "left-pad", "kind": "external", "language": "TypeScript"}],
+        "manifest_events": [{"path": "package.json", "ecosystem": "npm", "package": "left-pad", "version_spec": "999.999.999", "source_type": "direct_manifest"}],
+        "tree_dependencies": []
+      },
+      "registry": {"lookup_status": "ok", "versions": [{"version": "1.3.0", "published_at": "2018-01-01T00:00:00Z"}]},
+      "adjudication_inputs": {
+        "current_requery": {"effective_package_name": "left-pad", "patch_nonpublic_spec_hint": "false", "fresh_current_decision": "fresh_package_exists_query_absent_now"}
+      },
+      "expected": {
+        "stage3_registry_status": "current_absent_unknown",
+        "final_label": "probable_hallucination",
+        "confidence": "medium",
+        "basis_contains": "no requested version/range",
+        "flags_include": ["current_version_absent"],
+        "commented_manifest_corrections": 0
+      }
+    },
+    {
+      "id": "repeated_current_absence",
+      "language": "Python",
+      "repo_primary_language": "Python",
+      "author_date": "2026-07-01T00:00:00Z",
+      "committer_date": "2026-07-01T00:00:00Z",
+      "input_summary": "The PyPI package is absent in Stage 3 and a repeated current query, while deletion, private sources, and coverage gaps remain possible.",
+      "input": {
+        "source_events": [{"path": "src/control.py", "target": "rq2_repeated_absence", "kind": "external", "language": "Python"}],
+        "manifest_events": [{"path": "requirements.txt", "ecosystem": "PyPI", "package": "rq2-repeated-absence", "version_spec": "==1.0.0", "source_type": "direct_manifest"}],
+        "tree_dependencies": []
+      },
+      "registry": {"lookup_status": "not_found", "versions": []},
+      "adjudication_inputs": {
+        "current_requery": {"effective_package_name": "rq2-repeated-absence", "patch_nonpublic_spec_hint": "false", "fresh_current_decision": "fresh_package_not_found_now"}
+      },
+      "expected": {
+        "stage3_registry_status": "current_absent_unknown",
+        "final_label": "indeterminate",
+        "confidence": "low",
+        "basis_contains": "remains unresolved",
+        "flags_include": [],
+        "commented_manifest_corrections": 0
+      }
+    },
+    {
+      "id": "cargo_no_matching_version",
+      "language": "Rust",
+      "repo_primary_language": "Rust",
+      "author_date": "2026-07-01T00:00:00Z",
+      "committer_date": "2026-07-01T00:00:00Z",
+      "input_summary": "serde exists on crates.io, but no version satisfies the newly added ^999.0.0 range.",
+      "input": {
+        "source_events": [{"path": "src/lib.rs", "target": "serde", "kind": "external", "language": "Rust"}],
+        "manifest_events": [{"path": "Cargo.toml", "ecosystem": "Cargo", "package": "serde", "version_spec": "^999.0.0", "source_type": "direct_manifest"}],
+        "tree_dependencies": []
+      },
+      "registry": {"lookup_status": "ok", "versions": [{"version": "1.0.203", "published_at": "2024-01-01T00:00:00Z"}]},
+      "adjudication_inputs": {
+        "temporal_queue": {"parent_state": "package_and_query_absent", "exclusion_flags": [], "strong_review_candidate": true},
+        "temporal_requery": {"effective_package_name": "serde", "fresh_decision": "fresh_no_matching_version", "fresh_publish_after_committer_seconds": ""}
+      },
+      "expected": {
+        "stage3_registry_status": "no_matching_version_before_author_date",
+        "final_label": "confirmed_hallucination",
+        "confidence": "high",
+        "basis_contains": "no satisfying version",
+        "flags_include": ["fresh_no_matching_version"],
+        "commented_manifest_corrections": 0
+      }
+    },
+    {
+      "id": "go_local_workspace",
+      "language": "Go",
+      "repo_primary_language": "Go",
+      "author_date": "2026-07-01T00:00:00Z",
+      "committer_date": "2026-07-01T00:00:00Z",
+      "input_summary": "The Go proxy misses the module, but workspace and local-module context explain it.",
+      "input": {
+        "source_events": [{"path": "control.go", "target": "example.invalid/local-module/pkg", "kind": "external", "language": "Go"}],
+        "manifest_events": [{"path": "go.mod", "ecosystem": "Go", "package": "example.invalid/local-module", "version_spec": "v1.0.0", "source_type": "direct_manifest"}],
+        "tree_dependencies": []
+      },
+      "registry": {"lookup_status": "not_found", "versions": []},
+      "adjudication_inputs": {
+        "context_hints": ["explicit_workspace_or_local_context"]
+      },
+      "expected": {
+        "stage3_registry_status": "current_absent_unknown",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "basis_contains": "same-commit local/workspace",
+        "flags_include": ["explicit_workspace_or_local_context"],
+        "commented_manifest_corrections": 0
+      }
+    },
+    {
+      "id": "maven_vendor_match",
+      "language": "Java",
+      "repo_primary_language": "Java",
+      "author_date": "2026-07-01T00:00:00Z",
+      "committer_date": "2026-07-01T00:00:00Z",
+      "input_summary": "Central and Google miss the artifact, but the declared public vendor repository resolves the same Maven GAV.",
+      "input": {
+        "source_events": [],
+        "manifest_events": [{"path": "pom.xml", "ecosystem": "Maven", "package": "org.mule.connectors:mule-http-connector", "version_spec": "1.7.3", "source_type": "direct_manifest"}],
+        "tree_dependencies": []
+      },
+      "registry": {"lookup_status": "not_found", "versions": []},
+      "adjudication_inputs": {
+        "context_hints": ["resolved_version_present"],
+        "maven_vendor_proof": {"repository": "MuleSoft Releases", "coordinate": "org.mule.connectors:mule-http-connector:1.7.3"}
+      },
+      "expected": {
+        "stage3_registry_status": "current_absent_unknown",
+        "final_label": "not_hallucination",
+        "confidence": "high",
+        "basis_contains": "resolved-lock evidence",
+        "flags_include": ["resolved_version_present"],
+        "commented_manifest_corrections": 0
+      }
+    }
+  ]
+}

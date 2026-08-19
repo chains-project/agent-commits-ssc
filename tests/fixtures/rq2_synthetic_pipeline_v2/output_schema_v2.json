@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "date": "2026-08-03",
+  "status": "stage1_stage2_stage3_offline_core_implemented",
+  "encoding": "UTF-8",
+  "design_rule": "Emit only the four canonical analysis tables by default. Do not duplicate computable fields; store detailed network responses in the deduplicated evidence cache.",
+  "tables": {
+    "commits.csv": {
+      "primary_key": ["commit_id"],
+      "fields": ["commit_id", "repo", "sha", "author_date", "agent", "repo_primary_language", "actual_changed_languages", "import_event_count", "manifest_event_count", "dependency_quadrant", "schema_version"]
+    },
+    "events.csv": {
+      "primary_key": ["event_id"],
+      "fields": ["event_id", "commit_id", "event_type", "path", "actual_language", "ecosystem", "new_line_number", "event_ordinal", "raw_target", "package_candidate", "version_spec", "event_status", "reason_codes", "schema_version"]
+    },
+    "episodes.csv": {
+      "primary_key": ["episode_id"],
+      "fields": ["episode_id", "commit_id", "ecosystem", "package_name", "dependency_quadrant", "alignment_status", "query_kind", "query_value", "resolution_source", "registry_status", "advisory_status", "reason_codes", "evidence_ids", "schema_version"]
+    },
+    "episode_event_links.csv": {
+      "primary_key": ["episode_id", "event_id"],
+      "fields": ["episode_id", "event_id", "link_method", "schema_version"]
+    }
+  },
+  "non_tabular_outputs": {
+    "evidence.jsonl": {
+      "purpose": "Store deduplicated registry and advisory query metadata by evidence_id; complete responses remain in the content-addressed raw cache.",
+      "fields": ["evidence_id", "evidence_type", "query_key", "source", "lookup_status", "queried_at", "payload_sha256", "payload_path", "error", "schema_version"]
+    },
+    "run_summary.json": {
+      "purpose": "Store aggregate counts and invariant results by language, quadrant, mapping, version resolution, registry, and advisory state."
+    }
+  },
+  "debug_only_outputs": ["manifest_fetch_results.csv", "parsed_dependencies.csv", "alignment_candidates.csv"],
+  "enums": {
+    "event_type": ["import", "manifest_addition"],
+    "query_kind": ["exact", "name_only", "range", "excluded", "unresolved"],
+    "registry_status": ["not_queried", "exists_before_author_date", "published_after_author_date", "no_matching_version_before_author_date", "current_absent_unknown", "excluded", "cannot_compare"],
+    "advisory_status": ["active_before_or_at_author_date", "published_after_author_date", "withdrawn_before_author_date", "none_observed", "hydration_incomplete", "not_queried"]
+  },
+  "normalization_notes": [
+    "Join events and episodes through commit_id without repeating repository, SHA, author date, or agent fields.",
+    "Do not store episode event counts that can be derived from episode_event_links.",
+    "Do not repeat event_type in episode_event_links; obtain it from events.",
+    "Registry and advisory records share evidence references but remain independent episode status axes.",
+    "Repository primary language is descriptive only; parsing follows each changed file type.",
+    "Legacy products are read-only and v2 writes to a new dated output directory."
+  ]
+}

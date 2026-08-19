@@ -23,6 +23,10 @@ htmlcov/
 # External, raw, and machine-local data
 /data_products/
 /data/
+!/data/
+/data/*
+!/data/rq2/
+!/data/rq2/**
 /cache/
 /database/
 *.sqlite

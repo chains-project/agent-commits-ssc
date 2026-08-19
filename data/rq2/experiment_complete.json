@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "complete": true,
+  "completed_utc": "2026-08-16T07:36:43.378353+00:00",
+  "scope": "public RQ1/RQ2 clean export",
+  "canonical_experiment_rerun_for_export": false,
+  "languages": 6,
+  "canonical_tables": 24,
+  "final_analysis_checks": {
+    "passed": 80,
+    "failed": 0
+  },
+  "adjudication_rows": 74618,
+  "public_product_manifest": "public_product_manifest.json",
+  "canonical_table_index": "canonical_table_index.json"
+}
