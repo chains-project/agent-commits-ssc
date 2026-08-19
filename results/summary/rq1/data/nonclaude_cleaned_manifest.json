@@ -1,0 +1,11 @@
+{
+  "cleaned_version": "nonclaude_optimized_cleaned_v1",
+  "source_dir": "external://rq1/pilot/nonclaude-optimized",
+  "raw_file": "external://rq1/pilot/nonclaude-optimized/sha_channels_raw.csv",
+  "output_dir": "external://rq1/products/nonclaude-optimized-cleaned-v1",
+  "valid_raw_rows": 1520726,
+  "invalid_excluded_rows": 1,
+  "unique_repo_sha": 1451545,
+  "created_utc": "2026-06-14T02:16:46Z",
+  "note": "Raw data are preserved in source_dir; this directory contains cleaned summaries only."
+}

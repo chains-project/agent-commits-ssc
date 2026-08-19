@@ -1,0 +1,2 @@
+﻿"merged_version","grain","four_agent_population","three_agent_raw","four_agent_rows_read","three_agent_valid_raw_rows_scanned","three_agent_invalid_raw_rows_excluded","merged_agent_repo_sha_rows","merged_unique_repo_sha","created_utc"
+"agent_commit_population_merged_1y_v1","one row per agent plus repo_sha attribution","external://rq1/corrected/agent_commit_population.csv","external://rq1/nonclaude/sha_channels_raw.csv","460645","1520726","1","1853783","1852606","2026-06-14T03:07:01Z"

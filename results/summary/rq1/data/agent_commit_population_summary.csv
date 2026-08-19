@@ -1,0 +1,6 @@
+﻿"scope","rows","unique_repo_sha","raw_valid_rows_scanned","invalid_rows_excluded"
+"all_agent_attributions","460645","460207","529936","0"
+"agent:claude","401025","401025","",""
+"agent:codex","2224","2224","",""
+"agent:copilot","40194","40194","",""
+"agent:cursor","17202","17202","",""

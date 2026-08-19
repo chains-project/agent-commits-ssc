@@ -1,0 +1,18 @@
+{
+  "output_dir": "external://rq1/products/repo-metadata-merged-1y-v1",
+  "population_csv": "external://rq1/products/agent-commit-population-merged-1y-v1/merged_agent_commit_population.csv",
+  "queue_path": "external://rq1/products/repo-metadata-merged-1y-v1/repo_queue.csv",
+  "metadata_path": "external://rq1/products/repo-metadata-merged-1y-v1/repo_metadata.csv",
+  "raw_jsonl_path": "external://rq1/products/repo-metadata-merged-1y-v1/repo_metadata_raw.jsonl",
+  "max_repos": 10000000,
+  "fetched_this_run": 0,
+  "errors_this_run": 0,
+  "skipped_this_run": 443905,
+  "sleep_seconds": 0.3,
+  "rate_limit_floor": 50,
+  "rate_limit_buffer_seconds": 30,
+  "last_rate_limit_remaining": "",
+  "last_rate_limit_limit": "",
+  "last_rate_limit_reset_local": "",
+  "created_utc": "2026-06-20T21:03:53Z"
+}

@@ -1,0 +1,13 @@
+{
+  "population_version": "agent_commit_population_corrected_v1",
+  "source_dir": "external://rq1/pilot/annual-sample-corrected-v1",
+  "raw_file": "external://rq1/pilot/annual-sample-corrected-v1/sha_channels_raw.csv",
+  "output_dir": "external://rq1/products/agent-commit-population-corrected-v1",
+  "row_grain": "one row per agent plus repo_sha attribution",
+  "evidence_scope": "strict_agent_commit",
+  "rows": 460645,
+  "unique_repo_sha": 460207,
+  "raw_valid_rows_scanned": 529936,
+  "invalid_rows_excluded": 0,
+  "created_utc": "2026-06-14T02:26:56Z"
+}

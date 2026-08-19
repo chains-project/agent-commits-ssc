@@ -1,0 +1,7 @@
+﻿"scope","raw_rows_before_dedup","unique_repo_sha_after_dedup"
+"all_valid","1520726","1451545"
+"invalid_excluded","1",""
+"agent:codex","62189","44965"
+"agent:copilot","1031532","980956"
+"agent:cursor","427005","426386"
+"tier:main","1520726","1451545"

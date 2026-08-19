@@ -1,0 +1,149 @@
+﻿{
+    "commit_csv":  "data_products/agent_commit_population_merged_1y_v1/merged_agent_commit_population.csv",
+    "repo_metadata_csv":  "data_products/repo_metadata_merged_1y_v1/repo_metadata.csv",
+    "output_csv":  "data_products/agent_commit_population_merged_1y_v1/merged_agent_commit_population.csv",
+    "in_place":  true,
+    "backup_csv":  "data_products/agent_commit_population_merged_1y_v1/merged_agent_commit_population.bak_before_repo_language_20260620T231120Z.csv",
+    "repo_language_semantics":  "GitHub repository primary language from repo metadata field \u0027language\u0027",
+    "created_utc":  "2026-06-20T23:11:22Z",
+    "repo_metadata_repos":  443905,
+    "rows":  1853783,
+    "missing_repo_metadata_rows":  0,
+    "blank_repo_language_rows":  50744,
+    "top_repo_languages":  [
+                               [
+                                   "TypeScript",
+                                   573596
+                               ],
+                               [
+                                   "Python",
+                                   362145
+                               ],
+                               [
+                                   "JavaScript",
+                                   214763
+                               ],
+                               [
+                                   "HTML",
+                                   141319
+                               ],
+                               [
+                                   "C#",
+                                   66180
+                               ],
+                               [
+                                   "Rust",
+                                   63939
+                               ],
+                               [
+                                   "Go",
+                                   52428
+                               ],
+                               [
+                                   "\u003cblank\u003e",
+                                   50744
+                               ],
+                               [
+                                   "PHP",
+                                   37300
+                               ],
+                               [
+                                   "C++",
+                                   35648
+                               ],
+                               [
+                                   "Java",
+                                   33872
+                               ],
+                               [
+                                   "Shell",
+                                   26207
+                               ],
+                               [
+                                   "Kotlin",
+                                   19873
+                               ],
+                               [
+                                   "Dart",
+                                   18139
+                               ],
+                               [
+                                   "C",
+                                   15521
+                               ],
+                               [
+                                   "Swift",
+                                   14840
+                               ],
+                               [
+                                   "Jupyter Notebook",
+                                   13148
+                               ],
+                               [
+                                   "CSS",
+                                   11585
+                               ],
+                               [
+                                   "Vue",
+                                   11127
+                               ],
+                               [
+                                   "Astro",
+                                   7744
+                               ],
+                               [
+                                   "PowerShell",
+                                   6940
+                               ],
+                               [
+                                   "TeX",
+                                   6806
+                               ],
+                               [
+                                   "Ruby",
+                                   6540
+                               ],
+                               [
+                                   "Lua",
+                                   5171
+                               ],
+                               [
+                                   "Blade",
+                                   4230
+                               ],
+                               [
+                                   "MDX",
+                                   3864
+                               ],
+                               [
+                                   "Svelte",
+                                   3444
+                               ],
+                               [
+                                   "R",
+                                   3152
+                               ],
+                               [
+                                   "GDScript",
+                                   2807
+                               ],
+                               [
+                                   "HCL",
+                                   2422
+                               ]
+                           ],
+    "repo_metadata_status_counts":  [
+                                        [
+                                            "ok",
+                                            1846280
+                                        ],
+                                        [
+                                            "not_found",
+                                            6690
+                                        ],
+                                        [
+                                            "error",
+                                            813
+                                        ]
+                                    ]
+}

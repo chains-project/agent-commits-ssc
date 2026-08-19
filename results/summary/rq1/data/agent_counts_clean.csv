@@ -1,0 +1,4 @@
+﻿"agent","raw_rows_before_dedup","sum_channel_unique_before_cross_channel_dedup","unique_repo_sha_after_dedup","cross_channel_dedup_ratio"
+"codex","62189","62189","44965","0.723038"
+"copilot","1031532","1031213","980956","0.951264"
+"cursor","427005","427005","426386","0.99855"
