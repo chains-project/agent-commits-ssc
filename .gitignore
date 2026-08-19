@@ -1,0 +1,61 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python environments and caches
+.venv/
+.venv_*/
+venv/
+env/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# External, raw, and machine-local data
+/data_products/
+/data/
+/cache/
+/database/
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs and temporary artifacts
+/logs/
+/.tmp/
+/.playwright-cli/
+*.log
+*.pid
+*.tmp
+*.bak
+
+# Editor and operating-system state
+/.idea/
+/.vscode/
+/.claude/settings.local.json
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local browser/OCR captures that are not research figures
+/chrome_*.png
+/crop_*.png
+/xhs_*.png
+/scripts/.env.example
+
+# Regenerable nested caches and run-state outputs
+**/*_cache/
+/results/overnight_diff_retry_20260722/
+**/.idea/
+
+# Microsoft Office lock files
+~$*
