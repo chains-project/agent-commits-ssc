@@ -19,6 +19,9 @@ work is not included as a formal result.
 - results contains compact RQ1/RQ2 summaries and machine-readable validation
   records.
 - docs/artifact-catalog.md describes every public file.
+- docs/claude-linked-author-exploration.md reports the exploratory RQ1
+  linked-author Top-10, public profile context, sensitivity checks, and
+  interpretation limits.
 
 Historical repair wrappers, internal plans, reports, display figures, caches,
 raw review packets, and large intermediate tables are excluded.

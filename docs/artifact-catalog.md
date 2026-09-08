@@ -35,6 +35,7 @@ corpora are not part of this tree.
 | data/rq2/public_product_manifest.json | RQ2 | canonical entry, compact final result, manifest, or final verification | external source; see data-availability.md | yes |
 | data/rq2/v2_native_adjudication.csv | RQ2 | 74,618-row final candidate adjudication | external source; see data-availability.md | yes |
 | docs/artifact-catalog.md | mixed | per-file public artifact catalog | generated during clean export | yes |
+| docs/claude-linked-author-exploration.md | RQ1 | exploratory linked-author Top-10, public-profile context, sensitivity checks, and interpretation limits | frozen RQ1 population, reviewed internal analysis, and public self-presentations | no |
 | docs/data-availability.md | shared | Git/external-data boundary and download index | PROPOSED_NEW/docs/data-availability.md | no |
 | docs/data-dictionary.md | RQ1/RQ2 | schemas, fields, primary keys, and redaction notes | PROPOSED_NEW/docs/data-dictionary.md | no |
 | docs/rq1-method.md | RQ1 | RQ1 methods and limitations | PROPOSED_NEW/docs/rq1-method.md | no |
