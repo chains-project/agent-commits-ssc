@@ -1,0 +1,59 @@
+{
+  "schema_version": "attribution-feasibility-summary-v1",
+  "population_frame": {
+    "branch": "matched_10min",
+    "unique_repository_sha": 460207
+  },
+  "interpretation": "Descriptive counts in a stratified sample; declarations do not establish actual model execution.",
+  "sample_counts": {
+    "sample_rows": 120,
+    "labels": {
+      "X0": 72,
+      "X2": 8,
+      "X3": 34,
+      "XC": 6
+    },
+    "labels_by_stratum": {
+      "L3": {
+        "X3": 30
+      },
+      "L2": {
+        "X0": 15,
+        "X2": 8,
+        "X3": 2,
+        "XC": 5
+      },
+      "L1": {
+        "X0": 27,
+        "X3": 2,
+        "XC": 1
+      },
+      "L0": {
+        "X0": 30
+      }
+    },
+    "positive_rows": 42,
+    "positive_granularity": {
+      "exact_model": 39,
+      "model_family": 3
+    },
+    "positive_model_families": {
+      "claude": 36,
+      "gpt": 6
+    },
+    "positive_source_types": {
+      "commit_message": 10,
+      "commit_message;commit_trailer": 5,
+      "commit_trailer": 27
+    },
+    "positives_supported_only_by_message_or_trailer": 42,
+    "positives_citing_other_sources": 0,
+    "diff_status_counts": {
+      "error": 7,
+      "not_in_local_index": 4,
+      "ok": 109
+    },
+    "diff_index_matches": 116,
+    "readable_diffs": 109
+  }
+}
