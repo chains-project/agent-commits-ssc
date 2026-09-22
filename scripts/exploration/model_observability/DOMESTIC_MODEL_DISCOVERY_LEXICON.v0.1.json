@@ -1,0 +1,227 @@
+{
+  "schema_version": "domestic-model-discovery-lexicon-v1",
+  "lexicon_version": "tier1-discovery-v0.1.0",
+  "normalization": "Unicode NFKC; regex flags are embedded per pattern",
+  "patterns": [
+    {
+      "pattern_id": "deepseek_model_latin",
+      "family_id": "deepseek",
+      "canonical_name": "DeepSeek model family",
+      "entity_type": "model",
+      "alias_group": "DeepSeek and version forms",
+      "regex": "(?i)(?<![A-Za-z0-9])Deep[ ._/-]*Seek(?:[ ._/-]*(?:V|R)\\d+(?:\\.\\d+)*)?(?![A-Za-z0-9])",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "documentation, model support, provider configuration, benchmark",
+      "official_source_status": "official organization verified; not execution provenance"
+    },
+    {
+      "pattern_id": "deepseek_coder_model",
+      "family_id": "deepseek",
+      "canonical_name": "DeepSeek Coder",
+      "entity_type": "model",
+      "alias_group": "DeepSeek-Coder",
+      "regex": "(?i)(?<![A-Za-z0-9])Deep[ ._/-]*Seek[ ._/-]*Coder(?:[ ._/-]*V?\\d+(?:\\.\\d+)*)?(?![A-Za-z0-9])",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "dependency, documentation, benchmark, repository-development context",
+      "official_source_status": "official model repository verified; not harness attribution"
+    },
+    {
+      "pattern_id": "deepseek_chinese_brand",
+      "family_id": "deepseek",
+      "canonical_name": "DeepSeek",
+      "entity_type": "provider",
+      "alias_group": "深度求索",
+      "regex": "深度求索",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "organization or product discussion",
+      "official_source_status": "alias pending commit-pinned source audit"
+    },
+    {
+      "pattern_id": "qwen_code_harness",
+      "family_id": "qwen",
+      "canonical_name": "Qwen Code",
+      "entity_type": "harness",
+      "alias_group": "Qwen Code",
+      "regex": "(?i)(?<![A-Za-z0-9])Qwen[ ._/-]*Code(?![A-Za-z0-9])",
+      "evidence_ceiling": "H0",
+      "false_positive_risk": "documentation, installation, release notes, provider support",
+      "official_source_status": "official repository verified; exact H1 remains sealed separately"
+    },
+    {
+      "pattern_id": "qwen_coder_model",
+      "family_id": "qwen",
+      "canonical_name": "Qwen Coder model family",
+      "entity_type": "model",
+      "alias_group": "Qwen Coder",
+      "regex": "(?i)(?<![A-Za-z0-9])Qwen(?:[ ._/-]*\\d+(?:\\.\\d+)*)?[ ._/-]*Coder(?:[ ._/-]*\\d+(?:\\.\\d+)*)?(?![A-Za-z0-9])",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "model support, dependency, benchmark, documentation",
+      "official_source_status": "official family; not execution provenance"
+    },
+    {
+      "pattern_id": "qwen_model_latin",
+      "family_id": "qwen",
+      "canonical_name": "Qwen model family",
+      "entity_type": "model",
+      "alias_group": "Qwen and version forms",
+      "regex": "(?i)(?<![A-Za-z0-9])Qwen(?:[ ._/-]*\\d+(?:\\.\\d+)*)?(?![A-Za-z0-9])",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "Qwen Code name, documentation, dependency, benchmark",
+      "official_source_status": "official family; not execution provenance"
+    },
+    {
+      "pattern_id": "qwen_chinese_brand",
+      "family_id": "qwen",
+      "canonical_name": "Qwen",
+      "entity_type": "model",
+      "alias_group": "通义千问",
+      "regex": "通义千问",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "product discussion and documentation",
+      "official_source_status": "alias pending commit-pinned source audit"
+    },
+    {
+      "pattern_id": "kimi_code_harness",
+      "family_id": "kimi",
+      "canonical_name": "Kimi Code",
+      "entity_type": "harness",
+      "alias_group": "Kimi Code",
+      "regex": "(?i)(?<![A-Za-z0-9])Kimi[ ._/-]*Code(?![A-Za-z0-9])",
+      "evidence_ceiling": "H0",
+      "false_positive_risk": "documentation, installation, release notes",
+      "official_source_status": "official repository verified; no H1 source yet"
+    },
+    {
+      "pattern_id": "kimi_model_latin",
+      "family_id": "kimi",
+      "canonical_name": "Kimi model family",
+      "entity_type": "model",
+      "alias_group": "Kimi",
+      "regex": "(?i)(?<![A-Za-z0-9])Kimi(?![A-Za-z0-9])",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "person name, Kimi Code name, documentation",
+      "official_source_status": "official family; not execution provenance"
+    },
+    {
+      "pattern_id": "moonshot_provider",
+      "family_id": "kimi",
+      "canonical_name": "Moonshot AI",
+      "entity_type": "provider",
+      "alias_group": "Moonshot AI",
+      "regex": "(?i)(?<![A-Za-z0-9])Moonshot(?:[ ._-]*AI)?(?![A-Za-z0-9])",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "generic project name, provider configuration, dependency",
+      "official_source_status": "official organization; not model execution provenance"
+    },
+    {
+      "pattern_id": "moonshot_chinese_brand",
+      "family_id": "kimi",
+      "canonical_name": "Moonshot AI",
+      "entity_type": "provider",
+      "alias_group": "月之暗面",
+      "regex": "月之暗面",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "organization discussion",
+      "official_source_status": "alias pending commit-pinned source audit"
+    },
+    {
+      "pattern_id": "chatglm_model",
+      "family_id": "glm",
+      "canonical_name": "ChatGLM model family",
+      "entity_type": "model",
+      "alias_group": "ChatGLM",
+      "regex": "(?i)(?<![A-Za-z0-9])Chat[ ._/-]*GLM(?:[ ._/-]*\\d+(?:\\.\\d+)*)?(?![A-Za-z0-9])",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "dependency, documentation, benchmark",
+      "official_source_status": "official family; not execution provenance"
+    },
+    {
+      "pattern_id": "glm_versioned_model",
+      "family_id": "glm",
+      "canonical_name": "GLM model family",
+      "entity_type": "model",
+      "alias_group": "versioned GLM",
+      "regex": "(?i)(?<![A-Za-z0-9])GLM[ ._/-]*\\d+(?:\\.\\d+)*(?![A-Za-z0-9])",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "statistical GLM terminology and package versions",
+      "official_source_status": "version-qualified discovery only"
+    },
+    {
+      "pattern_id": "glm_coding_harness",
+      "family_id": "glm",
+      "canonical_name": "GLM Coding",
+      "entity_type": "harness",
+      "alias_group": "GLM Coding",
+      "regex": "(?i)(?<![A-Za-z0-9])GLM[ ._/-]*Coding(?![A-Za-z0-9])",
+      "evidence_ceiling": "H0",
+      "false_positive_risk": "product discussion and documentation",
+      "official_source_status": "product role requires commit-pinned audit"
+    },
+    {
+      "pattern_id": "codegeex_harness",
+      "family_id": "glm",
+      "canonical_name": "CodeGeeX",
+      "entity_type": "harness",
+      "alias_group": "CodeGeeX",
+      "regex": "(?i)(?<![A-Za-z0-9])Code[ ._/-]*GeeX(?![A-Za-z0-9])",
+      "evidence_ceiling": "H0",
+      "false_positive_risk": "repository development, documentation, dependency",
+      "official_source_status": "official ownership and commit behavior require detailed audit"
+    },
+    {
+      "pattern_id": "zcode_harness",
+      "family_id": "glm",
+      "canonical_name": "Z Code",
+      "entity_type": "harness",
+      "alias_group": "ZCode",
+      "regex": "(?i)(?<![A-Za-z0-9])Z[ ._/-]*Code(?![A-Za-z0-9])",
+      "evidence_ceiling": "H0",
+      "false_positive_risk": "unrelated product and repository names",
+      "official_source_status": "product role requires commit-pinned audit"
+    },
+    {
+      "pattern_id": "zhipu_provider",
+      "family_id": "glm",
+      "canonical_name": "Zhipu AI",
+      "entity_type": "provider",
+      "alias_group": "Zhipu and 智谱",
+      "regex": "(?i)(?<![A-Za-z0-9])Zhipu(?:[ ._-]*AI)?(?![A-Za-z0-9])|智谱(?:AI)?",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "provider integration or organization discussion",
+      "official_source_status": "provider name only"
+    },
+    {
+      "pattern_id": "doubao_model",
+      "family_id": "doubao_seed_trae",
+      "canonical_name": "Doubao model family",
+      "entity_type": "model",
+      "alias_group": "Doubao and 豆包",
+      "regex": "(?i)(?<![A-Za-z0-9])Doubao(?![A-Za-z0-9])|豆包",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "provider support, configuration, documentation",
+      "official_source_status": "official role requires detailed audit"
+    },
+    {
+      "pattern_id": "seed_coder_model",
+      "family_id": "doubao_seed_trae",
+      "canonical_name": "Seed Coder",
+      "entity_type": "model",
+      "alias_group": "Seed-Coder",
+      "regex": "(?i)(?<![A-Za-z0-9])Seed[ ._/-]*(?:Coder|Code)(?:[ ._/-]*\\d+(?:\\.\\d+)*)?(?![A-Za-z0-9])",
+      "evidence_ceiling": "M0",
+      "false_positive_risk": "unrelated seed/code terminology, documentation, benchmark",
+      "official_source_status": "product role requires commit-pinned audit"
+    },
+    {
+      "pattern_id": "trae_agent_harness",
+      "family_id": "doubao_seed_trae",
+      "canonical_name": "TRAE Agent",
+      "entity_type": "harness",
+      "alias_group": "TRAE Agent",
+      "regex": "(?i)(?<![A-Za-z0-9])TRAE(?:[ ._/-]*Agent)?(?![A-Za-z0-9])",
+      "evidence_ceiling": "H0",
+      "false_positive_risk": "repository development, dependency, documentation",
+      "official_source_status": "official repository verified; multi-provider harness"
+    }
+  ]
+}
