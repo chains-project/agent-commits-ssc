@@ -1,0 +1,21 @@
+{
+  "source_files": [
+    {
+      "path": "tmp\\weixing_pending_counts_20261007.sqlite",
+      "sha256": "a459a262739205edbcf3b1860eb0781c66bd6d04111e986c4f6aa7db56126559"
+    },
+    {
+      "path": "data_products\\repo_metadata_merged_1y_v1\\repo_metadata.csv",
+      "sha256": "a5a1301daf89ae52b60d9925484d2261803d074dd5469990a3d994932cf60338"
+    },
+    {
+      "path": "C:\\Users\\Ksco\\OneDrive\\\u6587\u6863\\KTH\\MasterThesis\\thesis-work\\experiments\\agent_dependency_study\\inputs\\commit_times\\manifest.json",
+      "sha256": "4dc43535e35518e1201cde0478955798992c6240a68ac7dfd675ff2a2817d92c"
+    }
+  ],
+  "sha256": "32886223f21f53ac60a09f93aca7750a6d616edd6ae9afa9e8efedc602d02a6a",
+  "commits": 343790,
+  "attribution": "all frozen qualifying agents",
+  "repository_identity": "numeric GitHub ID; explicit case-folded name fallback",
+  "cache_origin": "summarize_pending_corpus_counts.py; frozen expanded membership, no channel multiplication"
+}

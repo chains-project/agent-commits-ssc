@@ -1,0 +1,5 @@
+version,agent,ecosystem,episodes,queryable,queryable_commits,queryable_repositories,present_at_commit,queryable_present_at_commit,queryable_present_at_commit_pct,hallucinated_dependency,queryable_hallucinated_dependency,queryable_hallucinated_dependency_pct,insufficient_evidence,queryable_insufficient_evidence,queryable_insufficient_evidence_pct,out_of_scope,queryable_out_of_scope,queryable_out_of_scope_pct,package_no_match,version_no_match,postdate
+canonical_v3,claude,ALL,368892,295862,75736,58023,278880,278880,94.260162,13731,13731,4.641015,59629,3023,1.02176,16652,228,0.077063,12670,218,843
+canonical_v3,codex,ALL,30647,22388,6084,2229,19672,19672,87.868501,2076,2076,9.272825,6339,602,2.688941,2560,38,0.169734,1992,35,49
+canonical_v3,copilot,ALL,668625,509517,122266,51822,475353,475353,93.294826,26237,26237,5.149387,135003,7236,1.420169,32032,691,0.135619,24190,614,1433
+canonical_v3,cursor,ALL,613733,508750,100153,40136,484331,484331,95.200197,18550,18550,3.646192,91550,5585,1.097789,19302,284,0.055823,17457,477,616

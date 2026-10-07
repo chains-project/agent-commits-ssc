@@ -1,0 +1,6 @@
+version,agent,ecosystem,episodes,queryable,queryable_commits,queryable_repositories,confirmed_hallucination,queryable_confirmed_hallucination,queryable_confirmed_hallucination_pct,probable_hallucination,queryable_probable_hallucination,queryable_probable_hallucination_pct,indeterminate,queryable_indeterminate,queryable_indeterminate_pct,not_hallucination,queryable_not_hallucination,queryable_not_hallucination_pct,not_in_candidate_review,queryable_not_in_candidate_review,queryable_not_in_candidate_review_pct
+canonical_v2_20260816,ALL,Cargo,60051,47439,14176,6519,11,11,0.023188,5,5,0.01054,5230,5230,11.024684,2998,2998,6.319695,51807,39195,82.621893
+canonical_v2_20260816,ALL,Go,66360,53566,7556,4153,0,0,0.0,0,0,0.0,4367,4367,8.152559,7999,7999,14.93298,53994,41200,76.914461
+canonical_v2_20260816,ALL,Maven,177735,22563,4946,3510,1,1,0.004432,31,31,0.137393,1360,1360,6.027567,6465,6465,28.653105,169878,14706,65.177503
+canonical_v2_20260816,ALL,PyPI,492385,320493,80378,43641,118,118,0.036818,269,269,0.083933,28330,28330,8.839507,2267,2267,0.707348,461401,289509,90.332394
+canonical_v2_20260816,ALL,npm,973122,920795,202664,101872,192,192,0.020852,77,77,0.008362,12806,12806,1.390755,2092,2092,0.227195,957955,905628,98.352836

@@ -1,0 +1,5 @@
+version,agent,ecosystem,episodes,queryable,queryable_commits,queryable_repositories,confirmed_hallucination,queryable_confirmed_hallucination,queryable_confirmed_hallucination_pct,probable_hallucination,queryable_probable_hallucination,queryable_probable_hallucination_pct,indeterminate,queryable_indeterminate,queryable_indeterminate_pct,not_hallucination,queryable_not_hallucination,queryable_not_hallucination_pct,not_in_candidate_review,queryable_not_in_candidate_review,queryable_not_in_candidate_review_pct
+canonical_v2_20260816,claude,ALL,385239,302449,74988,57506,49,49,0.016201,100,100,0.033063,11590,11590,3.832051,4147,4147,1.37114,369353,286563,94.747544
+canonical_v2_20260816,codex,ALL,31550,22399,5983,2206,2,2,0.008929,6,6,0.026787,1643,1643,7.335149,636,636,2.839412,29263,20112,89.789723
+canonical_v2_20260816,copilot,ALL,698916,509038,119813,51049,108,108,0.021216,141,141,0.027699,23062,23062,4.530507,10878,10878,2.136972,664727,474849,93.283606
+canonical_v2_20260816,cursor,ALL,656063,532330,99384,39908,163,163,0.03062,135,135,0.02536,15852,15852,2.977852,6222,6222,1.168824,633691,509958,95.797344

@@ -1,0 +1,2 @@
+status,repo,sha,repo_language,commit_primary_language,commit_languages,patch_path
+ok,hayat01sh1da/tutorials,e493f9d952fed1b2c9880522c82ddf9fb20e6693,Ruby,JSON,JSON,sample/commit.patch

@@ -1,0 +1,466 @@
+{
+  "scope": "Read-only review of current Stage12 outputs and frozen context; no source or experiment output changed.",
+  "examples": [
+    {
+      "repo": "Snorlax021/HPMS_Project",
+      "sha": "0e90afe9349999960d1a069b5efd78c92501a381",
+      "commit_id": "cmt_0b9b518ed1a0624a67c0293060523136",
+      "event": {
+        "actual_language": "XML",
+        "commit_id": "cmt_0b9b518ed1a0624a67c0293060523136",
+        "ecosystem": "Maven",
+        "event_id": "evt_5e0a74ed68b8a6cd2de139fb59cd5c42",
+        "event_ordinal": "0",
+        "event_status": "direct_manifest",
+        "event_type": "manifest_addition",
+        "new_line_number": "55",
+        "package_candidate": "io.jsonwebtoken:jjwt-api",
+        "path": "pom.xml",
+        "raw_target": "io.jsonwebtoken:jjwt-api",
+        "reason_codes": "child_snapshot_structure",
+        "schema_version": "2",
+        "version_spec": "${jwt.version}"
+      },
+      "context": {
+        "repo_key": "snorlax021/hpms_project",
+        "repo": "Snorlax021/HPMS_Project",
+        "sha": "0e90afe9349999960d1a069b5efd78c92501a381",
+        "source_path": "pom.xml",
+        "raw_target": "io.jsonwebtoken:jjwt-api",
+        "import_root": "io.jsonwebtoken:jjwt-api",
+        "ecosystem": "Maven",
+        "package_name": "io.jsonwebtoken:jjwt-api",
+        "version_spec": "0.12.3",
+        "resolved_version": "0.12.3",
+        "resolution_source": "manifest",
+        "dependency_group": "dependency",
+        "dependency_path": "pom.xml",
+        "alignment_status": "matched_manifest",
+        "reason_codes": ""
+      },
+      "without_context": {
+        "declared_identity": "io.jsonwebtoken:jjwt-api",
+        "package_name": "io.jsonwebtoken:jjwt-api",
+        "query_kind": "name_only",
+        "query_value": "",
+        "resolution_source": "direct_manifest",
+        "reasons": [
+          "child_snapshot_structure",
+          "version_unresolved"
+        ]
+      },
+      "with_context": {
+        "declared_identity": "io.jsonwebtoken:jjwt-api",
+        "package_name": "io.jsonwebtoken:jjwt-api",
+        "query_kind": "exact",
+        "query_value": "0.12.3",
+        "resolution_source": "manifest",
+        "reasons": []
+      }
+    },
+    {
+      "repo": "Snorlax021/HPMS_Project",
+      "sha": "0e90afe9349999960d1a069b5efd78c92501a381",
+      "commit_id": "cmt_0b9b518ed1a0624a67c0293060523136",
+      "event": {
+        "actual_language": "XML",
+        "commit_id": "cmt_0b9b518ed1a0624a67c0293060523136",
+        "ecosystem": "Maven",
+        "event_id": "evt_8784e83b8f6733d1579d535143d9cf06",
+        "event_ordinal": "0",
+        "event_status": "direct_manifest",
+        "event_type": "manifest_addition",
+        "new_line_number": "66",
+        "package_candidate": "io.jsonwebtoken:jjwt-jackson",
+        "path": "pom.xml",
+        "raw_target": "io.jsonwebtoken:jjwt-jackson",
+        "reason_codes": "child_snapshot_structure",
+        "schema_version": "2",
+        "version_spec": "${jwt.version}"
+      },
+      "context": {
+        "repo_key": "snorlax021/hpms_project",
+        "repo": "Snorlax021/HPMS_Project",
+        "sha": "0e90afe9349999960d1a069b5efd78c92501a381",
+        "source_path": "pom.xml",
+        "raw_target": "io.jsonwebtoken:jjwt-jackson",
+        "import_root": "io.jsonwebtoken:jjwt-jackson",
+        "ecosystem": "Maven",
+        "package_name": "io.jsonwebtoken:jjwt-jackson",
+        "version_spec": "0.12.3",
+        "resolved_version": "0.12.3",
+        "resolution_source": "manifest",
+        "dependency_group": "runtime",
+        "dependency_path": "pom.xml",
+        "alignment_status": "matched_manifest",
+        "reason_codes": ""
+      },
+      "without_context": {
+        "declared_identity": "io.jsonwebtoken:jjwt-jackson",
+        "package_name": "io.jsonwebtoken:jjwt-jackson",
+        "query_kind": "name_only",
+        "query_value": "",
+        "resolution_source": "direct_manifest",
+        "reasons": [
+          "child_snapshot_structure",
+          "version_unresolved"
+        ]
+      },
+      "with_context": {
+        "declared_identity": "io.jsonwebtoken:jjwt-jackson",
+        "package_name": "io.jsonwebtoken:jjwt-jackson",
+        "query_kind": "exact",
+        "query_value": "0.12.3",
+        "resolution_source": "manifest",
+        "reasons": []
+      }
+    },
+    {
+      "repo": "Snorlax021/HPMS_Project",
+      "sha": "0e90afe9349999960d1a069b5efd78c92501a381",
+      "commit_id": "cmt_0b9b518ed1a0624a67c0293060523136",
+      "event": {
+        "actual_language": "XML",
+        "commit_id": "cmt_0b9b518ed1a0624a67c0293060523136",
+        "ecosystem": "Maven",
+        "event_id": "evt_8e10c594ef417753ef2adeedb4541be2",
+        "event_ordinal": "0",
+        "event_status": "direct_manifest",
+        "event_type": "manifest_addition",
+        "new_line_number": "81",
+        "package_candidate": "org.mapstruct:mapstruct",
+        "path": "pom.xml",
+        "raw_target": "org.mapstruct:mapstruct",
+        "reason_codes": "child_snapshot_structure",
+        "schema_version": "2",
+        "version_spec": "${mapstruct.version}"
+      },
+      "context": {
+        "repo_key": "snorlax021/hpms_project",
+        "repo": "Snorlax021/HPMS_Project",
+        "sha": "0e90afe9349999960d1a069b5efd78c92501a381",
+        "source_path": "pom.xml",
+        "raw_target": "org.mapstruct:mapstruct",
+        "import_root": "org.mapstruct:mapstruct",
+        "ecosystem": "Maven",
+        "package_name": "org.mapstruct:mapstruct",
+        "version_spec": "1.5.5.Final",
+        "resolved_version": "",
+        "resolution_source": "manifest",
+        "dependency_group": "dependency",
+        "dependency_path": "pom.xml",
+        "alignment_status": "matched_manifest",
+        "reason_codes": ""
+      },
+      "without_context": {
+        "declared_identity": "org.mapstruct:mapstruct",
+        "package_name": "org.mapstruct:mapstruct",
+        "query_kind": "name_only",
+        "query_value": "",
+        "resolution_source": "direct_manifest",
+        "reasons": [
+          "child_snapshot_structure",
+          "version_unresolved"
+        ]
+      },
+      "with_context": {
+        "declared_identity": "org.mapstruct:mapstruct",
+        "package_name": "org.mapstruct:mapstruct",
+        "query_kind": "exact",
+        "query_value": "1.5.5.Final",
+        "resolution_source": "manifest",
+        "reasons": []
+      }
+    },
+    {
+      "repo": "Snorlax021/HPMS_Project",
+      "sha": "0e90afe9349999960d1a069b5efd78c92501a381",
+      "commit_id": "cmt_0b9b518ed1a0624a67c0293060523136",
+      "event": {
+        "actual_language": "XML",
+        "commit_id": "cmt_0b9b518ed1a0624a67c0293060523136",
+        "ecosystem": "Maven",
+        "event_id": "evt_da78214eb6765a7100141f9de1b31d5c",
+        "event_ordinal": "0",
+        "event_status": "direct_manifest",
+        "event_type": "manifest_addition",
+        "new_line_number": "60",
+        "package_candidate": "io.jsonwebtoken:jjwt-impl",
+        "path": "pom.xml",
+        "raw_target": "io.jsonwebtoken:jjwt-impl",
+        "reason_codes": "child_snapshot_structure",
+        "schema_version": "2",
+        "version_spec": "${jwt.version}"
+      },
+      "context": {
+        "repo_key": "snorlax021/hpms_project",
+        "repo": "Snorlax021/HPMS_Project",
+        "sha": "0e90afe9349999960d1a069b5efd78c92501a381",
+        "source_path": "pom.xml",
+        "raw_target": "io.jsonwebtoken:jjwt-impl",
+        "import_root": "io.jsonwebtoken:jjwt-impl",
+        "ecosystem": "Maven",
+        "package_name": "io.jsonwebtoken:jjwt-impl",
+        "version_spec": "0.12.3",
+        "resolved_version": "0.12.3",
+        "resolution_source": "manifest",
+        "dependency_group": "runtime",
+        "dependency_path": "pom.xml",
+        "alignment_status": "matched_manifest",
+        "reason_codes": ""
+      },
+      "without_context": {
+        "declared_identity": "io.jsonwebtoken:jjwt-impl",
+        "package_name": "io.jsonwebtoken:jjwt-impl",
+        "query_kind": "name_only",
+        "query_value": "",
+        "resolution_source": "direct_manifest",
+        "reasons": [
+          "child_snapshot_structure",
+          "version_unresolved"
+        ]
+      },
+      "with_context": {
+        "declared_identity": "io.jsonwebtoken:jjwt-impl",
+        "package_name": "io.jsonwebtoken:jjwt-impl",
+        "query_kind": "exact",
+        "query_value": "0.12.3",
+        "resolution_source": "manifest",
+        "reasons": []
+      }
+    },
+    {
+      "repo": "yoshioterada/Spec-Driven-Dev",
+      "sha": "12e3e01ce5bea9973405bee6fea801092dbec1f9",
+      "commit_id": "cmt_0f39a03a715093cdb4dd5da2c3644733",
+      "event": {
+        "actual_language": "XML",
+        "commit_id": "cmt_0f39a03a715093cdb4dd5da2c3644733",
+        "ecosystem": "Maven",
+        "event_id": "evt_5a6c35c63610ce9b757a612802827eb0",
+        "event_ordinal": "0",
+        "event_status": "direct_manifest",
+        "event_type": "manifest_addition",
+        "new_line_number": "98",
+        "package_candidate": "org.drools:drools-compiler",
+        "path": "projects/07-coupon-service/pom.xml",
+        "raw_target": "org.drools:drools-compiler",
+        "reason_codes": "child_snapshot_structure",
+        "schema_version": "2",
+        "version_spec": "${drools.version}"
+      },
+      "context": {
+        "repo_key": "yoshioterada/spec-driven-dev",
+        "repo": "yoshioterada/Spec-Driven-Dev",
+        "sha": "12e3e01ce5bea9973405bee6fea801092dbec1f9",
+        "source_path": "projects/07-coupon-service/pom.xml",
+        "raw_target": "org.drools:drools-compiler",
+        "import_root": "org.drools:drools-compiler",
+        "ecosystem": "Maven",
+        "package_name": "org.drools:drools-compiler",
+        "version_spec": "8.44.0.Final",
+        "resolved_version": "",
+        "resolution_source": "manifest",
+        "dependency_group": "dependency",
+        "dependency_path": "projects/07-coupon-service/pom.xml",
+        "alignment_status": "matched_manifest",
+        "reason_codes": ""
+      },
+      "without_context": {
+        "declared_identity": "org.drools:drools-compiler",
+        "package_name": "org.drools:drools-compiler",
+        "query_kind": "name_only",
+        "query_value": "",
+        "resolution_source": "direct_manifest",
+        "reasons": [
+          "child_snapshot_structure",
+          "version_unresolved"
+        ]
+      },
+      "with_context": {
+        "declared_identity": "org.drools:drools-compiler",
+        "package_name": "org.drools:drools-compiler",
+        "query_kind": "exact",
+        "query_value": "8.44.0.Final",
+        "resolution_source": "manifest",
+        "reasons": []
+      }
+    },
+    {
+      "repo": "yoshioterada/Spec-Driven-Dev",
+      "sha": "12e3e01ce5bea9973405bee6fea801092dbec1f9",
+      "commit_id": "cmt_0f39a03a715093cdb4dd5da2c3644733",
+      "event": {
+        "actual_language": "XML",
+        "commit_id": "cmt_0f39a03a715093cdb4dd5da2c3644733",
+        "ecosystem": "Maven",
+        "event_id": "evt_6448cd6e3fe4206bf8c37868755c3ea3",
+        "event_ordinal": "0",
+        "event_status": "direct_manifest",
+        "event_type": "manifest_addition",
+        "new_line_number": "93",
+        "package_candidate": "org.drools:drools-core",
+        "path": "projects/07-coupon-service/pom.xml",
+        "raw_target": "org.drools:drools-core",
+        "reason_codes": "child_snapshot_structure",
+        "schema_version": "2",
+        "version_spec": "${drools.version}"
+      },
+      "context": {
+        "repo_key": "yoshioterada/spec-driven-dev",
+        "repo": "yoshioterada/Spec-Driven-Dev",
+        "sha": "12e3e01ce5bea9973405bee6fea801092dbec1f9",
+        "source_path": "projects/07-coupon-service/pom.xml",
+        "raw_target": "org.drools:drools-core",
+        "import_root": "org.drools:drools-core",
+        "ecosystem": "Maven",
+        "package_name": "org.drools:drools-core",
+        "version_spec": "8.44.0.Final",
+        "resolved_version": "",
+        "resolution_source": "manifest",
+        "dependency_group": "dependency",
+        "dependency_path": "projects/07-coupon-service/pom.xml",
+        "alignment_status": "matched_manifest",
+        "reason_codes": ""
+      },
+      "without_context": {
+        "declared_identity": "org.drools:drools-core",
+        "package_name": "org.drools:drools-core",
+        "query_kind": "name_only",
+        "query_value": "",
+        "resolution_source": "direct_manifest",
+        "reasons": [
+          "child_snapshot_structure",
+          "version_unresolved"
+        ]
+      },
+      "with_context": {
+        "declared_identity": "org.drools:drools-core",
+        "package_name": "org.drools:drools-core",
+        "query_kind": "exact",
+        "query_value": "8.44.0.Final",
+        "resolution_source": "manifest",
+        "reasons": []
+      }
+    },
+    {
+      "repo": "yoshioterada/Spec-Driven-Dev",
+      "sha": "12e3e01ce5bea9973405bee6fea801092dbec1f9",
+      "commit_id": "cmt_0f39a03a715093cdb4dd5da2c3644733",
+      "event": {
+        "actual_language": "XML",
+        "commit_id": "cmt_0f39a03a715093cdb4dd5da2c3644733",
+        "ecosystem": "Maven",
+        "event_id": "evt_6c93f87fdd5c6e347a77f9576719cee3",
+        "event_ordinal": "0",
+        "event_status": "direct_manifest",
+        "event_type": "manifest_addition",
+        "new_line_number": "108",
+        "package_candidate": "org.kie:kie-api",
+        "path": "projects/07-coupon-service/pom.xml",
+        "raw_target": "org.kie:kie-api",
+        "reason_codes": "child_snapshot_structure",
+        "schema_version": "2",
+        "version_spec": "${drools.version}"
+      },
+      "context": {
+        "repo_key": "yoshioterada/spec-driven-dev",
+        "repo": "yoshioterada/Spec-Driven-Dev",
+        "sha": "12e3e01ce5bea9973405bee6fea801092dbec1f9",
+        "source_path": "projects/07-coupon-service/pom.xml",
+        "raw_target": "org.kie:kie-api",
+        "import_root": "org.kie:kie-api",
+        "ecosystem": "Maven",
+        "package_name": "org.kie:kie-api",
+        "version_spec": "8.44.0.Final",
+        "resolved_version": "",
+        "resolution_source": "manifest",
+        "dependency_group": "dependency",
+        "dependency_path": "projects/07-coupon-service/pom.xml",
+        "alignment_status": "matched_manifest",
+        "reason_codes": ""
+      },
+      "without_context": {
+        "declared_identity": "org.kie:kie-api",
+        "package_name": "org.kie:kie-api",
+        "query_kind": "name_only",
+        "query_value": "",
+        "resolution_source": "direct_manifest",
+        "reasons": [
+          "child_snapshot_structure",
+          "version_unresolved"
+        ]
+      },
+      "with_context": {
+        "declared_identity": "org.kie:kie-api",
+        "package_name": "org.kie:kie-api",
+        "query_kind": "exact",
+        "query_value": "8.44.0.Final",
+        "resolution_source": "manifest",
+        "reasons": []
+      }
+    },
+    {
+      "repo": "yoshioterada/Spec-Driven-Dev",
+      "sha": "12e3e01ce5bea9973405bee6fea801092dbec1f9",
+      "commit_id": "cmt_0f39a03a715093cdb4dd5da2c3644733",
+      "event": {
+        "actual_language": "XML",
+        "commit_id": "cmt_0f39a03a715093cdb4dd5da2c3644733",
+        "ecosystem": "Maven",
+        "event_id": "evt_96a48779ac7b66b39c921b094fc2b7ef",
+        "event_ordinal": "0",
+        "event_status": "direct_manifest",
+        "event_type": "manifest_addition",
+        "new_line_number": "103",
+        "package_candidate": "org.drools:drools-mvel",
+        "path": "projects/07-coupon-service/pom.xml",
+        "raw_target": "org.drools:drools-mvel",
+        "reason_codes": "child_snapshot_structure",
+        "schema_version": "2",
+        "version_spec": "${drools.version}"
+      },
+      "context": {
+        "repo_key": "yoshioterada/spec-driven-dev",
+        "repo": "yoshioterada/Spec-Driven-Dev",
+        "sha": "12e3e01ce5bea9973405bee6fea801092dbec1f9",
+        "source_path": "projects/07-coupon-service/pom.xml",
+        "raw_target": "org.drools:drools-mvel",
+        "import_root": "org.drools:drools-mvel",
+        "ecosystem": "Maven",
+        "package_name": "org.drools:drools-mvel",
+        "version_spec": "8.44.0.Final",
+        "resolved_version": "",
+        "resolution_source": "manifest",
+        "dependency_group": "dependency",
+        "dependency_path": "projects/07-coupon-service/pom.xml",
+        "alignment_status": "matched_manifest",
+        "reason_codes": ""
+      },
+      "without_context": {
+        "declared_identity": "org.drools:drools-mvel",
+        "package_name": "org.drools:drools-mvel",
+        "query_kind": "name_only",
+        "query_value": "",
+        "resolution_source": "direct_manifest",
+        "reasons": [
+          "child_snapshot_structure",
+          "version_unresolved"
+        ]
+      },
+      "with_context": {
+        "declared_identity": "org.drools:drools-mvel",
+        "package_name": "org.drools:drools-mvel",
+        "query_kind": "exact",
+        "query_value": "8.44.0.Final",
+        "resolution_source": "manifest",
+        "reasons": []
+      }
+    }
+  ],
+  "stdlib_auxiliary_witness_coverage": {
+    "stdlib_only_rows": 971,
+    "with_stdlib_roots_json": 971,
+    "with_import_roots_json": 971
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "commits": 30,
+  "old_episodes": 920,
+  "selection": "SHA256(20261007|commit_id) ascending; 10 unused commits per coordinate in sorted coordinate order",
+  "catalog_target_opportunities_in_all_java_unresolved": {
+    "org.junit.jupiter:junit-jupiter-api": 5042,
+    "org.projectlombok:lombok": 2273,
+    "org.slf4j:slf4j-api": 1580
+  },
+  "sources": [
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\commits.csv",
+      "sha256": "7d507bcd2d84f244d8a0da68527ed01f54f4f8cf4137b8dfe582980e18a9cd28"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\events.csv",
+      "sha256": "fcd3cf5496331df741b0a6725692e76ed4cf405bfff25e0ad890906d2a00af76"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\episodes.csv",
+      "sha256": "209b5b3d25c7909b4f0dce7d40ac410346f497402c2466818c894676319e77d9"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\episode_event_links.csv",
+      "sha256": "d623a91cd2470d4685ae8ca35a074352aad582ab352a2db5040e5ff8f6b419eb"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\context\\Java.sqlite",
+      "sha256": "734ab4804df4b1b1248e72507d5deafed4a00a774eb8fbf38400502203304dcb"
+    },
+    {
+      "path": "C:\\Users\\Ksco\\OneDrive\\\u93c2\u56e8\u3002\\KTH\\MasterThesis\\thesis-work\\experiments\\agent_dependency_study\\inputs\\observations.sqlite",
+      "sha256": "e3cf162ed2e5c5354384d5634e0224cbfac98eb4b6b2940a5929641c6f76ba54"
+    },
+    {
+      "path": "C:\\Users\\Ksco\\OneDrive\\\u93c2\u56e8\u3002\\KTH\\MasterThesis\\thesis-work\\experiments\\agent_dependency_study\\scripts\\hallucination\\java_class_catalog.json",
+      "sha256": "68c28a0db52f2c2cc12cc72972aa61678ffa9ee1e4662ac27a3d6654aef19c80"
+    }
+  ],
+  "inputs": {
+    "auxiliary.json": "f1ba0c1060549cec8055ab1c32ae6edfbff1af5f8a569b7b21be4dac84c36ec7",
+    "commit_times.json": "cf80b30b43d3bbd4f06286eb096cbbd215a186276df7c51d84740279c5a8b3ad",
+    "commits.csv": "a2631fa824267feb76981750ba69a006cca7b3368bb9f5836086d6534260b4fe",
+    "contexts.json": "4fa24323fe9b360e3b5bbc9caf499e8022ac8c73f499adf09b06e3329d8fde50",
+    "events.csv": "eecdf73b7c0b889c2804a8567ff5624e478502c1fa2bc2591bdfba0aef18568a",
+    "observations.json": "f33bcc77fd5dce6cca30c0b57e76f5d8516e673b58e4aee7d24ca7066147a6ad",
+    "old_episodes.csv": "1aca05e8d0f039610af961fdaa3e75a43a79e7e2f7a2de27fa32b289a258c632",
+    "old_links.csv": "457b9bfa1bd49585941a5337a1466d4c9bb2ac8dc7101828334e839edda92395",
+    "selection.csv": "0608e1e3c9c643f0f748b34d78cbefdba1fc227ffcdf9d993f8581720c880e10",
+    "catalog.json": "68c28a0db52f2c2cc12cc72972aa61678ffa9ee1e4662ac27a3d6654aef19c80"
+  }
+}

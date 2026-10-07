@@ -1,0 +1,3147 @@
+{
+  "matches": [
+    {
+      "target": "org.springframework.stereotype.Service",
+      "coordinate": "org.springframework:spring-context",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-context",
+            "path": "spring-context/src/main/java/org/springframework/stereotype/Service.java",
+            "blob_sha": "92a9a70601f81a8f63091cbed8320380154b85b8"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-context/src/main/java/org/springframework/stereotype/Service.java"
+      ]
+    },
+    {
+      "target": "org.springframework.http.ResponseEntity",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/http/ResponseEntity.java",
+            "blob_sha": "a6e16405e88d526d66dd51d5a992f9eb2c7fb391"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/http/ResponseEntity.java"
+      ]
+    },
+    {
+      "target": "org.springframework.stereotype.Component",
+      "coordinate": "org.springframework:spring-context",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-context",
+            "path": "spring-context/src/main/java/org/springframework/stereotype/Component.java",
+            "blob_sha": "abf53ecd6b95edb91fa2f42b00953bfd8464e3bb"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-context/src/main/java/org/springframework/stereotype/Component.java"
+      ]
+    },
+    {
+      "target": "org.springframework.beans.factory.annotation.Autowired",
+      "coordinate": "org.springframework:spring-beans",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-beans",
+            "path": "spring-beans/src/main/java/org/springframework/beans/factory/annotation/Autowired.java",
+            "blob_sha": "0ba5e9f79890cc23e9f2e9fd973f60188c50ddf5"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-beans/src/main/java/org/springframework/beans/factory/annotation/Autowired.java"
+      ]
+    },
+    {
+      "target": "org.springframework.transaction.annotation.Transactional",
+      "coordinate": "org.springframework:spring-tx",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-tx",
+            "path": "spring-tx/src/main/java/org/springframework/transaction/annotation/Transactional.java",
+            "blob_sha": "956dfe60ea1233b11fa610f260df3591aab8d841"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-tx/src/main/java/org/springframework/transaction/annotation/Transactional.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.annotation.*",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "package_members",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/BindParam.java",
+            "blob_sha": "569ce72b6aa3a599c3f63a84398f70ee1ece4a93"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/ControllerAdvice.java",
+            "blob_sha": "57a28139d7fefdba83caac899a8d81d16c2e3e8b"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/ControllerMappingReflectiveProcessor.java",
+            "blob_sha": "564206809d405dbb329f21f593d3ff9b9f41447f"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/CookieValue.java",
+            "blob_sha": "9e8f3dae56e9e8d42883ce6a7cd766744d21ed09"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/CrossOrigin.java",
+            "blob_sha": "33e4afe2384d84c977fce87685710c59dbd44221"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/DeleteMapping.java",
+            "blob_sha": "4681a719a9ba5137c935f5b73baa02f46135a7c2"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/ExceptionHandler.java",
+            "blob_sha": "8fcd4f337a900b55621c9aff73ed1e6bb11554f8"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/ExceptionHandlerReflectiveProcessor.java",
+            "blob_sha": "63be56959128f15ebc8c0da779b5134f600dfb3a"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/GetMapping.java",
+            "blob_sha": "22092f77fc510424c938201f5043f8f7df7e4dcb"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/InitBinder.java",
+            "blob_sha": "c262653d87affb3994c70068db855389e6dfcdc8"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/Mapping.java",
+            "blob_sha": "beda6d7bb63d6990c43d0bcf00ef415c61c8df3d"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/MatrixVariable.java",
+            "blob_sha": "6f830c1eb1312284fecbe0eddc63b2c4280bf936"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/ModelAttribute.java",
+            "blob_sha": "4019c20dccebbcb4ca7f4b9866a2c6821ceb5992"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/PatchMapping.java",
+            "blob_sha": "c11f39e4b0a773e62aa9ec82bd4efc8c9bc6ce84"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/PathVariable.java",
+            "blob_sha": "1856378ce91125fa709ece4bd22b41ee5b2a848f"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/PostMapping.java",
+            "blob_sha": "18a0b47db553687fb13f2051978c5d661affdd42"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/PutMapping.java",
+            "blob_sha": "8e8cb005d0a4c691fab565ef10d1dbac5e51a601"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RequestAttribute.java",
+            "blob_sha": "8a760d84c0c5b10105c80b3c597011f251027350"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RequestBody.java",
+            "blob_sha": "5147a4e8077a7a22c11423a83d366d100d634085"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RequestHeader.java",
+            "blob_sha": "b02e635693c145e2a3c4dff6e0fb7a31c00bd202"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RequestMapping.java",
+            "blob_sha": "d01491b34697e1c99357378a56032f301131ddc7"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RequestMethod.java",
+            "blob_sha": "c7564093cdd90104a56f2e5b9578e08527617151"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RequestParam.java",
+            "blob_sha": "28e706a3c4a0af29d5ead2fb74d9e8caed238cc6"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RequestPart.java",
+            "blob_sha": "518354623a18d2e21cb90f0502dd30ecd2a86930"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/ResponseBody.java",
+            "blob_sha": "69f9c82f3988d8cb655a43d2b385b2a8f29db2eb"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/ResponseStatus.java",
+            "blob_sha": "a6febcac1277cb43e8b962182588390c6757f96d"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RestController.java",
+            "blob_sha": "68abaf310f5a9eb2b59013080fdb4a64945f9bb0"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RestControllerAdvice.java",
+            "blob_sha": "c819ee0a4daf44251c1a5cd50c1985cabc5f479d"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/SessionAttribute.java",
+            "blob_sha": "f2132a7b7ccef20502d1d33ab52a567d2a51f219"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/SessionAttributes.java",
+            "blob_sha": "6a422e37c295e23be00bc0ed790b98f8bed7e4db"
+          },
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/ValueConstants.java",
+            "blob_sha": "0993fa584c2c680f9545f0eb740685cdffde36a8"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/BindParam.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/ControllerAdvice.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/ControllerMappingReflectiveProcessor.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/CookieValue.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/CrossOrigin.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/DeleteMapping.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/ExceptionHandler.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/ExceptionHandlerReflectiveProcessor.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/GetMapping.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/InitBinder.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/Mapping.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/MatrixVariable.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/ModelAttribute.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/PatchMapping.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/PathVariable.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/PostMapping.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/PutMapping.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestAttribute.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestBody.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestHeader.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestMapping.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestMethod.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestParam.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestPart.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/ResponseBody.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/ResponseStatus.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RestController.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RestControllerAdvice.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/SessionAttribute.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/SessionAttributes.java",
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/ValueConstants.java"
+      ]
+    },
+    {
+      "target": "org.springframework.http.HttpStatus",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/http/HttpStatus.java",
+            "blob_sha": "94284d101d6939241879e3895bdb559eb3d095d8"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/http/HttpStatus.java"
+      ]
+    },
+    {
+      "target": "org.springframework.context.annotation.Configuration",
+      "coordinate": "org.springframework:spring-context",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-context",
+            "path": "spring-context/src/main/java/org/springframework/context/annotation/Configuration.java",
+            "blob_sha": "96314a73023019f763e3157f50a353b920fe3485"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-context/src/main/java/org/springframework/context/annotation/Configuration.java"
+      ]
+    },
+    {
+      "target": "org.springframework.beans.factory.annotation.Value",
+      "coordinate": "org.springframework:spring-beans",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-beans",
+            "path": "spring-beans/src/main/java/org/springframework/beans/factory/annotation/Value.java",
+            "blob_sha": "bfa27305a6a1dfd7484179fe1e809b024dbfb0ce"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-beans/src/main/java/org/springframework/beans/factory/annotation/Value.java"
+      ]
+    },
+    {
+      "target": "org.springframework.context.annotation.Bean",
+      "coordinate": "org.springframework:spring-context",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-context",
+            "path": "spring-context/src/main/java/org/springframework/context/annotation/Bean.java",
+            "blob_sha": "7f068fef659ed11a6c9223cfef47ea4bc25034e5"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-context/src/main/java/org/springframework/context/annotation/Bean.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.annotation.GetMapping",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/GetMapping.java",
+            "blob_sha": "22092f77fc510424c938201f5043f8f7df7e4dcb"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/GetMapping.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.annotation.RestController",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RestController.java",
+            "blob_sha": "68abaf310f5a9eb2b59013080fdb4a64945f9bb0"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RestController.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.annotation.RequestMapping",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RequestMapping.java",
+            "blob_sha": "d01491b34697e1c99357378a56032f301131ddc7"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestMapping.java"
+      ]
+    },
+    {
+      "target": "org.springframework.http.MediaType",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/http/MediaType.java",
+            "blob_sha": "746adf65e168b135c0b636118592b4ecf3346c6b"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/http/MediaType.java"
+      ]
+    },
+    {
+      "target": "org.springframework.stereotype.Repository",
+      "coordinate": "org.springframework:spring-context",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-context",
+            "path": "spring-context/src/main/java/org/springframework/stereotype/Repository.java",
+            "blob_sha": "5a964bbd063f70b7048b3015a4b073b1a132e43d"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-context/src/main/java/org/springframework/stereotype/Repository.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.annotation.PostMapping",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/PostMapping.java",
+            "blob_sha": "18a0b47db553687fb13f2051978c5d661affdd42"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/PostMapping.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.annotation.RequestBody",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RequestBody.java",
+            "blob_sha": "5147a4e8077a7a22c11423a83d366d100d634085"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestBody.java"
+      ]
+    },
+    {
+      "target": "org.springframework.test.web.servlet.MockMvc",
+      "coordinate": "org.springframework:spring-test",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-test",
+            "path": "spring-test/src/main/java/org/springframework/test/web/servlet/MockMvc.java",
+            "blob_sha": "7acf46ba152971ca01fd621715d3e50a90b568d2"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-test/src/main/java/org/springframework/test/web/servlet/MockMvc.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.annotation.PathVariable",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/PathVariable.java",
+            "blob_sha": "1856378ce91125fa709ece4bd22b41ee5b2a848f"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/PathVariable.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.annotation.ExceptionHandler",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/ExceptionHandler.java",
+            "blob_sha": "8fcd4f337a900b55621c9aff73ed1e6bb11554f8"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/ExceptionHandler.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.annotation.RequestParam",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RequestParam.java",
+            "blob_sha": "28e706a3c4a0af29d5ead2fb74d9e8caed238cc6"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestParam.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.annotation.RestControllerAdvice",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/annotation/RestControllerAdvice.java",
+            "blob_sha": "c819ee0a4daf44251c1a5cd50c1985cabc5f479d"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/annotation/RestControllerAdvice.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.filter.OncePerRequestFilter",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/filter/OncePerRequestFilter.java",
+            "blob_sha": "c7b673293903c49bc0449f42c592c82b3faea3b5"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/filter/OncePerRequestFilter.java"
+      ]
+    },
+    {
+      "target": "org.springframework.web.bind.MethodArgumentNotValidException",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/web/bind/MethodArgumentNotValidException.java",
+            "blob_sha": "442c9ac30d1b243267d82e499c63d4213c0f50de"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/web/bind/MethodArgumentNotValidException.java"
+      ]
+    },
+    {
+      "target": "org.springframework.http.HttpHeaders",
+      "coordinate": "org.springframework:spring-web",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-web",
+            "path": "spring-web/src/main/java/org/springframework/http/HttpHeaders.java",
+            "blob_sha": "5d895e4a368d7a25853d0fa272f5bcd6538b745a"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-web/src/main/java/org/springframework/http/HttpHeaders.java"
+      ]
+    },
+    {
+      "target": "org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get",
+      "coordinate": "org.springframework:spring-test",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "static_member_owner",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-test",
+            "path": "spring-test/src/main/java/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.java",
+            "blob_sha": "00c0c54ceb2168df5ff783bcad4fd1d27533eb2a"
+          }
+        ],
+        "member_source_url": "https://raw.githubusercontent.com/spring-projects/spring-framework/v6.2.5/spring-test/src/main/java/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.java",
+        "member_source_sha256": "439bedeefde2e6a29b81498f1a196d6508d2d8340ab526c238bb6a57537e3e87"
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-test/src/main/java/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.java"
+      ]
+    },
+    {
+      "target": "org.springframework.test.web.servlet.result.MockMvcResultMatchers.status",
+      "coordinate": "org.springframework:spring-test",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "static_member_owner",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-test",
+            "path": "spring-test/src/main/java/org/springframework/test/web/servlet/result/MockMvcResultMatchers.java",
+            "blob_sha": "a3392535bbbf500083dfe698c1bad7a5c7e8c39e"
+          }
+        ],
+        "member_source_url": "https://raw.githubusercontent.com/spring-projects/spring-framework/v6.2.5/spring-test/src/main/java/org/springframework/test/web/servlet/result/MockMvcResultMatchers.java",
+        "member_source_sha256": "488d474648e3b04f22a50d093dc3410398aeac345aa8d5548179b821e69d0e51"
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-test/src/main/java/org/springframework/test/web/servlet/result/MockMvcResultMatchers.java"
+      ]
+    },
+    {
+      "target": "org.springframework.util.StringUtils",
+      "coordinate": "org.springframework:spring-core",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-core",
+            "path": "spring-core/src/main/java/org/springframework/util/StringUtils.java",
+            "blob_sha": "f785767a78461255827935c80fde7bae324e088f"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-core/src/main/java/org/springframework/util/StringUtils.java"
+      ]
+    },
+    {
+      "target": "org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post",
+      "coordinate": "org.springframework:spring-test",
+      "proof": {
+        "repo": "spring-projects/spring-framework",
+        "requested_ref": "v6.2.5",
+        "tree_sha": "0f19fa5d8eb3214ca391732065ee1c14d45c1744",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-framework/git/trees/v6.2.5?recursive=1",
+        "tree_sha256": "e6f4db05930c9bc37d23b95dbc4ead550d634103795e75663b6e6dfc2616220a",
+        "match_kind": "static_member_owner",
+        "source_files": [
+          {
+            "coordinate": "org.springframework:spring-test",
+            "path": "spring-test/src/main/java/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.java",
+            "blob_sha": "00c0c54ceb2168df5ff783bcad4fd1d27533eb2a"
+          }
+        ],
+        "member_source_url": "https://raw.githubusercontent.com/spring-projects/spring-framework/v6.2.5/spring-test/src/main/java/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.java",
+        "member_source_sha256": "439bedeefde2e6a29b81498f1a196d6508d2d8340ab526c238bb6a57537e3e87"
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-test/src/main/java/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.java"
+      ]
+    },
+    {
+      "target": "org.springframework.boot.SpringApplication",
+      "coordinate": "org.springframework.boot:spring-boot",
+      "proof": {
+        "repo": "spring-projects/spring-boot",
+        "requested_ref": "v3.4.4",
+        "tree_sha": "d4eb5561217be6bd490634fe5254fc4824d8dd87",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-boot/git/trees/v3.4.4?recursive=1",
+        "tree_sha256": "e58e8fb3068547e4eb58fb8e3e7f432bc336b9b84afdfd94f49b68023947bf28",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.boot:spring-boot",
+            "path": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/SpringApplication.java",
+            "blob_sha": "e1d311ff765e34379595ad5cec931f2dc43b925e"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-boot/blob/v3.4.4/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/SpringApplication.java"
+      ]
+    },
+    {
+      "target": "org.springframework.boot.autoconfigure.SpringBootApplication",
+      "coordinate": "org.springframework.boot:spring-boot-autoconfigure",
+      "proof": {
+        "repo": "spring-projects/spring-boot",
+        "requested_ref": "v3.4.4",
+        "tree_sha": "d4eb5561217be6bd490634fe5254fc4824d8dd87",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-boot/git/trees/v3.4.4?recursive=1",
+        "tree_sha256": "e58e8fb3068547e4eb58fb8e3e7f432bc336b9b84afdfd94f49b68023947bf28",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.boot:spring-boot-autoconfigure",
+            "path": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/SpringBootApplication.java",
+            "blob_sha": "99d9ce03646e1bfbfac65c26f86b252e46a58206"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-boot/blob/v3.4.4/spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/SpringBootApplication.java"
+      ]
+    },
+    {
+      "target": "org.springframework.boot.test.context.SpringBootTest",
+      "coordinate": "org.springframework.boot:spring-boot-test",
+      "proof": {
+        "repo": "spring-projects/spring-boot",
+        "requested_ref": "v3.4.4",
+        "tree_sha": "d4eb5561217be6bd490634fe5254fc4824d8dd87",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-boot/git/trees/v3.4.4?recursive=1",
+        "tree_sha256": "e58e8fb3068547e4eb58fb8e3e7f432bc336b9b84afdfd94f49b68023947bf28",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.boot:spring-boot-test",
+            "path": "spring-boot-project/spring-boot-test/src/main/java/org/springframework/boot/test/context/SpringBootTest.java",
+            "blob_sha": "41cb55b1557fb2d575d45629387ceebc54d80890"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-boot/blob/v3.4.4/spring-boot-project/spring-boot-test/src/main/java/org/springframework/boot/test/context/SpringBootTest.java"
+      ]
+    },
+    {
+      "target": "org.springframework.boot.context.properties.ConfigurationProperties",
+      "coordinate": "org.springframework.boot:spring-boot",
+      "proof": {
+        "repo": "spring-projects/spring-boot",
+        "requested_ref": "v3.4.4",
+        "tree_sha": "d4eb5561217be6bd490634fe5254fc4824d8dd87",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-boot/git/trees/v3.4.4?recursive=1",
+        "tree_sha256": "e58e8fb3068547e4eb58fb8e3e7f432bc336b9b84afdfd94f49b68023947bf28",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.boot:spring-boot",
+            "path": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/ConfigurationProperties.java",
+            "blob_sha": "7c8c41e05ad33f51171197c0a387255081c8990c"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-boot/blob/v3.4.4/spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/ConfigurationProperties.java"
+      ]
+    },
+    {
+      "target": "org.springframework.data.jpa.repository.JpaRepository",
+      "coordinate": "org.springframework.data:spring-data-jpa",
+      "proof": {
+        "repo": "spring-projects/spring-data-jpa",
+        "requested_ref": "3.4.4",
+        "tree_sha": "3ea732c697cf8c936bb19a26c3cdffd577384367",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-data-jpa/git/trees/3.4.4?recursive=1",
+        "tree_sha256": "e864789c0a8b69ad442c85082d8ee438c2875e62a2621c29c6eb8368c4227051",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.data:spring-data-jpa",
+            "path": "spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/JpaRepository.java",
+            "blob_sha": "a3541460f98b95571e601b95f0a29ed97814732f"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-data-jpa/blob/3.4.4/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/JpaRepository.java"
+      ]
+    },
+    {
+      "target": "org.springframework.data.jpa.repository.Query",
+      "coordinate": "org.springframework.data:spring-data-jpa",
+      "proof": {
+        "repo": "spring-projects/spring-data-jpa",
+        "requested_ref": "3.4.4",
+        "tree_sha": "3ea732c697cf8c936bb19a26c3cdffd577384367",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-data-jpa/git/trees/3.4.4?recursive=1",
+        "tree_sha256": "e864789c0a8b69ad442c85082d8ee438c2875e62a2621c29c6eb8368c4227051",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.data:spring-data-jpa",
+            "path": "spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/Query.java",
+            "blob_sha": "12ff41bb7119b1163a03d5127a81694c9a81333e"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-data-jpa/blob/3.4.4/spring-data-jpa/src/main/java/org/springframework/data/jpa/repository/Query.java"
+      ]
+    },
+    {
+      "target": "org.springframework.data.repository.query.Param",
+      "coordinate": "org.springframework.data:spring-data-commons",
+      "proof": {
+        "repo": "spring-projects/spring-data-commons",
+        "requested_ref": "3.4.4",
+        "tree_sha": "aba2047b9e173f3576e9bd30504c65a2691663c9",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-data-commons/git/trees/3.4.4?recursive=1",
+        "tree_sha256": "ad9bd2ed11e4ff903f4793032f44db8ce2a173106c41de1c9c70a2dc487803f4",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.data:spring-data-commons",
+            "path": "src/main/java/org/springframework/data/repository/query/Param.java",
+            "blob_sha": "47ca2ed5b9cfed16ceeaee79dbf777f833c1a430"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-data-commons/blob/3.4.4/src/main/java/org/springframework/data/repository/query/Param.java"
+      ]
+    },
+    {
+      "target": "org.springframework.data.domain.Pageable",
+      "coordinate": "org.springframework.data:spring-data-commons",
+      "proof": {
+        "repo": "spring-projects/spring-data-commons",
+        "requested_ref": "3.4.4",
+        "tree_sha": "aba2047b9e173f3576e9bd30504c65a2691663c9",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-data-commons/git/trees/3.4.4?recursive=1",
+        "tree_sha256": "ad9bd2ed11e4ff903f4793032f44db8ce2a173106c41de1c9c70a2dc487803f4",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.data:spring-data-commons",
+            "path": "src/main/java/org/springframework/data/domain/Pageable.java",
+            "blob_sha": "66f4b6d32c3e4c758680f0a85de08ea730d494ae"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-data-commons/blob/3.4.4/src/main/java/org/springframework/data/domain/Pageable.java"
+      ]
+    },
+    {
+      "target": "org.springframework.data.domain.Page",
+      "coordinate": "org.springframework.data:spring-data-commons",
+      "proof": {
+        "repo": "spring-projects/spring-data-commons",
+        "requested_ref": "3.4.4",
+        "tree_sha": "aba2047b9e173f3576e9bd30504c65a2691663c9",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-data-commons/git/trees/3.4.4?recursive=1",
+        "tree_sha256": "ad9bd2ed11e4ff903f4793032f44db8ce2a173106c41de1c9c70a2dc487803f4",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.data:spring-data-commons",
+            "path": "src/main/java/org/springframework/data/domain/Page.java",
+            "blob_sha": "0d632cece1d7bb5c347d6d4cab396404c1567ea2"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-data-commons/blob/3.4.4/src/main/java/org/springframework/data/domain/Page.java"
+      ]
+    },
+    {
+      "target": "org.springframework.data.domain.PageRequest",
+      "coordinate": "org.springframework.data:spring-data-commons",
+      "proof": {
+        "repo": "spring-projects/spring-data-commons",
+        "requested_ref": "3.4.4",
+        "tree_sha": "aba2047b9e173f3576e9bd30504c65a2691663c9",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-data-commons/git/trees/3.4.4?recursive=1",
+        "tree_sha256": "ad9bd2ed11e4ff903f4793032f44db8ce2a173106c41de1c9c70a2dc487803f4",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.data:spring-data-commons",
+            "path": "src/main/java/org/springframework/data/domain/PageRequest.java",
+            "blob_sha": "4502f8305594dc501d246340950e753cc5ee0890"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-data-commons/blob/3.4.4/src/main/java/org/springframework/data/domain/PageRequest.java"
+      ]
+    },
+    {
+      "target": "org.springframework.security.crypto.password.PasswordEncoder",
+      "coordinate": "org.springframework.security:spring-security-crypto",
+      "proof": {
+        "repo": "spring-projects/spring-security",
+        "requested_ref": "6.4.4",
+        "tree_sha": "3d9cd31122161aed337655e68da5c395f8b6c3f6",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-security/git/trees/6.4.4?recursive=1",
+        "tree_sha256": "6a1109f8e939cdc3d1b9755bcaea79fb78afc1b3eb931a07a92a1932a15014a4",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.security:spring-security-crypto",
+            "path": "crypto/src/main/java/org/springframework/security/crypto/password/PasswordEncoder.java",
+            "blob_sha": "3d3f8ee425da8942f98ebecbe41bb4b151af1070"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-security/blob/6.4.4/crypto/src/main/java/org/springframework/security/crypto/password/PasswordEncoder.java"
+      ]
+    },
+    {
+      "target": "org.springframework.security.core.context.SecurityContextHolder",
+      "coordinate": "org.springframework.security:spring-security-core",
+      "proof": {
+        "repo": "spring-projects/spring-security",
+        "requested_ref": "6.4.4",
+        "tree_sha": "3d9cd31122161aed337655e68da5c395f8b6c3f6",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-security/git/trees/6.4.4?recursive=1",
+        "tree_sha256": "6a1109f8e939cdc3d1b9755bcaea79fb78afc1b3eb931a07a92a1932a15014a4",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.security:spring-security-core",
+            "path": "core/src/main/java/org/springframework/security/core/context/SecurityContextHolder.java",
+            "blob_sha": "de593d1fc06206eeeb37d3705899b3506acdbf39"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-security/blob/6.4.4/core/src/main/java/org/springframework/security/core/context/SecurityContextHolder.java"
+      ]
+    },
+    {
+      "target": "org.springframework.security.core.Authentication",
+      "coordinate": "org.springframework.security:spring-security-core",
+      "proof": {
+        "repo": "spring-projects/spring-security",
+        "requested_ref": "6.4.4",
+        "tree_sha": "3d9cd31122161aed337655e68da5c395f8b6c3f6",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-security/git/trees/6.4.4?recursive=1",
+        "tree_sha256": "6a1109f8e939cdc3d1b9755bcaea79fb78afc1b3eb931a07a92a1932a15014a4",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.security:spring-security-core",
+            "path": "core/src/main/java/org/springframework/security/core/Authentication.java",
+            "blob_sha": "d3f38a5c11458fe85fc8de4cedd0e1a3b11a9f6c"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-security/blob/6.4.4/core/src/main/java/org/springframework/security/core/Authentication.java"
+      ]
+    },
+    {
+      "target": "org.springframework.security.config.annotation.web.builders.HttpSecurity",
+      "coordinate": "org.springframework.security:spring-security-config",
+      "proof": {
+        "repo": "spring-projects/spring-security",
+        "requested_ref": "6.4.4",
+        "tree_sha": "3d9cd31122161aed337655e68da5c395f8b6c3f6",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-security/git/trees/6.4.4?recursive=1",
+        "tree_sha256": "6a1109f8e939cdc3d1b9755bcaea79fb78afc1b3eb931a07a92a1932a15014a4",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.security:spring-security-config",
+            "path": "config/src/main/java/org/springframework/security/config/annotation/web/builders/HttpSecurity.java",
+            "blob_sha": "f96c943d557e5d860bfc88d141570882f8ee01cc"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-security/blob/6.4.4/config/src/main/java/org/springframework/security/config/annotation/web/builders/HttpSecurity.java"
+      ]
+    },
+    {
+      "target": "org.springframework.security.web.SecurityFilterChain",
+      "coordinate": "org.springframework.security:spring-security-web",
+      "proof": {
+        "repo": "spring-projects/spring-security",
+        "requested_ref": "6.4.4",
+        "tree_sha": "3d9cd31122161aed337655e68da5c395f8b6c3f6",
+        "tree_url": "https://api.github.com/repos/spring-projects/spring-security/git/trees/6.4.4?recursive=1",
+        "tree_sha256": "6a1109f8e939cdc3d1b9755bcaea79fb78afc1b3eb931a07a92a1932a15014a4",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.springframework.security:spring-security-web",
+            "path": "web/src/main/java/org/springframework/security/web/SecurityFilterChain.java",
+            "blob_sha": "fb87b7bae8e4cad5bc8a86e4ea54502dcc2aa916"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/spring-projects/spring-security/blob/6.4.4/web/src/main/java/org/springframework/security/web/SecurityFilterChain.java"
+      ]
+    },
+    {
+      "target": "com.fasterxml.jackson.databind.ObjectMapper",
+      "coordinate": "com.fasterxml.jackson.core:jackson-databind",
+      "proof": {
+        "repo": "FasterXML/jackson-databind",
+        "requested_ref": "jackson-databind-2.18.3",
+        "tree_sha": "4105844f3665612637f5cf9410df5b83d375e620",
+        "tree_url": "https://api.github.com/repos/FasterXML/jackson-databind/git/trees/jackson-databind-2.18.3?recursive=1",
+        "tree_sha256": "76c92101a1b258c629c8c7e22ec63d5585bebbdd44c812c4de0c9070be8873d0",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "com.fasterxml.jackson.core:jackson-databind",
+            "path": "src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java",
+            "blob_sha": "431e68d013cafcb8107b03dc0aaad5a05c1e1453"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/FasterXML/jackson-databind/blob/jackson-databind-2.18.3/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java"
+      ]
+    },
+    {
+      "target": "com.fasterxml.jackson.databind.JsonNode",
+      "coordinate": "com.fasterxml.jackson.core:jackson-databind",
+      "proof": {
+        "repo": "FasterXML/jackson-databind",
+        "requested_ref": "jackson-databind-2.18.3",
+        "tree_sha": "4105844f3665612637f5cf9410df5b83d375e620",
+        "tree_url": "https://api.github.com/repos/FasterXML/jackson-databind/git/trees/jackson-databind-2.18.3?recursive=1",
+        "tree_sha256": "76c92101a1b258c629c8c7e22ec63d5585bebbdd44c812c4de0c9070be8873d0",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "com.fasterxml.jackson.core:jackson-databind",
+            "path": "src/main/java/com/fasterxml/jackson/databind/JsonNode.java",
+            "blob_sha": "19fe1ef6dc658018d45df2f7d4c49b46d93e6c6a"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/FasterXML/jackson-databind/blob/jackson-databind-2.18.3/src/main/java/com/fasterxml/jackson/databind/JsonNode.java"
+      ]
+    },
+    {
+      "target": "com.fasterxml.jackson.annotation.JsonProperty",
+      "coordinate": "com.fasterxml.jackson.core:jackson-annotations",
+      "proof": {
+        "repo": "FasterXML/jackson-annotations",
+        "requested_ref": "jackson-annotations-2.18.3",
+        "tree_sha": "518296ec5740c89ef8c6f1e9ca96ef69bb8b2b55",
+        "tree_url": "https://api.github.com/repos/FasterXML/jackson-annotations/git/trees/jackson-annotations-2.18.3?recursive=1",
+        "tree_sha256": "01a231c8c880d79877248e5f877ff3637eacafffa815bccf968bfda6fc93f94e",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "com.fasterxml.jackson.core:jackson-annotations",
+            "path": "src/main/java/com/fasterxml/jackson/annotation/JsonProperty.java",
+            "blob_sha": "6ff9823f3eecce1f64d93f7c4da3a0acecb63e5e"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/FasterXML/jackson-annotations/blob/jackson-annotations-2.18.3/src/main/java/com/fasterxml/jackson/annotation/JsonProperty.java"
+      ]
+    },
+    {
+      "target": "org.mockito.Mock",
+      "coordinate": "org.mockito:mockito-core",
+      "proof": {
+        "repo": "mockito/mockito",
+        "requested_ref": "v5.15.2",
+        "tree_sha": "e04dbbe3c83badb0d7d6d9cd700f456e227a9bb3",
+        "tree_url": "https://api.github.com/repos/mockito/mockito/git/trees/v5.15.2?recursive=1",
+        "tree_sha256": "6e8617660867071306e9bf6e85e9728cf4d6abb7f88f3170ac33380f2a9b7c0f",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.mockito:mockito-core",
+            "path": "mockito-core/src/main/java/org/mockito/Mock.java",
+            "blob_sha": "4d94edfe2642d3022506596da4b62848e48ad6d0"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/mockito/mockito/blob/v5.15.2/mockito-core/src/main/java/org/mockito/Mock.java"
+      ]
+    },
+    {
+      "target": "org.mockito.junit.jupiter.MockitoExtension",
+      "coordinate": "org.mockito:mockito-junit-jupiter",
+      "proof": {
+        "repo": "mockito/mockito",
+        "requested_ref": "v5.15.2",
+        "tree_sha": "e04dbbe3c83badb0d7d6d9cd700f456e227a9bb3",
+        "tree_url": "https://api.github.com/repos/mockito/mockito/git/trees/v5.15.2?recursive=1",
+        "tree_sha256": "6e8617660867071306e9bf6e85e9728cf4d6abb7f88f3170ac33380f2a9b7c0f",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.mockito:mockito-junit-jupiter",
+            "path": "mockito-extensions/mockito-junit-jupiter/src/main/java/org/mockito/junit/jupiter/MockitoExtension.java",
+            "blob_sha": "e2dc009cb8ace5b69a7df6e4e05058932384b7ce"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/mockito/mockito/blob/v5.15.2/mockito-extensions/mockito-junit-jupiter/src/main/java/org/mockito/junit/jupiter/MockitoExtension.java"
+      ]
+    },
+    {
+      "target": "org.mockito.ArgumentMatchers.any",
+      "coordinate": "org.mockito:mockito-core",
+      "proof": {
+        "repo": "mockito/mockito",
+        "requested_ref": "v5.15.2",
+        "tree_sha": "e04dbbe3c83badb0d7d6d9cd700f456e227a9bb3",
+        "tree_url": "https://api.github.com/repos/mockito/mockito/git/trees/v5.15.2?recursive=1",
+        "tree_sha256": "6e8617660867071306e9bf6e85e9728cf4d6abb7f88f3170ac33380f2a9b7c0f",
+        "match_kind": "static_member_owner",
+        "source_files": [
+          {
+            "coordinate": "org.mockito:mockito-core",
+            "path": "mockito-core/src/main/java/org/mockito/ArgumentMatchers.java",
+            "blob_sha": "05580a7c29b53404464f6d34d2dea35829826764"
+          }
+        ],
+        "member_source_url": "https://raw.githubusercontent.com/mockito/mockito/v5.15.2/mockito-core/src/main/java/org/mockito/ArgumentMatchers.java",
+        "member_source_sha256": "5d8ce41aed72fd085739809ead6b07d7a0776abaa47cf3df3f21291632f22378"
+      },
+      "sources": [
+        "https://github.com/mockito/mockito/blob/v5.15.2/mockito-core/src/main/java/org/mockito/ArgumentMatchers.java"
+      ]
+    },
+    {
+      "target": "org.mockito.Mockito.when",
+      "coordinate": "org.mockito:mockito-core",
+      "proof": {
+        "repo": "mockito/mockito",
+        "requested_ref": "v5.15.2",
+        "tree_sha": "e04dbbe3c83badb0d7d6d9cd700f456e227a9bb3",
+        "tree_url": "https://api.github.com/repos/mockito/mockito/git/trees/v5.15.2?recursive=1",
+        "tree_sha256": "6e8617660867071306e9bf6e85e9728cf4d6abb7f88f3170ac33380f2a9b7c0f",
+        "match_kind": "static_member_owner",
+        "source_files": [
+          {
+            "coordinate": "org.mockito:mockito-core",
+            "path": "mockito-core/src/main/java/org/mockito/Mockito.java",
+            "blob_sha": "ba71195cd940a278ba3c1141346960400181eb76"
+          }
+        ],
+        "member_source_url": "https://raw.githubusercontent.com/mockito/mockito/v5.15.2/mockito-core/src/main/java/org/mockito/Mockito.java",
+        "member_source_sha256": "c30e29e12497befb7cd21120d2fd222f1620cf7a12538ae6959c2cad9bf0045f"
+      },
+      "sources": [
+        "https://github.com/mockito/mockito/blob/v5.15.2/mockito-core/src/main/java/org/mockito/Mockito.java"
+      ]
+    },
+    {
+      "target": "org.mockito.Mockito.*",
+      "coordinate": "org.mockito:mockito-core",
+      "proof": {
+        "repo": "mockito/mockito",
+        "requested_ref": "v5.15.2",
+        "tree_sha": "e04dbbe3c83badb0d7d6d9cd700f456e227a9bb3",
+        "tree_url": "https://api.github.com/repos/mockito/mockito/git/trees/v5.15.2?recursive=1",
+        "tree_sha256": "6e8617660867071306e9bf6e85e9728cf4d6abb7f88f3170ac33380f2a9b7c0f",
+        "match_kind": "class_members",
+        "source_files": [
+          {
+            "coordinate": "org.mockito:mockito-core",
+            "path": "mockito-core/src/main/java/org/mockito/Mockito.java",
+            "blob_sha": "ba71195cd940a278ba3c1141346960400181eb76"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/mockito/mockito/blob/v5.15.2/mockito-core/src/main/java/org/mockito/Mockito.java"
+      ]
+    },
+    {
+      "target": "org.mockito.InjectMocks",
+      "coordinate": "org.mockito:mockito-core",
+      "proof": {
+        "repo": "mockito/mockito",
+        "requested_ref": "v5.15.2",
+        "tree_sha": "e04dbbe3c83badb0d7d6d9cd700f456e227a9bb3",
+        "tree_url": "https://api.github.com/repos/mockito/mockito/git/trees/v5.15.2?recursive=1",
+        "tree_sha256": "6e8617660867071306e9bf6e85e9728cf4d6abb7f88f3170ac33380f2a9b7c0f",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.mockito:mockito-core",
+            "path": "mockito-core/src/main/java/org/mockito/InjectMocks.java",
+            "blob_sha": "c804126641149e01d49b3ae4208f40238096e995"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/mockito/mockito/blob/v5.15.2/mockito-core/src/main/java/org/mockito/InjectMocks.java"
+      ]
+    },
+    {
+      "target": "org.mockito.Mockito.verify",
+      "coordinate": "org.mockito:mockito-core",
+      "proof": {
+        "repo": "mockito/mockito",
+        "requested_ref": "v5.15.2",
+        "tree_sha": "e04dbbe3c83badb0d7d6d9cd700f456e227a9bb3",
+        "tree_url": "https://api.github.com/repos/mockito/mockito/git/trees/v5.15.2?recursive=1",
+        "tree_sha256": "6e8617660867071306e9bf6e85e9728cf4d6abb7f88f3170ac33380f2a9b7c0f",
+        "match_kind": "static_member_owner",
+        "source_files": [
+          {
+            "coordinate": "org.mockito:mockito-core",
+            "path": "mockito-core/src/main/java/org/mockito/Mockito.java",
+            "blob_sha": "ba71195cd940a278ba3c1141346960400181eb76"
+          }
+        ],
+        "member_source_url": "https://raw.githubusercontent.com/mockito/mockito/v5.15.2/mockito-core/src/main/java/org/mockito/Mockito.java",
+        "member_source_sha256": "c30e29e12497befb7cd21120d2fd222f1620cf7a12538ae6959c2cad9bf0045f"
+      },
+      "sources": [
+        "https://github.com/mockito/mockito/blob/v5.15.2/mockito-core/src/main/java/org/mockito/Mockito.java"
+      ]
+    },
+    {
+      "target": "org.mockito.ArgumentMatchers.eq",
+      "coordinate": "org.mockito:mockito-core",
+      "proof": {
+        "repo": "mockito/mockito",
+        "requested_ref": "v5.15.2",
+        "tree_sha": "e04dbbe3c83badb0d7d6d9cd700f456e227a9bb3",
+        "tree_url": "https://api.github.com/repos/mockito/mockito/git/trees/v5.15.2?recursive=1",
+        "tree_sha256": "6e8617660867071306e9bf6e85e9728cf4d6abb7f88f3170ac33380f2a9b7c0f",
+        "match_kind": "static_member_owner",
+        "source_files": [
+          {
+            "coordinate": "org.mockito:mockito-core",
+            "path": "mockito-core/src/main/java/org/mockito/ArgumentMatchers.java",
+            "blob_sha": "05580a7c29b53404464f6d34d2dea35829826764"
+          }
+        ],
+        "member_source_url": "https://raw.githubusercontent.com/mockito/mockito/v5.15.2/mockito-core/src/main/java/org/mockito/ArgumentMatchers.java",
+        "member_source_sha256": "5d8ce41aed72fd085739809ead6b07d7a0776abaa47cf3df3f21291632f22378"
+      },
+      "sources": [
+        "https://github.com/mockito/mockito/blob/v5.15.2/mockito-core/src/main/java/org/mockito/ArgumentMatchers.java"
+      ]
+    },
+    {
+      "target": "org.mockito.ArgumentCaptor",
+      "coordinate": "org.mockito:mockito-core",
+      "proof": {
+        "repo": "mockito/mockito",
+        "requested_ref": "v5.15.2",
+        "tree_sha": "e04dbbe3c83badb0d7d6d9cd700f456e227a9bb3",
+        "tree_url": "https://api.github.com/repos/mockito/mockito/git/trees/v5.15.2?recursive=1",
+        "tree_sha256": "6e8617660867071306e9bf6e85e9728cf4d6abb7f88f3170ac33380f2a9b7c0f",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.mockito:mockito-core",
+            "path": "mockito-core/src/main/java/org/mockito/ArgumentCaptor.java",
+            "blob_sha": "863c9a29b40ae6d7a08590f1c1c279f0c47f7e5e"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/mockito/mockito/blob/v5.15.2/mockito-core/src/main/java/org/mockito/ArgumentCaptor.java"
+      ]
+    },
+    {
+      "target": "org.assertj.core.api.Assertions.assertThat",
+      "coordinate": "org.assertj:assertj-core",
+      "proof": {
+        "repo": "assertj/assertj",
+        "requested_ref": "assertj-build-3.27.3",
+        "tree_sha": "c928dd31f3270471d60b8463a90bf831a26279b8",
+        "tree_url": "https://api.github.com/repos/assertj/assertj/git/trees/assertj-build-3.27.3?recursive=1",
+        "tree_sha256": "62478c0b29d008bfa5c8f00723c0ec22e978b21afd3737d605184e175de91c8d",
+        "match_kind": "static_member_owner",
+        "source_files": [
+          {
+            "coordinate": "org.assertj:assertj-core",
+            "path": "assertj-core/src/main/java/org/assertj/core/api/Assertions.java",
+            "blob_sha": "d2c3dc890139d077381e9685af3991d7a14a048c"
+          }
+        ],
+        "member_source_url": "https://raw.githubusercontent.com/assertj/assertj/assertj-build-3.27.3/assertj-core/src/main/java/org/assertj/core/api/Assertions.java",
+        "member_source_sha256": "056b3ea88595849c356646f5285afa937c5bc8fd3061c9536750103a15607a42"
+      },
+      "sources": [
+        "https://github.com/assertj/assertj/blob/assertj-build-3.27.3/assertj-core/src/main/java/org/assertj/core/api/Assertions.java"
+      ]
+    },
+    {
+      "target": "org.assertj.core.api.Assertions.assertThatThrownBy",
+      "coordinate": "org.assertj:assertj-core",
+      "proof": {
+        "repo": "assertj/assertj",
+        "requested_ref": "assertj-build-3.27.3",
+        "tree_sha": "c928dd31f3270471d60b8463a90bf831a26279b8",
+        "tree_url": "https://api.github.com/repos/assertj/assertj/git/trees/assertj-build-3.27.3?recursive=1",
+        "tree_sha256": "62478c0b29d008bfa5c8f00723c0ec22e978b21afd3737d605184e175de91c8d",
+        "match_kind": "static_member_owner",
+        "source_files": [
+          {
+            "coordinate": "org.assertj:assertj-core",
+            "path": "assertj-core/src/main/java/org/assertj/core/api/Assertions.java",
+            "blob_sha": "d2c3dc890139d077381e9685af3991d7a14a048c"
+          }
+        ],
+        "member_source_url": "https://raw.githubusercontent.com/assertj/assertj/assertj-build-3.27.3/assertj-core/src/main/java/org/assertj/core/api/Assertions.java",
+        "member_source_sha256": "056b3ea88595849c356646f5285afa937c5bc8fd3061c9536750103a15607a42"
+      },
+      "sources": [
+        "https://github.com/assertj/assertj/blob/assertj-build-3.27.3/assertj-core/src/main/java/org/assertj/core/api/Assertions.java"
+      ]
+    },
+    {
+      "target": "lombok.NoArgsConstructor",
+      "coordinate": "org.projectlombok:lombok",
+      "proof": {
+        "repo": "projectlombok/lombok",
+        "requested_ref": "v1.18.36",
+        "tree_sha": "91d79ff9fbef24494039a9f37498a4fd4386459e",
+        "tree_url": "https://api.github.com/repos/projectlombok/lombok/git/trees/v1.18.36?recursive=1",
+        "tree_sha256": "01e737f7fb4fd45a5e4ab8440e585e48ab713237c2fcbaaf8acc552394e8dbc9",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/NoArgsConstructor.java",
+            "blob_sha": "2ba69e487ad39474636c6d8efc2bf1e5123a09c8"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/NoArgsConstructor.java"
+      ]
+    },
+    {
+      "target": "lombok.AllArgsConstructor",
+      "coordinate": "org.projectlombok:lombok",
+      "proof": {
+        "repo": "projectlombok/lombok",
+        "requested_ref": "v1.18.36",
+        "tree_sha": "91d79ff9fbef24494039a9f37498a4fd4386459e",
+        "tree_url": "https://api.github.com/repos/projectlombok/lombok/git/trees/v1.18.36?recursive=1",
+        "tree_sha256": "01e737f7fb4fd45a5e4ab8440e585e48ab713237c2fcbaaf8acc552394e8dbc9",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/AllArgsConstructor.java",
+            "blob_sha": "28d9c209526accb64488d3514376353b53493c82"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/AllArgsConstructor.java"
+      ]
+    },
+    {
+      "target": "lombok.Builder",
+      "coordinate": "org.projectlombok:lombok",
+      "proof": {
+        "repo": "projectlombok/lombok",
+        "requested_ref": "v1.18.36",
+        "tree_sha": "91d79ff9fbef24494039a9f37498a4fd4386459e",
+        "tree_url": "https://api.github.com/repos/projectlombok/lombok/git/trees/v1.18.36?recursive=1",
+        "tree_sha256": "01e737f7fb4fd45a5e4ab8440e585e48ab713237c2fcbaaf8acc552394e8dbc9",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Builder.java",
+            "blob_sha": "06ca3853bac78f9a647b91f69740b71279a7e778"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Builder.java"
+      ]
+    },
+    {
+      "target": "lombok.Getter",
+      "coordinate": "org.projectlombok:lombok",
+      "proof": {
+        "repo": "projectlombok/lombok",
+        "requested_ref": "v1.18.36",
+        "tree_sha": "91d79ff9fbef24494039a9f37498a4fd4386459e",
+        "tree_url": "https://api.github.com/repos/projectlombok/lombok/git/trees/v1.18.36?recursive=1",
+        "tree_sha256": "01e737f7fb4fd45a5e4ab8440e585e48ab713237c2fcbaaf8acc552394e8dbc9",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Getter.java",
+            "blob_sha": "5a23fe30bd07b9162c22311dc044bac72c8d89be"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Getter.java"
+      ]
+    },
+    {
+      "target": "lombok.Setter",
+      "coordinate": "org.projectlombok:lombok",
+      "proof": {
+        "repo": "projectlombok/lombok",
+        "requested_ref": "v1.18.36",
+        "tree_sha": "91d79ff9fbef24494039a9f37498a4fd4386459e",
+        "tree_url": "https://api.github.com/repos/projectlombok/lombok/git/trees/v1.18.36?recursive=1",
+        "tree_sha256": "01e737f7fb4fd45a5e4ab8440e585e48ab713237c2fcbaaf8acc552394e8dbc9",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Setter.java",
+            "blob_sha": "1b70bac971728ad8a103fd6000e3081174399608"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Setter.java"
+      ]
+    },
+    {
+      "target": "lombok.*",
+      "coordinate": "org.projectlombok:lombok",
+      "proof": {
+        "repo": "projectlombok/lombok",
+        "requested_ref": "v1.18.36",
+        "tree_sha": "91d79ff9fbef24494039a9f37498a4fd4386459e",
+        "tree_url": "https://api.github.com/repos/projectlombok/lombok/git/trees/v1.18.36?recursive=1",
+        "tree_sha256": "01e737f7fb4fd45a5e4ab8440e585e48ab713237c2fcbaaf8acc552394e8dbc9",
+        "match_kind": "package_members",
+        "source_files": [
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/AccessLevel.java",
+            "blob_sha": "9c138e53b56342821a4de497da7d1293667c5fd0"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/AllArgsConstructor.java",
+            "blob_sha": "28d9c209526accb64488d3514376353b53493c82"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Builder.java",
+            "blob_sha": "06ca3853bac78f9a647b91f69740b71279a7e778"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Cleanup.java",
+            "blob_sha": "a3a1c1981f20548a633088fd01c290c2b85592ee"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/ConfigurationKeys.java",
+            "blob_sha": "b19dccfc98b85ba8cbffac5ddf5e37bbd1e1d18d"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/CustomLog.java",
+            "blob_sha": "c6ea400d67c1399ec031138938bf357178f14e3e"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Data.java",
+            "blob_sha": "081ade3be8c72b684606348e5fee07d6bd063d63"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Delegate.java",
+            "blob_sha": "0c5a4c2c660653a7abb49b693c61a126d181f3db"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/EqualsAndHashCode.java",
+            "blob_sha": "279e6e3dfe90e509e343267c673dbaed425aaf55"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Generated.java",
+            "blob_sha": "09608e4bb36eeaedaa2de73820a70f03658aebc5"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Getter.java",
+            "blob_sha": "5a23fe30bd07b9162c22311dc044bac72c8d89be"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Locked.java",
+            "blob_sha": "37adf553273caf4c5521c34c7302fd5726c5a345"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Lombok.java",
+            "blob_sha": "d86b6d1cce6608090b47120564e596500007417c"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/NoArgsConstructor.java",
+            "blob_sha": "2ba69e487ad39474636c6d8efc2bf1e5123a09c8"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/NonNull.java",
+            "blob_sha": "ba8c24a4c5ae274d5b9179d4177417e015fdac6c"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/RequiredArgsConstructor.java",
+            "blob_sha": "8f2f365afa4d4833b99fcb7a75b34dd72c8b7d94"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Setter.java",
+            "blob_sha": "1b70bac971728ad8a103fd6000e3081174399608"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Singular.java",
+            "blob_sha": "08b53973165665640da9ed4e81a78fc719808ecf"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/SneakyThrows.java",
+            "blob_sha": "41b8f5169eb811c10da891374c609a475ca57a55"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Synchronized.java",
+            "blob_sha": "1089bea800930189327d4fdce36274ea63fa49bf"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/ToString.java",
+            "blob_sha": "34418a2fe6ff4b83f6cb1e668385b9e58e3450ed"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/Value.java",
+            "blob_sha": "562ba0cca092410d6a694299dd5303d9c18dd8f1"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/With.java",
+            "blob_sha": "417d8b31a12e0596768091118f6e55294f6dacdc"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/val.java",
+            "blob_sha": "a69d514c4641c825703dc630f08e75dfbe09dbec"
+          },
+          {
+            "coordinate": "org.projectlombok:lombok",
+            "path": "src/core/lombok/var.java",
+            "blob_sha": "63a70213d15500b374a300b8a75d6479d0fa1018"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/AccessLevel.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/AllArgsConstructor.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Builder.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Cleanup.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/ConfigurationKeys.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/CustomLog.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Data.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Delegate.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/EqualsAndHashCode.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Generated.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Getter.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Locked.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Lombok.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/NoArgsConstructor.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/NonNull.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/RequiredArgsConstructor.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Setter.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Singular.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/SneakyThrows.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Synchronized.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/ToString.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/Value.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/With.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/val.java",
+        "https://github.com/projectlombok/lombok/blob/v1.18.36/src/core/lombok/var.java"
+      ]
+    },
+    {
+      "target": "org.junit.jupiter.api.extension.ExtendWith",
+      "coordinate": "org.junit.jupiter:junit-jupiter-api",
+      "proof": {
+        "repo": "junit-team/junit5",
+        "requested_ref": "r5.12.0",
+        "tree_sha": "2750b0402e38fbed2c15ec47e8b422aa812a9e1e",
+        "tree_url": "https://api.github.com/repos/junit-team/junit5/git/trees/r5.12.0?recursive=1",
+        "tree_sha256": "c5480f2059a7ee8cbdce2c2f7e1db2a19dd4cf67d785ca89e4f924f77399f7f0",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.junit.jupiter:junit-jupiter-api",
+            "path": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/extension/ExtendWith.java",
+            "blob_sha": "7bbab30aa8d3fdfe6e05fd007bff9118022cde87"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/junit-team/junit5/blob/r5.12.0/junit-jupiter-api/src/main/java/org/junit/jupiter/api/extension/ExtendWith.java"
+      ]
+    },
+    {
+      "target": "org.junit.jupiter.api.DisplayName",
+      "coordinate": "org.junit.jupiter:junit-jupiter-api",
+      "proof": {
+        "repo": "junit-team/junit5",
+        "requested_ref": "r5.12.0",
+        "tree_sha": "2750b0402e38fbed2c15ec47e8b422aa812a9e1e",
+        "tree_url": "https://api.github.com/repos/junit-team/junit5/git/trees/r5.12.0?recursive=1",
+        "tree_sha256": "c5480f2059a7ee8cbdce2c2f7e1db2a19dd4cf67d785ca89e4f924f77399f7f0",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "org.junit.jupiter:junit-jupiter-api",
+            "path": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/DisplayName.java",
+            "blob_sha": "c8318e1bfb3b2d702d21d6f88a19967c3a828c04"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/junit-team/junit5/blob/r5.12.0/junit-jupiter-api/src/main/java/org/junit/jupiter/api/DisplayName.java"
+      ]
+    },
+    {
+      "target": "org.junit.jupiter.api.Assertions.assertFalse",
+      "coordinate": "org.junit.jupiter:junit-jupiter-api",
+      "proof": {
+        "repo": "junit-team/junit5",
+        "requested_ref": "r5.12.0",
+        "tree_sha": "2750b0402e38fbed2c15ec47e8b422aa812a9e1e",
+        "tree_url": "https://api.github.com/repos/junit-team/junit5/git/trees/r5.12.0?recursive=1",
+        "tree_sha256": "c5480f2059a7ee8cbdce2c2f7e1db2a19dd4cf67d785ca89e4f924f77399f7f0",
+        "match_kind": "static_member_owner",
+        "source_files": [
+          {
+            "coordinate": "org.junit.jupiter:junit-jupiter-api",
+            "path": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assertions.java",
+            "blob_sha": "cd037a416914b54fa0374011e1b4fcc198e34c64"
+          }
+        ],
+        "member_source_url": "https://raw.githubusercontent.com/junit-team/junit5/r5.12.0/junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assertions.java",
+        "member_source_sha256": "be3d9ab17e837adb505fe66d490bc5c7ab1792d8e14bb20709ec60d317ff97b3"
+      },
+      "sources": [
+        "https://github.com/junit-team/junit5/blob/r5.12.0/junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assertions.java"
+      ]
+    },
+    {
+      "target": "org.junit.Test",
+      "coordinate": "junit:junit",
+      "proof": {
+        "repo": "junit-team/junit4",
+        "requested_ref": "r4.13.2",
+        "tree_sha": "05fe2a64f59127c02135be22f416e91260d6ede6",
+        "tree_url": "https://api.github.com/repos/junit-team/junit4/git/trees/r4.13.2?recursive=1",
+        "tree_sha256": "2e8214f22e70f89289d720805181c3fb43bd468a94b978eec66904fdd2e47911",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "junit:junit",
+            "path": "src/main/java/org/junit/Test.java",
+            "blob_sha": "1db6fc7ab0736a013cce145598b243ee5651926b"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/junit-team/junit4/blob/r4.13.2/src/main/java/org/junit/Test.java"
+      ]
+    },
+    {
+      "target": "org.junit.Assert.*",
+      "coordinate": "junit:junit",
+      "proof": {
+        "repo": "junit-team/junit4",
+        "requested_ref": "r4.13.2",
+        "tree_sha": "05fe2a64f59127c02135be22f416e91260d6ede6",
+        "tree_url": "https://api.github.com/repos/junit-team/junit4/git/trees/r4.13.2?recursive=1",
+        "tree_sha256": "2e8214f22e70f89289d720805181c3fb43bd468a94b978eec66904fdd2e47911",
+        "match_kind": "class_members",
+        "source_files": [
+          {
+            "coordinate": "junit:junit",
+            "path": "src/main/java/org/junit/Assert.java",
+            "blob_sha": "65bbc9d3f7ff0bbc71a4b563b26f63fbb587c200"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/junit-team/junit4/blob/r4.13.2/src/main/java/org/junit/Assert.java"
+      ]
+    },
+    {
+      "target": "jakarta.validation.Valid",
+      "coordinate": "jakarta.validation:jakarta.validation-api",
+      "proof": {
+        "repo": "jakartaee/validation",
+        "requested_ref": "3.1.1",
+        "tree_sha": "a188798f8f2636b9f3df542322bed42af600a956",
+        "tree_url": "https://api.github.com/repos/jakartaee/validation/git/trees/3.1.1?recursive=1",
+        "tree_sha256": "30c30304d114687792e655c3438369c64b5f0d0bf01939ffabfce7ac51c7ffdd",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.validation:jakarta.validation-api",
+            "path": "src/main/java/jakarta/validation/Valid.java",
+            "blob_sha": "a181a09045bba4f164cc3684725b5775cd8daaa8"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/validation/blob/3.1.1/src/main/java/jakarta/validation/Valid.java"
+      ]
+    },
+    {
+      "target": "jakarta.validation.constraints.NotBlank",
+      "coordinate": "jakarta.validation:jakarta.validation-api",
+      "proof": {
+        "repo": "jakartaee/validation",
+        "requested_ref": "3.1.1",
+        "tree_sha": "a188798f8f2636b9f3df542322bed42af600a956",
+        "tree_url": "https://api.github.com/repos/jakartaee/validation/git/trees/3.1.1?recursive=1",
+        "tree_sha256": "30c30304d114687792e655c3438369c64b5f0d0bf01939ffabfce7ac51c7ffdd",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.validation:jakarta.validation-api",
+            "path": "src/main/java/jakarta/validation/constraints/NotBlank.java",
+            "blob_sha": "45de2eecfcfb28c0628b0b487390b3740041931d"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/validation/blob/3.1.1/src/main/java/jakarta/validation/constraints/NotBlank.java"
+      ]
+    },
+    {
+      "target": "jakarta.validation.constraints.NotNull",
+      "coordinate": "jakarta.validation:jakarta.validation-api",
+      "proof": {
+        "repo": "jakartaee/validation",
+        "requested_ref": "3.1.1",
+        "tree_sha": "a188798f8f2636b9f3df542322bed42af600a956",
+        "tree_url": "https://api.github.com/repos/jakartaee/validation/git/trees/3.1.1?recursive=1",
+        "tree_sha256": "30c30304d114687792e655c3438369c64b5f0d0bf01939ffabfce7ac51c7ffdd",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.validation:jakarta.validation-api",
+            "path": "src/main/java/jakarta/validation/constraints/NotNull.java",
+            "blob_sha": "948e29a13fa0ae6c420211fc7d5cb6934e0183d0"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/validation/blob/3.1.1/src/main/java/jakarta/validation/constraints/NotNull.java"
+      ]
+    },
+    {
+      "target": "jakarta.validation.constraints.Size",
+      "coordinate": "jakarta.validation:jakarta.validation-api",
+      "proof": {
+        "repo": "jakartaee/validation",
+        "requested_ref": "3.1.1",
+        "tree_sha": "a188798f8f2636b9f3df542322bed42af600a956",
+        "tree_url": "https://api.github.com/repos/jakartaee/validation/git/trees/3.1.1?recursive=1",
+        "tree_sha256": "30c30304d114687792e655c3438369c64b5f0d0bf01939ffabfce7ac51c7ffdd",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.validation:jakarta.validation-api",
+            "path": "src/main/java/jakarta/validation/constraints/Size.java",
+            "blob_sha": "8616f9e480f8707778968a46738c2252ca0f2cd2"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/validation/blob/3.1.1/src/main/java/jakarta/validation/constraints/Size.java"
+      ]
+    },
+    {
+      "target": "jakarta.validation.constraints.Email",
+      "coordinate": "jakarta.validation:jakarta.validation-api",
+      "proof": {
+        "repo": "jakartaee/validation",
+        "requested_ref": "3.1.1",
+        "tree_sha": "a188798f8f2636b9f3df542322bed42af600a956",
+        "tree_url": "https://api.github.com/repos/jakartaee/validation/git/trees/3.1.1?recursive=1",
+        "tree_sha256": "30c30304d114687792e655c3438369c64b5f0d0bf01939ffabfce7ac51c7ffdd",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.validation:jakarta.validation-api",
+            "path": "src/main/java/jakarta/validation/constraints/Email.java",
+            "blob_sha": "0ab425e3dbb07c0c2ca9cce5d3a9a4c5966146a6"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/validation/blob/3.1.1/src/main/java/jakarta/validation/constraints/Email.java"
+      ]
+    },
+    {
+      "target": "jakarta.persistence.*",
+      "coordinate": "jakarta.persistence:jakarta.persistence-api",
+      "proof": {
+        "repo": "jakartaee/persistence",
+        "requested_ref": "3.2-3.2.0-RELEASE",
+        "tree_sha": "320bface63284bf72f5844dc34f6b8ddad7b39c7",
+        "tree_url": "https://api.github.com/repos/jakartaee/persistence/git/trees/3.2-3.2.0-RELEASE?recursive=1",
+        "tree_sha256": "5f05632180bfaa645b9470d0a70305f96551ac1ef410d61dfa33c70077830303",
+        "match_kind": "package_members",
+        "source_files": [
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Access.java",
+            "blob_sha": "55383baabf9b1e2b8198b9fa2fde6f3e230212f5"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/AccessType.java",
+            "blob_sha": "9f503c746da6d289d327f7648a97fc3dc120f139"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/AssociationOverride.java",
+            "blob_sha": "21db5c33d20ebcbf5d2724a56dca439fad5cb4e6"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/AssociationOverrides.java",
+            "blob_sha": "921041d9103f7d49eea2957128c51c995712fb22"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/AttributeConverter.java",
+            "blob_sha": "53488e745d045ab51669042bb2d649a59e3d6f9c"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/AttributeNode.java",
+            "blob_sha": "5d70203a9bdd02d682a2145973c5f1e9789849c3"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/AttributeOverride.java",
+            "blob_sha": "8d428b945365bdb79721f22c3155c58e9cff8b3c"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/AttributeOverrides.java",
+            "blob_sha": "cb0970484a15320cc5b20528864d04762e5dbe07"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Basic.java",
+            "blob_sha": "8f2ddc302e0e4a1eeb2877213e17c926b7bab060"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Cache.java",
+            "blob_sha": "89fa34bcba4006b9288a04e4160c01dabdd4062c"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/CacheRetrieveMode.java",
+            "blob_sha": "7f83fe4d92ceef0a50e57e2c4357b0abcbe3ee1f"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/CacheStoreMode.java",
+            "blob_sha": "ff48e4c2f23866c15ad39208dab1f68f7f604dfd"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Cacheable.java",
+            "blob_sha": "797d603aafb9474a81580d1c3ea5258c6b1f39e5"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/CascadeType.java",
+            "blob_sha": "e38d8a26d819612af5255a1bb20bba88a9a7b4a4"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/CheckConstraint.java",
+            "blob_sha": "d91ec92cb043f809fc0487b42326aec3152122bf"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/CollectionTable.java",
+            "blob_sha": "39863b4d992970aea9e2b5e08a48bc5e65c181c8"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Column.java",
+            "blob_sha": "c12f4f028431bdf44c786f2159dcffb4eba28274"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ColumnResult.java",
+            "blob_sha": "fff1860542b9245075c1adb869987d5aaed040e8"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ConnectionConsumer.java",
+            "blob_sha": "015c92dcb720f98a700661744c0ef521b5f2bcf2"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ConnectionFunction.java",
+            "blob_sha": "19ed74798b0330b68acc4994b8014eb0f597d4f0"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ConstraintMode.java",
+            "blob_sha": "4a1224fc2f238d52d0e81283a964ff3a84f267a5"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ConstructorResult.java",
+            "blob_sha": "c2f923be30e4702a7a815d91e376bdba9435e3c2"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Convert.java",
+            "blob_sha": "c1e75674c17c5e20260bc6ff0f4c909a8f369957"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Converter.java",
+            "blob_sha": "f56c0130206daa1ce1ea3be4f849941c91f3671b"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Converts.java",
+            "blob_sha": "5a374cfffca0a8b6bc78620b1d25e092c73d5a0a"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/DiscriminatorColumn.java",
+            "blob_sha": "44b6a34e3f38ee596522399e55cf332ff75e2e0f"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/DiscriminatorType.java",
+            "blob_sha": "c49c2f94deb8bcf6f76364b2f88806a8095b5112"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/DiscriminatorValue.java",
+            "blob_sha": "90e9a6df098f73e1e3d35859e82fb55484e391e6"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ElementCollection.java",
+            "blob_sha": "467d00d81877ce4cc01621baf5c1ec64fd704056"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Embeddable.java",
+            "blob_sha": "a5e4206576cd309a88ea4b6fb71095a78f6f60ea"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Embedded.java",
+            "blob_sha": "6a1a162dda5aaede149b1a4809416c057640bd36"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EmbeddedId.java",
+            "blob_sha": "89eca42257320119e99e05c5dea5beba6dc0e89d"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Entity.java",
+            "blob_sha": "df076e297728ce6d1fd7d582cb0a6afdb02088fc"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EntityExistsException.java",
+            "blob_sha": "5af73bfbbcbc0fc1dbd95786e4af1c9dcf564fb7"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EntityGraph.java",
+            "blob_sha": "164444181bc3ce3460c622e3cae4c7257bf292c0"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EntityListeners.java",
+            "blob_sha": "fe7500c6e5980abb1859fca9b2b9e900f0b9d930"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EntityManager.java",
+            "blob_sha": "80b41a1968ed637c165bb3f11c7c655a1cf7bd54"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EntityManagerFactory.java",
+            "blob_sha": "708b34c8d6f2ce7509ff14f9bb6da9d3245ad422"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EntityNotFoundException.java",
+            "blob_sha": "2debef7e2124eb76e500548ce9904ea56e7b4382"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EntityResult.java",
+            "blob_sha": "93912866535848c53ec97e0be1f6ed527f6d6251"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EntityTransaction.java",
+            "blob_sha": "b84cea316d7c0430325c57a72dea6f2201f0b85f"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EnumType.java",
+            "blob_sha": "db6866c25de292961c57076c765e0b076d84f55e"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Enumerated.java",
+            "blob_sha": "0e18b63fad949915fdf24f8104a60d2bc49f387f"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/EnumeratedValue.java",
+            "blob_sha": "edf8bacc86e76d3ead5b1b22c9117281c1b9d90a"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ExcludeDefaultListeners.java",
+            "blob_sha": "3f44bd8a87daa442e10ef7213dfc56e38ea5132f"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ExcludeSuperclassListeners.java",
+            "blob_sha": "5b1c137b9f756d73306ee00b05ee75d5999d3228"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/FetchType.java",
+            "blob_sha": "d982c954b5be709566100b98a3323eefc0680d5f"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/FieldResult.java",
+            "blob_sha": "ec6069c4342a1cdc6db793b771589ecd871f00e1"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/FindOption.java",
+            "blob_sha": "24d893e96793d9352bd24eb35e753dc2e20b08a3"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/FlushModeType.java",
+            "blob_sha": "a96fb000777a57e83e0406b1a816b2c79c1866fa"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ForeignKey.java",
+            "blob_sha": "3959a8fe19087c6dafb9b1a062ef31fa9458b570"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/GeneratedValue.java",
+            "blob_sha": "894fc69fdd8b1610e8b4537b668a0d82f97cdd0c"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/GenerationType.java",
+            "blob_sha": "19830f773211ac49f869a5c9e1106b5596df0c8c"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Graph.java",
+            "blob_sha": "24f6dc36a1edc73c42e024f8f78aa44607c564d7"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Id.java",
+            "blob_sha": "3971420227c9e258a9ebade89b8cb00812d08cd8"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/IdClass.java",
+            "blob_sha": "e9445d78cd0a62fbaa906b4a532d983456c42633"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Index.java",
+            "blob_sha": "82fa7679c6ea14ed8e52fbfc8b28965909675f0d"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Inheritance.java",
+            "blob_sha": "4a3e0d1fcad1211b5774a23aeb4a5cd078d8c954"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/InheritanceType.java",
+            "blob_sha": "d7ab782ba6e5510938229ea50f81d2125d6ae4f0"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/JoinColumn.java",
+            "blob_sha": "36b225ff2e18fc94fbd6a94b2276709dcf428510"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/JoinColumns.java",
+            "blob_sha": "88ec4fef89e50696a0feb000eba896896ea54d9f"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/JoinTable.java",
+            "blob_sha": "34b2729c96228468d5c09420c2d06fd110daca7e"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Lob.java",
+            "blob_sha": "a01b4b3eb6d482b693f17b674b723008bb99c504"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/LockModeType.java",
+            "blob_sha": "bb58b6e884f9de1492483e8951a2c8e174dce7fc"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/LockOption.java",
+            "blob_sha": "265d128260b65c373921881d7ab6d52a956f0cfe"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/LockTimeoutException.java",
+            "blob_sha": "43329bafa2badbe86e204cdfa14caa292fe8b474"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ManyToMany.java",
+            "blob_sha": "e16652729461b47878ea073265a716017fee7581"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ManyToOne.java",
+            "blob_sha": "68437e1265eaf8a210a635699306bbaddba72368"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/MapKey.java",
+            "blob_sha": "31bd83e3f3b20876522285559d3f75b8b6392827"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/MapKeyClass.java",
+            "blob_sha": "ff1d8523e96be5be5df2cb2cccb6aa1ac24d4532"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/MapKeyColumn.java",
+            "blob_sha": "11bb2733ec6bb684cb0dadec2061eb45f97c49ef"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/MapKeyEnumerated.java",
+            "blob_sha": "fef9d37b3fe992754e548ff722bea78961c547fc"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/MapKeyJoinColumn.java",
+            "blob_sha": "dad10bff49c9af2aef869c2c6e999d3b05e70588"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/MapKeyJoinColumns.java",
+            "blob_sha": "ea59479f2db7cd0beff1846758f2919f3732ffcd"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/MapKeyTemporal.java",
+            "blob_sha": "2cca948c8dc3205fab8e10c9ece9c7432d303786"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/MappedSuperclass.java",
+            "blob_sha": "5f14f9f87a6bec9da997dd89966953c77b8bbdfe"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/MapsId.java",
+            "blob_sha": "b81bdda11e5cdd3d1a38e41e50928cc66cc024d0"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NamedAttributeNode.java",
+            "blob_sha": "0f56df0166cf81b03a7d26dd35cee07d633d097b"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NamedEntityGraph.java",
+            "blob_sha": "f4314dc33c7b7a851668edd9ee63c7922172eb13"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NamedEntityGraphs.java",
+            "blob_sha": "aebe5db5dbafd40c863ceb89790d915f18c1b65a"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NamedNativeQueries.java",
+            "blob_sha": "9cf482bff200e36e436c1dc2384a2efedfac2517"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NamedNativeQuery.java",
+            "blob_sha": "14bb9073d84957ea3f00f504813ad4bfaac65ef8"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NamedQueries.java",
+            "blob_sha": "315e92fe054d7ac80f2f2dc9795e44b75383a6e9"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NamedQuery.java",
+            "blob_sha": "e0b88ea22369134211594d962c9008cffe9ff105"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NamedStoredProcedureQueries.java",
+            "blob_sha": "cb018e3ed5b9feb5d7db9a2ae444bafca62d6230"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NamedStoredProcedureQuery.java",
+            "blob_sha": "f9d68ff43c9930fa593574aa35dbe1c68cfe7872"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NamedSubgraph.java",
+            "blob_sha": "a2648f64af8e73522ddfad7d4c5781871a6d8668"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NoResultException.java",
+            "blob_sha": "e0deb7c3438b15e17729727b63bc8471a11a7b96"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/NonUniqueResultException.java",
+            "blob_sha": "01709320c5d6a01aa9a0678801c18ffbc08107ca"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/OneToMany.java",
+            "blob_sha": "e036d2e4127f30b29cd09ac4d8a6fa0b20a4ec30"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/OneToOne.java",
+            "blob_sha": "fa231937ca1336997c7bf168a79a4474428051f7"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/OptimisticLockException.java",
+            "blob_sha": "205277a4ec7c5a3a2ccc330febedee1e3531b24d"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/OrderBy.java",
+            "blob_sha": "e6a5998b540821b15e34165b5c228df8ed8ba91a"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/OrderColumn.java",
+            "blob_sha": "f6fca173e2b1f54b7c75184794eaedf9ef3c37e5"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Parameter.java",
+            "blob_sha": "f69bc7561d66ec524293e5f7a42fb7fc3209038c"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ParameterMode.java",
+            "blob_sha": "8d548d08b91d90102631e3406d95f03d86f7e7ee"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Persistence.java",
+            "blob_sha": "4057d3024d34d66ab92920e325af2ed523f204af"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceConfiguration.java",
+            "blob_sha": "d24d01f7cf51ccd003d1d4a9d790df3ccf99a46b"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceContext.java",
+            "blob_sha": "8cfdbdd0c5151fa623d85abeaa874358dc701633"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceContextType.java",
+            "blob_sha": "9364a00853583dcbfc1012d9f9262233ebe7125c"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceContexts.java",
+            "blob_sha": "bc89d2b7ad6c80536ddeb25e13bcb114932bb2bf"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceException.java",
+            "blob_sha": "a1e3d6125be2c739adb46f590314734709fe0840"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceProperty.java",
+            "blob_sha": "f952d17df7d448743afc2e12f7daf699efd195e3"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceUnit.java",
+            "blob_sha": "10ef8cac51f9e387e72433930d874fe10155737a"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceUnitTransactionType.java",
+            "blob_sha": "e24055f03044d24fa1db39f2cdc9e54f74de6463"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceUnitUtil.java",
+            "blob_sha": "afee412170bb5eece918a4163fd67bf0323b1250"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceUnits.java",
+            "blob_sha": "5e33cf4d7eb07f6100c876d182c69aeeab7497a5"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PersistenceUtil.java",
+            "blob_sha": "602de4975a837b7b4839b90b5b67a2b196ac5809"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PessimisticLockException.java",
+            "blob_sha": "5199d6ef30d885e53f86800040e3d0266b6bf8f9"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PessimisticLockScope.java",
+            "blob_sha": "ccae02e87a8c1c4ee05afb854201ed90e6952b23"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PostLoad.java",
+            "blob_sha": "64c10f19d270ea90370ab2ac1516443dc5314821"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PostPersist.java",
+            "blob_sha": "5ec58d2918c578a0984f7ef2d18b02fabc57b6cb"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PostRemove.java",
+            "blob_sha": "6c5a7956ad529e4c63b2b9810cb6dd13122b4d94"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PostUpdate.java",
+            "blob_sha": "168a6c18a01bc33237f30956426254e4e20d1f56"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PrePersist.java",
+            "blob_sha": "9b8dcfebe84e19b37e323c511903381bd78cd536"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PreRemove.java",
+            "blob_sha": "22daca3bea455ecd8ca8e97d27eef59819d52e05"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PreUpdate.java",
+            "blob_sha": "f92800deac2e72ca68a29d17c1b001fac87f7626"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PrimaryKeyJoinColumn.java",
+            "blob_sha": "6f367707432a3e981af42d70b004d9cbd4273216"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/PrimaryKeyJoinColumns.java",
+            "blob_sha": "372b1c43371e3a860845be83c35221522021ec4b"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Query.java",
+            "blob_sha": "a031eb75c78589c14aa21949b8546f4704481c9c"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/QueryHint.java",
+            "blob_sha": "2e0ae98e8285342e11f86f7aa7d81288f1e5e2bf"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/QueryTimeoutException.java",
+            "blob_sha": "f8509062d69078fc2da6e9a1996c9b9941b71290"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/RefreshOption.java",
+            "blob_sha": "afe47d8575c4e52e1a0f7f3bb2b9247061cbc434"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/RollbackException.java",
+            "blob_sha": "4b8ec5e6605acaf7cf334be98f79fc71d77e2c9d"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/SchemaManager.java",
+            "blob_sha": "1b87ab861bce74200497f02a1df2badd8c94b08a"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/SchemaValidationException.java",
+            "blob_sha": "be8a9ba14727e49d841ec38b0362a25fb3dc8e07"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/SecondaryTable.java",
+            "blob_sha": "3c21d8c03e1302b7fb037aaf42d8515926ccdfb4"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/SecondaryTables.java",
+            "blob_sha": "2bdbd8fea0d67870d8fbb7ee2ac68ffc4d25d83b"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/SequenceGenerator.java",
+            "blob_sha": "8d3a0c83909dcdc190b9f120f77baaf75846579f"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/SequenceGenerators.java",
+            "blob_sha": "a0247bb3508fc8c50609796572cb3ee905feb770"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/SharedCacheMode.java",
+            "blob_sha": "d61234f40c3f498b63ef1fa6973792ce6192ec59"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/SqlResultSetMapping.java",
+            "blob_sha": "42c30e5580b3b8dc209dc337763d46394902bebd"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/SqlResultSetMappings.java",
+            "blob_sha": "0f5d22e9d4d22dc1eb20a38f82eb82dc47ce0b7c"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/StoredProcedureParameter.java",
+            "blob_sha": "faf19a51e3fc66870eee31270e20178263b5abfe"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/StoredProcedureQuery.java",
+            "blob_sha": "6b1a4778035220375beeb90c4acb73e64bb8696b"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Subgraph.java",
+            "blob_sha": "395225129303f833e0c3a31a97321c2c07b1f3f5"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/SynchronizationType.java",
+            "blob_sha": "d9f4c9d586ce347a237849db3f9ded58c3c3026d"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Table.java",
+            "blob_sha": "15cca133eda16e6c8e4592053a2f403cf65d9297"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/TableGenerator.java",
+            "blob_sha": "534aba8793dbfa770a23d22b6cd4b1691a25f6a4"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/TableGenerators.java",
+            "blob_sha": "2181e8dc47f76cce104faf23065b671480db4c5d"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Temporal.java",
+            "blob_sha": "32b24bb9ab47c12cec1858fa23f567ae5cc2f7a1"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/TemporalType.java",
+            "blob_sha": "05f7b2f3d0ddd87fbf9c55fe660d2549187f9506"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Timeout.java",
+            "blob_sha": "a6b64474fa16c8570f2f60375cac888904d6dab3"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/TransactionRequiredException.java",
+            "blob_sha": "e418e90807736db6b5109035c96b5721e9509e03"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Transient.java",
+            "blob_sha": "7f95c24a8656213e3d2a8bbb82a875df0785f034"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Tuple.java",
+            "blob_sha": "fe9952dcf9c15f3d967ce2c48ef9444c711501b6"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/TupleElement.java",
+            "blob_sha": "eb9662c78269a7e510825355a4467b89174b18c3"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/TypedQuery.java",
+            "blob_sha": "9fd6edc9b93a1234548bb8fcf72bb89b57082ffd"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/TypedQueryReference.java",
+            "blob_sha": "eb232008495fe8e1b236c7330632929bba31186e"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/UniqueConstraint.java",
+            "blob_sha": "62e7c02ed27cb4b45f2b9770c6e354c79050c4af"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/ValidationMode.java",
+            "blob_sha": "6a1eef94a052aa856a2340b223a7247c8aae04a6"
+          },
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Version.java",
+            "blob_sha": "5fdda7573408b3b087753ed02e99101ce33d5a9c"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Access.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/AccessType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/AssociationOverride.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/AssociationOverrides.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/AttributeConverter.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/AttributeNode.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/AttributeOverride.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/AttributeOverrides.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Basic.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Cache.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/CacheRetrieveMode.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/CacheStoreMode.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Cacheable.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/CascadeType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/CheckConstraint.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/CollectionTable.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Column.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ColumnResult.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ConnectionConsumer.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ConnectionFunction.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ConstraintMode.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ConstructorResult.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Convert.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Converter.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Converts.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/DiscriminatorColumn.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/DiscriminatorType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/DiscriminatorValue.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ElementCollection.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Embeddable.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Embedded.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EmbeddedId.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Entity.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EntityExistsException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EntityGraph.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EntityListeners.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EntityManager.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EntityManagerFactory.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EntityNotFoundException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EntityResult.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EntityTransaction.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EnumType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Enumerated.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/EnumeratedValue.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ExcludeDefaultListeners.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ExcludeSuperclassListeners.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/FetchType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/FieldResult.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/FindOption.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/FlushModeType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ForeignKey.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/GeneratedValue.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/GenerationType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Graph.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Id.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/IdClass.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Index.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Inheritance.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/InheritanceType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/JoinColumn.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/JoinColumns.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/JoinTable.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Lob.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/LockModeType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/LockOption.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/LockTimeoutException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ManyToMany.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ManyToOne.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/MapKey.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/MapKeyClass.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/MapKeyColumn.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/MapKeyEnumerated.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/MapKeyJoinColumn.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/MapKeyJoinColumns.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/MapKeyTemporal.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/MappedSuperclass.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/MapsId.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NamedAttributeNode.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NamedEntityGraph.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NamedEntityGraphs.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NamedNativeQueries.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NamedNativeQuery.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NamedQueries.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NamedQuery.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NamedStoredProcedureQueries.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NamedStoredProcedureQuery.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NamedSubgraph.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NoResultException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/NonUniqueResultException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/OneToMany.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/OneToOne.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/OptimisticLockException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/OrderBy.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/OrderColumn.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Parameter.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ParameterMode.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Persistence.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceConfiguration.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceContext.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceContextType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceContexts.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceProperty.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceUnit.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceUnitTransactionType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceUnitUtil.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceUnits.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PersistenceUtil.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PessimisticLockException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PessimisticLockScope.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PostLoad.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PostPersist.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PostRemove.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PostUpdate.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PrePersist.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PreRemove.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PreUpdate.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PrimaryKeyJoinColumn.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/PrimaryKeyJoinColumns.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Query.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/QueryHint.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/QueryTimeoutException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/RefreshOption.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/RollbackException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/SchemaManager.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/SchemaValidationException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/SecondaryTable.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/SecondaryTables.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/SequenceGenerator.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/SequenceGenerators.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/SharedCacheMode.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/SqlResultSetMapping.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/SqlResultSetMappings.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/StoredProcedureParameter.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/StoredProcedureQuery.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Subgraph.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/SynchronizationType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Table.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/TableGenerator.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/TableGenerators.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Temporal.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/TemporalType.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Timeout.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/TransactionRequiredException.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Transient.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Tuple.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/TupleElement.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/TypedQuery.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/TypedQueryReference.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/UniqueConstraint.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/ValidationMode.java",
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Version.java"
+      ]
+    },
+    {
+      "target": "jakarta.persistence.Entity",
+      "coordinate": "jakarta.persistence:jakarta.persistence-api",
+      "proof": {
+        "repo": "jakartaee/persistence",
+        "requested_ref": "3.2-3.2.0-RELEASE",
+        "tree_sha": "320bface63284bf72f5844dc34f6b8ddad7b39c7",
+        "tree_url": "https://api.github.com/repos/jakartaee/persistence/git/trees/3.2-3.2.0-RELEASE?recursive=1",
+        "tree_sha256": "5f05632180bfaa645b9470d0a70305f96551ac1ef410d61dfa33c70077830303",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Entity.java",
+            "blob_sha": "df076e297728ce6d1fd7d582cb0a6afdb02088fc"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Entity.java"
+      ]
+    },
+    {
+      "target": "jakarta.persistence.Column",
+      "coordinate": "jakarta.persistence:jakarta.persistence-api",
+      "proof": {
+        "repo": "jakartaee/persistence",
+        "requested_ref": "3.2-3.2.0-RELEASE",
+        "tree_sha": "320bface63284bf72f5844dc34f6b8ddad7b39c7",
+        "tree_url": "https://api.github.com/repos/jakartaee/persistence/git/trees/3.2-3.2.0-RELEASE?recursive=1",
+        "tree_sha256": "5f05632180bfaa645b9470d0a70305f96551ac1ef410d61dfa33c70077830303",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Column.java",
+            "blob_sha": "c12f4f028431bdf44c786f2159dcffb4eba28274"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Column.java"
+      ]
+    },
+    {
+      "target": "jakarta.persistence.Id",
+      "coordinate": "jakarta.persistence:jakarta.persistence-api",
+      "proof": {
+        "repo": "jakartaee/persistence",
+        "requested_ref": "3.2-3.2.0-RELEASE",
+        "tree_sha": "320bface63284bf72f5844dc34f6b8ddad7b39c7",
+        "tree_url": "https://api.github.com/repos/jakartaee/persistence/git/trees/3.2-3.2.0-RELEASE?recursive=1",
+        "tree_sha256": "5f05632180bfaa645b9470d0a70305f96551ac1ef410d61dfa33c70077830303",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Id.java",
+            "blob_sha": "3971420227c9e258a9ebade89b8cb00812d08cd8"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Id.java"
+      ]
+    },
+    {
+      "target": "jakarta.persistence.Table",
+      "coordinate": "jakarta.persistence:jakarta.persistence-api",
+      "proof": {
+        "repo": "jakartaee/persistence",
+        "requested_ref": "3.2-3.2.0-RELEASE",
+        "tree_sha": "320bface63284bf72f5844dc34f6b8ddad7b39c7",
+        "tree_url": "https://api.github.com/repos/jakartaee/persistence/git/trees/3.2-3.2.0-RELEASE?recursive=1",
+        "tree_sha256": "5f05632180bfaa645b9470d0a70305f96551ac1ef410d61dfa33c70077830303",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/Table.java",
+            "blob_sha": "15cca133eda16e6c8e4592053a2f403cf65d9297"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/Table.java"
+      ]
+    },
+    {
+      "target": "jakarta.persistence.GeneratedValue",
+      "coordinate": "jakarta.persistence:jakarta.persistence-api",
+      "proof": {
+        "repo": "jakartaee/persistence",
+        "requested_ref": "3.2-3.2.0-RELEASE",
+        "tree_sha": "320bface63284bf72f5844dc34f6b8ddad7b39c7",
+        "tree_url": "https://api.github.com/repos/jakartaee/persistence/git/trees/3.2-3.2.0-RELEASE?recursive=1",
+        "tree_sha256": "5f05632180bfaa645b9470d0a70305f96551ac1ef410d61dfa33c70077830303",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/GeneratedValue.java",
+            "blob_sha": "894fc69fdd8b1610e8b4537b668a0d82f97cdd0c"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/GeneratedValue.java"
+      ]
+    },
+    {
+      "target": "jakarta.persistence.GenerationType",
+      "coordinate": "jakarta.persistence:jakarta.persistence-api",
+      "proof": {
+        "repo": "jakartaee/persistence",
+        "requested_ref": "3.2-3.2.0-RELEASE",
+        "tree_sha": "320bface63284bf72f5844dc34f6b8ddad7b39c7",
+        "tree_url": "https://api.github.com/repos/jakartaee/persistence/git/trees/3.2-3.2.0-RELEASE?recursive=1",
+        "tree_sha256": "5f05632180bfaa645b9470d0a70305f96551ac1ef410d61dfa33c70077830303",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.persistence:jakarta.persistence-api",
+            "path": "api/src/main/java/jakarta/persistence/GenerationType.java",
+            "blob_sha": "19830f773211ac49f869a5c9e1106b5596df0c8c"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/persistence/blob/3.2-3.2.0-RELEASE/api/src/main/java/jakarta/persistence/GenerationType.java"
+      ]
+    },
+    {
+      "target": "jakarta.servlet.http.HttpServletRequest",
+      "coordinate": "jakarta.servlet:jakarta.servlet-api",
+      "proof": {
+        "repo": "jakartaee/servlet",
+        "requested_ref": "6.1.0-RELEASE",
+        "tree_sha": "fe6e12a5d54d8ccf5084e034be3e5ecc5a27f082",
+        "tree_url": "https://api.github.com/repos/jakartaee/servlet/git/trees/6.1.0-RELEASE?recursive=1",
+        "tree_sha256": "88641da4da220e5ccd2e78b1bfd023663c4631e11bbbb88792ef43f373dc10d0",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.servlet:jakarta.servlet-api",
+            "path": "api/src/main/java/jakarta/servlet/http/HttpServletRequest.java",
+            "blob_sha": "41c837f3c21f91dd2f3edf1d8e04d6dfb3eaf584"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/servlet/blob/6.1.0-RELEASE/api/src/main/java/jakarta/servlet/http/HttpServletRequest.java"
+      ]
+    },
+    {
+      "target": "jakarta.servlet.http.HttpServletResponse",
+      "coordinate": "jakarta.servlet:jakarta.servlet-api",
+      "proof": {
+        "repo": "jakartaee/servlet",
+        "requested_ref": "6.1.0-RELEASE",
+        "tree_sha": "fe6e12a5d54d8ccf5084e034be3e5ecc5a27f082",
+        "tree_url": "https://api.github.com/repos/jakartaee/servlet/git/trees/6.1.0-RELEASE?recursive=1",
+        "tree_sha256": "88641da4da220e5ccd2e78b1bfd023663c4631e11bbbb88792ef43f373dc10d0",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.servlet:jakarta.servlet-api",
+            "path": "api/src/main/java/jakarta/servlet/http/HttpServletResponse.java",
+            "blob_sha": "2e0b56054337df5cdb108ffceaa2ad1f68194658"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/servlet/blob/6.1.0-RELEASE/api/src/main/java/jakarta/servlet/http/HttpServletResponse.java"
+      ]
+    },
+    {
+      "target": "jakarta.servlet.ServletException",
+      "coordinate": "jakarta.servlet:jakarta.servlet-api",
+      "proof": {
+        "repo": "jakartaee/servlet",
+        "requested_ref": "6.1.0-RELEASE",
+        "tree_sha": "fe6e12a5d54d8ccf5084e034be3e5ecc5a27f082",
+        "tree_url": "https://api.github.com/repos/jakartaee/servlet/git/trees/6.1.0-RELEASE?recursive=1",
+        "tree_sha256": "88641da4da220e5ccd2e78b1bfd023663c4631e11bbbb88792ef43f373dc10d0",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.servlet:jakarta.servlet-api",
+            "path": "api/src/main/java/jakarta/servlet/ServletException.java",
+            "blob_sha": "a2ec3cc2a0f6d49afc490f63c7a38715e9dea66e"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/servlet/blob/6.1.0-RELEASE/api/src/main/java/jakarta/servlet/ServletException.java"
+      ]
+    },
+    {
+      "target": "jakarta.servlet.FilterChain",
+      "coordinate": "jakarta.servlet:jakarta.servlet-api",
+      "proof": {
+        "repo": "jakartaee/servlet",
+        "requested_ref": "6.1.0-RELEASE",
+        "tree_sha": "fe6e12a5d54d8ccf5084e034be3e5ecc5a27f082",
+        "tree_url": "https://api.github.com/repos/jakartaee/servlet/git/trees/6.1.0-RELEASE?recursive=1",
+        "tree_sha256": "88641da4da220e5ccd2e78b1bfd023663c4631e11bbbb88792ef43f373dc10d0",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "jakarta.servlet:jakarta.servlet-api",
+            "path": "api/src/main/java/jakarta/servlet/FilterChain.java",
+            "blob_sha": "baf5d3d581b9b621a5c7c9739c5d4ad8b855b0c8"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jakartaee/servlet/blob/6.1.0-RELEASE/api/src/main/java/jakarta/servlet/FilterChain.java"
+      ]
+    },
+    {
+      "target": "io.jsonwebtoken.security.Keys",
+      "coordinate": "io.jsonwebtoken:jjwt-api",
+      "proof": {
+        "repo": "jwtk/jjwt",
+        "requested_ref": "0.12.6",
+        "tree_sha": "0df975627c2c1d796b6d0309b7eb25fc53e15f9b",
+        "tree_url": "https://api.github.com/repos/jwtk/jjwt/git/trees/0.12.6?recursive=1",
+        "tree_sha256": "33d5358ceb6ded5548ad39fc3146972b1fbf82b0049ba977e7e838eaab4e6992",
+        "match_kind": "class",
+        "source_files": [
+          {
+            "coordinate": "io.jsonwebtoken:jjwt-api",
+            "path": "api/src/main/java/io/jsonwebtoken/security/Keys.java",
+            "blob_sha": "9ae54e73e0874d49dc3fc51afb6cd314b0a47c83"
+          }
+        ]
+      },
+      "sources": [
+        "https://github.com/jwtk/jjwt/blob/0.12.6/api/src/main/java/io/jsonwebtoken/security/Keys.java"
+      ]
+    }
+  ],
+  "errors": []
+}

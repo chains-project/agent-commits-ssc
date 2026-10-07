@@ -1,0 +1,9 @@
+final_queryable,label,subtype,episodes
+0,insufficient_evidence,,104746
+0,out_of_scope,,4627
+1,hallucinated_dependency,package_no_match,1122
+1,hallucinated_dependency,postdate,9
+1,hallucinated_dependency,version_no_match,68
+1,insufficient_evidence,,2108
+1,out_of_scope,,12
+1,present_at_commit,,42829

@@ -1,0 +1,11 @@
+label,reason,episodes
+hallucinated_dependency,package_no_match,1122
+hallucinated_dependency,postdate,9
+hallucinated_dependency,version_no_match,68
+insufficient_evidence,matching_release_time_missing,484
+insufficient_evidence,unresolved_property,65
+insufficient_evidence,unsupported_query_syntax,1559
+insufficient_evidence,upstream_identity_unresolved,104746
+out_of_scope,all_manifest_references_local,12
+out_of_scope,upstream_explicit_exclusion,4627
+present_at_commit,matching_release_before_boundary,42829

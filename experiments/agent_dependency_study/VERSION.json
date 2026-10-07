@@ -1,0 +1,15 @@
+{
+  "result_version": "canonical_v3",
+  "predecessor": "canonical_v2",
+  "change": "Integrated extraction and alignment, four final categories, and a committer-time boundary.",
+  "methodology": "Rebuilt extraction and alignment; four final categories; committer main boundary.",
+  "episodes": 1679785,
+  "queryable": 1335133,
+  "labels": {
+    "present_at_commit": 1256976,
+    "insufficient_evidence": 291918,
+    "out_of_scope": 70375,
+    "hallucinated_dependency": 60516
+  },
+  "final_labels_sha256": "44b56250f623da2ad246192702cb992c3d79e76dc4be7b449e01182efec4a6f3"
+}

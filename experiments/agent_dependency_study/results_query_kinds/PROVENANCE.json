@@ -1,0 +1,10 @@
+{
+  "dataset": "integrated_20261007",
+  "source_stage12_sha256": "8eb8a3ed1fc4b11704985ffdfb6c6ecba04c3411391e0a24d4fa0e5416a1b7e1",
+  "summary_sha256": "3cee98c0a1074fb4a3136d081cc8e587160d4a11c9765ae12bf3e122a1804a25",
+  "code_sha256": "48ffad23a5d2a34e017e2b27fa4f9f8e9fe3ea5105c058a618dda4c238f7d7c5",
+  "output_sha256": "47d1c5e32eb1cb8ea488fe6dab09580a6d5788482270c6411721e96fef3a10c9",
+  "episodes": 1679785,
+  "queryable": 1335133,
+  "validation": "Global count and queryable closure; ecosystem partition by query kind."
+}

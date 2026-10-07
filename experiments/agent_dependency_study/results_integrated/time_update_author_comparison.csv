@@ -1,0 +1,9 @@
+committer_label,committer_subtype,author_label,author_subtype,episodes
+hallucinated_dependency,package_no_match,hallucinated_dependency,package_no_match,56235
+hallucinated_dependency,postdate,hallucinated_dependency,postdate,2936
+hallucinated_dependency,postdate,present_at_commit,,2
+hallucinated_dependency,version_no_match,hallucinated_dependency,version_no_match,1343
+insufficient_evidence,,insufficient_evidence,,291918
+out_of_scope,,out_of_scope,,70375
+present_at_commit,,hallucinated_dependency,postdate,57
+present_at_commit,,present_at_commit,,1256919

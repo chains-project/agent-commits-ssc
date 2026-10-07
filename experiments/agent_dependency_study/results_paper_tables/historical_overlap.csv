@@ -1,0 +1,8 @@
+version,agents,episodes,queryable,confirmed_hallucination,probable_hallucination,indeterminate,not_hallucination,not_in_candidate_review
+canonical_v2_20260816,claude|codex,178,137,0,0,11,6,161
+canonical_v2_20260816,claude|copilot,288,172,0,0,12,1,275
+canonical_v2_20260816,claude|copilot|cursor,2,0,0,0,0,0,2
+canonical_v2_20260816,claude|cursor,211,171,0,0,4,12,195
+canonical_v2_20260816,codex|copilot,287,114,0,0,6,3,278
+canonical_v2_20260816,codex|cursor,163,137,0,0,9,13,141
+canonical_v2_20260816,copilot|cursor,984,629,0,0,12,27,945

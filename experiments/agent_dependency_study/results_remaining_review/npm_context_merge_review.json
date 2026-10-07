@@ -1,0 +1,214 @@
+{
+  "method": "In-memory rebuild using current linker and frozen Stage12 events/context; running database unchanged.",
+  "linker_sha256": "1a12515a46d0d6eace9cfc139e7c467ccb92be93038926054a44dc9b429a5f8f",
+  "examples": [
+    {
+      "repo": "kindlyrobotics/inferall-vscode",
+      "sha": "08a21c8dbe3c6e13ac2259a8e44aba279e6ff72c",
+      "commit_id": "cmt_49c61f6da3ea2086b50f2ae0d5e2b802",
+      "package": "@anthropic-ai/sdk",
+      "case": "preserved_valid_merge",
+      "manifest_events": [
+        {
+          "actual_language": "JSON",
+          "commit_id": "cmt_49c61f6da3ea2086b50f2ae0d5e2b802",
+          "ecosystem": "npm",
+          "event_id": "evt_654762a539ca6f8b4c0fda894c4ec020",
+          "event_ordinal": "0",
+          "event_status": "direct_manifest",
+          "event_type": "manifest_addition",
+          "new_line_number": "509",
+          "package_candidate": "@anthropic-ai/sdk",
+          "path": "package.json",
+          "raw_target": "@anthropic-ai/sdk",
+          "reason_codes": "child_snapshot_structure",
+          "schema_version": "2",
+          "version_spec": "^0.37.0"
+        }
+      ],
+      "representative_import": {
+        "actual_language": "TypeScript",
+        "commit_id": "cmt_49c61f6da3ea2086b50f2ae0d5e2b802",
+        "ecosystem": "npm",
+        "event_id": "evt_0e9ecb36bc837340f3ae44c72d8cc735",
+        "event_ordinal": "0",
+        "event_status": "direct_mapping",
+        "event_type": "import",
+        "new_line_number": "1",
+        "package_candidate": "@anthropic-ai/sdk",
+        "path": "src/core/api/providers/litellm.ts",
+        "raw_target": "@anthropic-ai/sdk",
+        "reason_codes": "",
+        "schema_version": "2",
+        "version_spec": ""
+      },
+      "context": {
+        "repo": "kindlyrobotics/inferall-vscode",
+        "sha": "08a21c8dbe3c6e13ac2259a8e44aba279e6ff72c",
+        "source_path": "src/core/api/providers/litellm.ts",
+        "raw_target": "@anthropic-ai/sdk",
+        "import_root": "@anthropic-ai/sdk",
+        "ecosystem": "npm",
+        "package_name": "@anthropic-ai/sdk",
+        "version_spec": "^0.37.0",
+        "resolved_version": "0.37.0",
+        "resolution_source": "manifest+lockfile",
+        "dependency_group": "dependencies",
+        "dependency_path": "package.json",
+        "alignment_status": "matched_manifest_and_lock",
+        "reason_codes": ""
+      },
+      "guard_accepts_context": true,
+      "final_queries_for_manifest_events": [
+        {
+          "episode_id": "dep_a0c5803417d255b09a4664513cc66af2",
+          "package_name": "@anthropic-ai/sdk",
+          "query_kind": "exact",
+          "query_value": "0.37.0",
+          "alignment_status": "matched_manifest_and_lock",
+          "resolution_source": "manifest+lockfile"
+        }
+      ],
+      "event_closure": true
+    },
+    {
+      "repo": "jmigrala/priceyourfence",
+      "sha": "7e537938eca54ca33591cf3017c2f4e2fb48ef17",
+      "commit_id": "cmt_2fd24b8f28c0b9e33132e80f6d491d94",
+      "package": "@aws-sdk/client-s3",
+      "case": "preserved_valid_merge",
+      "manifest_events": [
+        {
+          "actual_language": "JSON",
+          "commit_id": "cmt_2fd24b8f28c0b9e33132e80f6d491d94",
+          "ecosystem": "npm",
+          "event_id": "evt_c529fe7fef4c4e2212a3d4ddc129c0f0",
+          "event_ordinal": "0",
+          "event_status": "direct_manifest",
+          "event_type": "manifest_addition",
+          "new_line_number": "27",
+          "package_candidate": "@aws-sdk/client-s3",
+          "path": "package.json",
+          "raw_target": "@aws-sdk/client-s3",
+          "reason_codes": "child_snapshot_structure",
+          "schema_version": "2",
+          "version_spec": "^3.932.0"
+        }
+      ],
+      "representative_import": {
+        "actual_language": "TypeScript",
+        "commit_id": "cmt_2fd24b8f28c0b9e33132e80f6d491d94",
+        "ecosystem": "npm",
+        "event_id": "evt_384b21545a27fee375afa85f7365820b",
+        "event_ordinal": "0",
+        "event_status": "direct_mapping",
+        "event_type": "import",
+        "new_line_number": "1",
+        "package_candidate": "@aws-sdk/client-s3",
+        "path": "server/utils/r2.ts",
+        "raw_target": "@aws-sdk/client-s3",
+        "reason_codes": "",
+        "schema_version": "2",
+        "version_spec": ""
+      },
+      "context": {
+        "repo": "jmigrala/priceyourfence",
+        "sha": "7e537938eca54ca33591cf3017c2f4e2fb48ef17",
+        "source_path": "server/utils/r2.ts",
+        "raw_target": "@aws-sdk/client-s3",
+        "import_root": "@aws-sdk/client-s3",
+        "ecosystem": "npm",
+        "package_name": "@aws-sdk/client-s3",
+        "version_spec": "^3.932.0",
+        "resolved_version": "3.932.0",
+        "resolution_source": "manifest+lockfile",
+        "dependency_group": "dependencies",
+        "dependency_path": "package.json",
+        "alignment_status": "matched_manifest_and_lock",
+        "reason_codes": ""
+      },
+      "guard_accepts_context": true,
+      "final_queries_for_manifest_events": [
+        {
+          "episode_id": "dep_6b701e2c6e1d0d868d9650044bff767e",
+          "package_name": "@aws-sdk/client-s3",
+          "query_kind": "exact",
+          "query_value": "3.932.0",
+          "alignment_status": "matched_manifest_and_lock",
+          "resolution_source": "manifest+lockfile"
+        }
+      ],
+      "event_closure": true
+    },
+    {
+      "repo": "Quaid5050/projects-showcase",
+      "sha": "194ac22e2a256f0cbd1d5f7a95f0fafbd13c8b5a",
+      "commit_id": "cmt_23fbbfd0465168721364360d31515743",
+      "package": "@prisma/client",
+      "case": "cross_module_context_rejected",
+      "manifest_events": [
+        {
+          "actual_language": "JSON",
+          "commit_id": "cmt_23fbbfd0465168721364360d31515743",
+          "ecosystem": "npm",
+          "event_id": "evt_e0c74ec83eb9a8c38b4d0ac8d91b37e8",
+          "event_ordinal": "0",
+          "event_status": "direct_manifest",
+          "event_type": "manifest_addition",
+          "new_line_number": "14",
+          "package_candidate": "@prisma/client",
+          "path": "Lupin-Project/package.json",
+          "raw_target": "@prisma/client",
+          "reason_codes": "child_snapshot_structure",
+          "schema_version": "2",
+          "version_spec": "^6.19.3"
+        }
+      ],
+      "representative_import": {
+        "actual_language": "TypeScript",
+        "commit_id": "cmt_23fbbfd0465168721364360d31515743",
+        "ecosystem": "npm",
+        "event_id": "evt_871e41cdc2fecea8d743edbbe395c178",
+        "event_ordinal": "0",
+        "event_status": "direct_mapping",
+        "event_type": "import",
+        "new_line_number": "1",
+        "package_candidate": "@prisma/client",
+        "path": "Lupin-Project/lib/prisma.ts",
+        "raw_target": "@prisma/client",
+        "reason_codes": "",
+        "schema_version": "2",
+        "version_spec": ""
+      },
+      "context": {
+        "repo": "Quaid5050/projects-showcase",
+        "sha": "194ac22e2a256f0cbd1d5f7a95f0fafbd13c8b5a",
+        "source_path": "Lupin-Project/lib/prisma.ts",
+        "raw_target": "@prisma/client",
+        "import_root": "@prisma/client",
+        "ecosystem": "npm",
+        "package_name": "@prisma/client",
+        "version_spec": "^5.22.0",
+        "resolved_version": "5.22.0",
+        "resolution_source": "manifest+lockfile",
+        "dependency_group": "dependencies",
+        "dependency_path": "Black-Trucks-Co/package.json",
+        "alignment_status": "matched_manifest_and_lock",
+        "reason_codes": ""
+      },
+      "guard_accepts_context": false,
+      "final_queries_for_manifest_events": [
+        {
+          "episode_id": "dep_5031a066e26b534c52beba378ed8264a",
+          "package_name": "@prisma/client",
+          "query_kind": "range",
+          "query_value": "^6.19.3",
+          "alignment_status": "matched_manifest",
+          "resolution_source": "direct_manifest"
+        }
+      ],
+      "event_closure": true
+    }
+  ],
+  "status": "passed"
+}

@@ -1,0 +1,6 @@
+path,bytes,MiB,sha256,purpose
+inputs/observations.sqlite,1403621376,1338.598,e3cf162ed2e5c5354384d5634e0224cbfac98eb4b6b2940a5929641c6f76ba54,"Current results, offline replay or full verification input"
+results/episodes.csv.gz,144138142,137.461,b75effd87c6fc059412bea179ef82e8f5c8afe50ee2e2d31c19050cec1ce4a45,"Current results, offline replay or full verification input"
+results_integrated/episodes.csv.gz,173144179,165.123,bce190014cb0fc5ff02e5fb9a24249dda315b39689562cb43c50aafd38c48afc,"Current results, offline replay or full verification input"
+results_replay_v2/manifest_witnesses.jsonl.gz,15675634,14.949,8494810514f4585c1f8508d5b59f9e2aa8a0b1a5af1c1fa8552f0c96f5d9e247,"Current results, offline replay or full verification input"
+results_replay_v2/stage12.sqlite,1615593472,1540.75,8eb8a3ed1fc4b11704985ffdfb6c6ecba04c3411391e0a24d4fa0e5416a1b7e1,"Current results, offline replay or full verification input"

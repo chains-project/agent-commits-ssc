@@ -1,0 +1,8 @@
+version,agents,episodes,queryable,present_at_commit,hallucinated_dependency,insufficient_evidence,out_of_scope
+canonical_v3,claude|codex,175,133,111,14,35,15
+canonical_v3,claude|copilot,275,179,163,12,83,17
+canonical_v3,claude|copilot|cursor,2,0,0,0,2,0
+canonical_v3,claude|cursor,220,180,176,4,27,13
+canonical_v3,codex|copilot,280,111,101,9,145,25
+canonical_v3,codex|cursor,160,139,92,22,31,15
+canonical_v3,copilot|cursor,998,642,617,17,278,86

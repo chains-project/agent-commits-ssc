@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "sources": [
+    {
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\analysis\\v2_native_adjudication.csv",
+      "sha256": "17572ec857b8e9ba6c3f2e040ca3cfc6479a221f824877244a3197e528ad8500"
+    },
+    {
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\analysis\\v2_temporal_commit_metadata.csv",
+      "sha256": "ea0dda793278469270ef2bca508aabbd319eaeb07c07742272ee505e1e34bdcb"
+    },
+    {
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\analysis\\v2_temporal_official_requery.csv",
+      "sha256": "6ad6eff3579ffb5819d0a113bba926bd490fcff83f916373a7c4d3cbfb3c615c"
+    },
+    {
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\analysis\\v2_temporal_npm_semver.csv",
+      "sha256": "a82df0f36e54becdb7705c10a1d004d04f910da9a6556d82e1eafbd7d324d425"
+    },
+    {
+      "path": ".Codex\\plans\\2026-08-15-rq2-six-language-hallucination-analysis\\six_language_hidden_postdate_commit_metadata.csv",
+      "sha256": "11325779a6990a6924beaadb67237792cff89049b0e85c0caf7322e4c1f7c042"
+    },
+    {
+      "path": ".Codex\\plans\\2026-08-15-rq2-six-language-hallucination-analysis\\six_language_maven_artifact_times.csv",
+      "sha256": "948d0243637130bb2de43a4091f07558c105f30611d2e618b6d3826f06850032"
+    },
+    {
+      "path": "C:\\Users\\Ksco\\OneDrive\\\u6587\u6863\\KTH\\MasterThesis\\thesis-work\\experiments\\agent_dependency_study\\summarize_historical_time_basis.py",
+      "sha256": "a7a030a79966824ccaa998cb1410ab3f31e472e4d82329f18b81da51bf708416"
+    },
+    {
+      "path": "C:\\Users\\Ksco\\OneDrive\\\u6587\u6863\\KTH\\MasterThesis\\thesis-work\\experiments\\agent_dependency_study\\inputs\\commit_times\\commit_times.csv.gz",
+      "sha256": "c39a934180b982446dcb93d448ca274ade4afa3bdefaff0c5db48813a0aaaa1a"
+    }
+  ],
+  "temporal_committer": 81,
+  "temporal_author_fallback": 0,
+  "no_release_time_comparison": 623,
+  "validation": "Saved temporal deltas recomputed and boundaries matched to recovered raw committer dates.",
+  "screening_boundary": "author",
+  "network": false,
+  "labels_changed": false,
+  "outputs": {
+    "historical_positive_time_counts.csv": "0cb9117edc3c186e038dd5543cb9f3c6c906e65f9f6bec616671b51482ca03c8",
+    "historical_positive_time_evidence.csv": "7846ec3053ab4cabb4d256b44d8802b33da6cfcb2bd80ba8ddf72a63880c195b"
+  }
+}

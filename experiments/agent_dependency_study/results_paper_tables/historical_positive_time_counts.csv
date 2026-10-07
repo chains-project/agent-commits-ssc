@@ -1,0 +1,5 @@
+label,final_boundary,episodes
+confirmed_hallucination,committer,56
+confirmed_hallucination,no_release_time_comparison,266
+probable_hallucination,committer,25
+probable_hallucination,no_release_time_comparison,357

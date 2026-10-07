@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "commits": 12466,
+    "events": 541169,
+    "old_episodes": 177735,
+    "old_links": 541799
+  },
+  "sha256": "201dc5e9422a8390869941b429bbb591bb418022046aafbc99b12ad8c69b35e8",
+  "sources": [
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\commits.csv",
+      "sha256": "7d507bcd2d84f244d8a0da68527ed01f54f4f8cf4137b8dfe582980e18a9cd28"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\events.csv",
+      "sha256": "fcd3cf5496331df741b0a6725692e76ed4cf405bfff25e0ad890906d2a00af76"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\episodes.csv",
+      "sha256": "209b5b3d25c7909b4f0dce7d40ac410346f497402c2466818c894676319e77d9"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\episode_event_links.csv",
+      "sha256": "d623a91cd2470d4685ae8ca35a074352aad582ab352a2db5040e5ff8f6b419eb"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\context\\Java.sqlite",
+      "sha256": "734ab4804df4b1b1248e72507d5deafed4a00a774eb8fbf38400502203304dcb"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "insufficient": 308269,
+  "identity_unresolved": 290963,
+  "unsupported_queries": 9525,
+  "source": "results_final/episodes.csv.gz",
+  "note": "Diagnostic counts; target and reason-token groups can overlap. No label or evidence changes.",
+  "cached_java_candidates": {
+    "targets": 1009,
+    "target_episode_incidences": 16162
+  }
+}

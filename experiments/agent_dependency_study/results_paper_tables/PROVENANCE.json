@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "inputs": {
+    "results_integrated/episodes.csv.gz": "44b56250f623da2ad246192702cb992c3d79e76dc4be7b449e01182efec4a6f3",
+    "results_integrated/summary.json": "78839b1acbedd6577bee806d6478298cc4d7596254ba6c74a7f1a4b45baee5aa",
+    "inputs/observations.sqlite": "e3cf162ed2e5c5354384d5634e0224cbfac98eb4b6b2940a5929641c6f76ba54",
+    "inputs/analysis_membership/commits.csv.gz": "32886223f21f53ac60a09f93aca7750a6d616edd6ae9afa9e8efedc602d02a6a",
+    "summarize_paper_tables.py": "bcf7ba30876bae00f7fc6892e0c631bdcb5946a02635261f583b7a3a28fd0bb6",
+    "src/paper_counts.py": "76bd39be42323b2d29fb877566ad8f2bd30b0b0936914e4379984ae3a1c03473",
+    "src/paper_freshness.py": "11fc3c76c3b31848264b420949e6226f5423830b93d349e6847e1bf2b694cf64"
+  },
+  "result_version": "canonical_v3",
+  "population": "expanded",
+  "denominator": "exact/range/name_only episodes; complete qualifying agent membership",
+  "repository_population": "distinct stable repository keys among queryable episodes in each stratum",
+  "repository_resolution": {
+    "numeric_id": 343631,
+    "metadata_unavailable_name_fallback": 159
+  },
+  "validation": "label/denominator totals, ecosystem partition, agent-cross-table margins and overlap excess checked",
+  "network": false,
+  "bootstrap": false,
+  "outputs": {
+    "current_agent.csv": "e609a902e10370d387d5641d2aaeef9294f998d59f0431f38981476a1a335c2b",
+    "current_agent_ecosystem.csv": "b8bf90de2938b1235b02d6e5a8cb7a18444eb9df8c89ddea6fb88368c80bb0a6",
+    "current_ecosystem.csv": "949ede1bef5bb0754a7cd3eeadee0182a98f458e2eeea396e81430e84538eae8",
+    "current_global.csv": "20f4beea93242a9c5e27d0f909f47d4bd2731c6ada547e4f8ca688f5ad9f1b95",
+    "current_overlap.csv": "d52b2fcad377aad9abb6ebbfe55d4fa164249bd835262824f3548214cc27ec31",
+    "freshness_evidence_coverage.csv": "03f7495ace5d8b505ce05dc0a253a88ac3d4fd071af64a23112be32fe480ded7",
+    "historical_agent.csv": "6825e342ca13da73cb900f69288644272a3221996a6744e85c518657cdce4acc",
+    "historical_agent_ecosystem.csv": "c4efb653e6324d72a15d95f693803f3ec9dfe42770824e64aca82bd113146600",
+    "historical_ecosystem.csv": "18d340d578620dedd95a54563f02842849249620e5554debe0dd218a91f8a2f1",
+    "historical_global.csv": "7ba295ae75f1824da7e14b310ed19fe2c18a092f82cdc50162f8f83b40d63a2c",
+    "historical_overlap.csv": "a793ccb313a80ee8168f26cf2e01b7e905856c8430b77e264d783511f59dec13"
+  },
+  "result_naming": "Current result version: canonical_v3. VERSION.json records its methods and counts."
+}

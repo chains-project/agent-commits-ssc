@@ -1,0 +1,30 @@
+{
+  "staging": {
+    "files": 323,
+    "bytes": 61091713
+  },
+  "drive_core": {
+    "files": 5,
+    "bytes": 3352172803
+  },
+  "drive_optional": {
+    "files": 43,
+    "bytes": 1465951308
+  },
+  "data_access": "DATA_ACCESS.md",
+  "control_files": "Inventory files exclude their own hashes. package_manifest.json fingerprints the public export.",
+  "recommended_downloads": {
+    "results": {
+      "files": 5,
+      "bytes": 728043634
+    },
+    "reproductions": {
+      "files": 4,
+      "bytes": 3179028624
+    }
+  },
+  "current_data_inventory": "data_bundle_files.csv",
+  "historical_inventory_note": "drive_core_files.csv and drive_optional_files.csv describe earlier packaging selections; current publication uses data_bundle_files.csv.",
+  "download_url": "https://drive.google.com/drive/folders/1Qp-xgDnHjzgSQWFrJgoIo_5FvHnEq7Ta?usp=sharing",
+  "result_version": "canonical_v3"
+}

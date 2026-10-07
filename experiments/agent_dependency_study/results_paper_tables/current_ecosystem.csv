@@ -1,0 +1,6 @@
+version,agent,ecosystem,episodes,queryable,queryable_commits,queryable_repositories,present_at_commit,queryable_present_at_commit,queryable_present_at_commit_pct,hallucinated_dependency,queryable_hallucinated_dependency,queryable_hallucinated_dependency_pct,insufficient_evidence,queryable_insufficient_evidence,queryable_insufficient_evidence_pct,out_of_scope,queryable_out_of_scope,queryable_out_of_scope_pct,package_no_match,version_no_match,postdate
+canonical_v3,ALL,Cargo,61218,47648,14122,6505,37460,37460,78.6182,7738,7738,16.239926,4642,2225,4.669661,11378,225,0.472213,6846,95,797
+canonical_v3,ALL,Go,66607,53813,7556,4153,45428,45428,84.418263,7240,7240,13.453998,1161,1145,2.127739,12778,0,0.0,6923,74,243
+canonical_v3,ALL,Maven,142275,48985,8926,5093,45823,45823,93.544963,1211,1211,2.472185,90602,1939,3.958355,4639,12,0.024497,1095,107,9
+canonical_v3,ALL,PyPI,493361,322919,81250,44097,286804,286804,88.816081,29613,29613,9.170411,145020,5498,1.702594,31924,1004,0.310914,27729,595,1289
+canonical_v3,ALL,npm,916324,861768,202357,101751,841461,841461,97.643565,14714,14714,1.70742,50493,5593,0.649015,9656,0,0.0,13642,472,600

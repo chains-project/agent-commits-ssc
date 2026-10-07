@@ -1,0 +1,41 @@
+{
+  "population": "canonical_v2_20260816; global unique episode IDs",
+  "query_kinds": {
+    "exact": 400813,
+    "excluded": 68035,
+    "name_only": 418520,
+    "range": 545523,
+    "unresolved": 336762
+  },
+  "advisory_statuses": {
+    "active_before_or_at_author_date": 30444,
+    "none_observed": 334689,
+    "not_queried": 1368840,
+    "published_after_author_date": 35680
+  },
+  "active_malicious_flagged_episodes": 18,
+  "active_malicious_flagged_packages": 15,
+  "historical_advisory_current_absence_episodes": 480,
+  "historical_advisory_current_absence_final_labels": {
+    "not_hallucination": 349,
+    "probable_hallucination": 65,
+    "indeterminate": 66
+  },
+  "malicious_final_candidate_labels": {
+    "indeterminate": 13,
+    "not_hallucination": 2,
+    "probable_hallucination": 2,
+    "not_in_candidate_adjudication": 1
+  },
+  "source_episode_hashes": {
+    "TypeScript": "3ff87e9f92d82a8a7bb5a219e4bccf608f46ad4f606039e1e460bfb540f5e226",
+    "Python": "55abe0a0ed0f9c147425a280d41f89ef126dd0693a042c80085ee78ae727d6cf",
+    "JavaScript": "0acae861caf16a5e49fd5328f056507cb21541cdf6d9c2b5cfd29a7b594fb93e",
+    "Rust": "861ca0b6e9ab63359ce9bb16684f2bb19f35c7a0fe8181682f4a613717dcd33c",
+    "Go": "8597d9700e1ebdabfc68f4381549c4724ead58437f6c7515717c4b421d70f1c1",
+    "Java": "209b5b3d25c7909b4f0dce7d40ac410346f497402c2466818c894676319e77d9"
+  },
+  "global_aggregate_sha256": "d48afcc077c2a0933fe82acea9ff1fd157848be7e03b1c7a53978446b87f2133",
+  "source_manifest_sha256": "14179b833595a49b79c7a99942289b1ba87cfef00cf1b0d2c17e9b1049729104",
+  "limitation": "Counts reflect frozen pipeline advisory flags; not a fresh malware audit, complete package census, or proof of execution. Future-only malicious advisories are outside this active-at-author-time count."
+}

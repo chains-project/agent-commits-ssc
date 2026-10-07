@@ -1,0 +1,12 @@
+{
+  "commits_without_old_manifest_events": 126473,
+  "old_manifest_events": 392179,
+  "commits_with_old_manifest_events": 40880,
+  "previous_event_commits": 343756,
+  "snapshot_linked_patch_commits": 181739,
+  "overlap": 176403,
+  "additional_patch_commits": 5336,
+  "old_commits_without_snapshot_patch_index": 167353,
+  "total_candidate_keys": 349092,
+  "source_sha256": "564e49024b4789e00e91460c7014da63a978924b8603df02a2985eb05111b95d"
+}

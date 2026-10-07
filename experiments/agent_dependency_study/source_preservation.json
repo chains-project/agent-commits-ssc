@@ -1,0 +1,221 @@
+{
+  "status": "baseline_preserved_with_authorized_integrated_amendments",
+  "initial_copy_verification": {
+    "status": "passed",
+    "rule": "Only recorded filename/module references substituted; remaining text identical",
+    "files": [
+      {
+        "original": "scripts\\hallucination\\rq2_stage1_extract.py",
+        "packaged": "scripts\\hallucination\\stage1_extract.py",
+        "original_sha256": "0a7991f8b2f03fc75c5939d9c20a789be39a6fbf5d608f0b486c6a6f987f04ab",
+        "packaged_sha256": "ffe9e764ded0702184b4787a4cde60e5ddbbb0053a31ddfa34bbe7608cf9bdef"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_stage1_manifest_diff.py",
+        "packaged": "scripts\\hallucination\\stage1_manifest_diff.py",
+        "original_sha256": "c4f57be8ff12998bce97bfe0781a538730f151438712417105b3b38909d9d685",
+        "packaged_sha256": "cbf84ade679e085e6e2cdfafd36a6ec2706d1b2682ab3f234fbfc3ed6ebf8385"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_stage1_streaming.py",
+        "packaged": "scripts\\hallucination\\stage1_streaming.py",
+        "original_sha256": "529366278bb8707c83fa9c1491216f8a9e62c4bca7a895431b0493313fd734b5",
+        "packaged_sha256": "44785c557a1020e7adee53ea88eb41a2ffc238c6b3b56d579552c7524b7bf793"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_stage2_alignment.py",
+        "packaged": "scripts\\hallucination\\stage2_alignment.py",
+        "original_sha256": "bad8545f8e351f75a5dfa39657cde25f5f11782db6e002f7f0dfae86af50e0cf",
+        "packaged_sha256": "5f4cd8a4fefe72ba259fcca4ede9b520d0efbe504d1c0bd50252d2960a887305"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_stage2_build.py",
+        "packaged": "scripts\\hallucination\\stage2_build.py",
+        "original_sha256": "26341422299e86c76b6317bc276d9e923e760361095a8584c88cf43b13bd1565",
+        "packaged_sha256": "0bd82f870b5a58c862423e4f3a18ed5c516b13d709bd27bb11fadbf166970fc4"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_stage2_context.py",
+        "packaged": "scripts\\hallucination\\stage2_context.py",
+        "original_sha256": "1625dfef02981483ec7b2a2cc80842699abef454f08c8584f89fc9c6970935f0",
+        "packaged_sha256": "6e221f7a73157e1427615130ca04c8a460d2809abda6930448f9e8e6c40f91c3"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_stage2_episode_linker.py",
+        "packaged": "scripts\\hallucination\\stage2_episode_linker.py",
+        "original_sha256": "4db7297b56f3fc29472ff89f5a504ade79f2ca825e24849afccbe20ec1dcbaac",
+        "packaged_sha256": "f8c7a133c6bb05cfa933dc27ae486a7da3df19b6f4ce7b69aaa34b9434d46294"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_stage2_python_wheel.py",
+        "packaged": "scripts\\hallucination\\stage2_python_wheel.py",
+        "original_sha256": "87c52500977b366ae4989af2bb465ece0a1474a73e5ff748ff39e2409ff26a4e",
+        "packaged_sha256": "5b6fcc9b70e893643a1ae9dcd3530282c8d286b7375e6a92924c1305a5d0a452"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_stage2_storage.py",
+        "packaged": "scripts\\hallucination\\stage2_storage.py",
+        "original_sha256": "e13ca6c3428dad6d746d6448ea403b6860e6d436af7b86e6a4a3a5b3b373ebab",
+        "packaged_sha256": "7312ac9fdbcc84bbcaf1ec849e7ab512e17e1fbebd2a710a74837fd43e31123c"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_stage2_streaming.py",
+        "packaged": "scripts\\hallucination\\stage2_streaming.py",
+        "original_sha256": "48334017ea7d1721dc256910d6036dcb83a0d20611a02e442e5449353bf6a3a6",
+        "packaged_sha256": "8d8ce4bfbb0f7f3b417a001d6faed795e5be1814a60599a30de46ff7d0185d99"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_streaming_store.py",
+        "packaged": "scripts\\hallucination\\streaming_store.py",
+        "original_sha256": "452b8de0f76383949c1f44811c07f2f7297137e0b7c36dc9b12f46a502442dc0",
+        "packaged_sha256": "452b8de0f76383949c1f44811c07f2f7297137e0b7c36dc9b12f46a502442dc0"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_stage_schema.py",
+        "packaged": "scripts\\hallucination\\stage_schema.py",
+        "original_sha256": "ee8c7492cc66a7f3db29da18b954de35f244cae53db251042f39123b0499cee8",
+        "packaged_sha256": "ee8c7492cc66a7f3db29da18b954de35f244cae53db251042f39123b0499cee8"
+      },
+      {
+        "original": "scripts\\hallucination\\rq2_python_stdlib.py",
+        "packaged": "scripts\\hallucination\\python_stdlib.py",
+        "original_sha256": "492b4af8e2605ad5de196c7f6188be38d8bcf67abc74a7a91b85b1345f9ffb49",
+        "packaged_sha256": "492b4af8e2605ad5de196c7f6188be38d8bcf67abc74a7a91b85b1345f9ffb49"
+      }
+    ]
+  },
+  "integrated_amendment": {
+    "date": "2026-10-07",
+    "authorization": "Child-manifest repair, source-aware parsing, cached Java mapping expansion and complete local replay within 2-3 hours.",
+    "files": [
+      {
+        "path": "scripts/hallucination/stage1_snapshot.py",
+        "sha256": "397bee65fb66febb1af1363c41e66b2364581c1199ecc40f7fa076b220b7d2c7"
+      },
+      {
+        "path": "scripts/hallucination/stage2_alignment.py",
+        "sha256": "23600bbd34c48eb74ce8cdbc47de3ea5c176a34b0a1f9c4de954af31c22280aa"
+      },
+      {
+        "path": "scripts/hallucination/stage2_episode_linker.py",
+        "sha256": "1a12515a46d0d6eace9cfc139e7c467ccb92be93038926054a44dc9b429a5f8f"
+      },
+      {
+        "path": "scripts/hallucination/stage2_version_repairs.py",
+        "sha256": "0ececa9b6612ac1ed80dc0491030644a8e652c09db603775ea2cb047bede0cfb"
+      },
+      {
+        "path": "scripts/hallucination/java_class_catalog.json",
+        "sha256": "293c463a015734f3b2747d3552c167f68605ce31f31269a1d0a12ed090d8b736"
+      },
+      {
+        "path": "src/stage1_replay_adapter.py",
+        "sha256": "30be56bf76d82af032cd87f99270b96d30ead210c34ed092861a9e36a506fce1"
+      },
+      {
+        "path": "src/replay_classification.py",
+        "sha256": "4cfee2a3ce988c23e6c6954bd0abe30bf26400c4f6dd415371cd544ce71f529a"
+      },
+      {
+        "path": "prepare_replay.py",
+        "sha256": "63be6be679bc80f4e8288fb9759ddfda0b321e244cd00b3111e076d282ca3262"
+      },
+      {
+        "path": "run_stage12_replay.py",
+        "sha256": "94dc38bc9c485e31359b3aabcad7f9cd5d9f77cd95112e490f186d35eb8983a4"
+      },
+      {
+        "path": "repair_replay_context.py",
+        "sha256": "7b076cc3f5dd66d6a13aae6aa0c652b92fbddcda85be0ca79340ffc6dac289b2"
+      },
+      {
+        "path": "run_stage3_replay.py",
+        "sha256": "935aeb8be061f359e2d34bea0e9c4d43883637722df0157dcb779817e3536bda"
+      },
+      {
+        "path": "verify_integrated_results.py",
+        "sha256": "b2d6f36366eca95358edb09e2c1f4b22581c4d8496336b68c5d08e8b82917f1f"
+      },
+      {
+        "path": "run_integrated.py",
+        "sha256": "f8ca9ac70fcef0e21f68a90973aa9f6eb0f42a147d1a2d2cd5411201d689d046"
+      },
+      {
+        "path": "repair_replay_scope.py",
+        "sha256": "26779dbd402cfa97179d10933b7d85e690cac75cd82623fde10000a2e558658c"
+      },
+      {
+        "path": "summarize_replay_coverage.py",
+        "sha256": "a9f98482991f22102ba32c8ec2f9ca96dc11dfcc27037fae71ee515d161519c5"
+      },
+      {
+        "path": "src/integrated_report.py",
+        "sha256": "ea1d6b41df3c261cf1bb03418eeffff05d5d0215bf425a2dfd0ccbd350807a33"
+      },
+      {
+        "path": "policy.json",
+        "sha256": "9ce3e644c11a67c7dc91ee8e009ecf4494e537f5f69a9fa3e8882ec63ee44ccc"
+      }
+    ],
+    "intermediate_provenance_note": "The context completion pass records the linker file hash at completion, after a subsequent scope guard was edited. It is not a loaded-module fingerprint. The later scope completion pass applies that guard and records the final linker hash and output database hash.",
+    "validation": {
+      "targeted_tests_passed": 63,
+      "full_verification": "results_integrated/verification.json",
+      "status": "passed",
+      "real_case_reviews": [
+        "results_remaining_review/npm_context_merge_review.json",
+        "results_remaining_review/placeholder_context_regression_examples.json"
+      ]
+    }
+  },
+  "java_repair_amendment": {
+    "date": "2026-10-07",
+    "scope": "Independent packaged Stage2 Java identity repair; Stage1 preserved.",
+    "unchanged_baseline_modules": [
+      "scripts\\hallucination\\stage1_extract.py",
+      "scripts\\hallucination\\stage1_manifest_diff.py",
+      "scripts\\hallucination\\stage1_streaming.py",
+      "scripts\\hallucination\\stage2_alignment.py",
+      "scripts\\hallucination\\stage2_build.py",
+      "scripts\\hallucination\\stage2_context.py",
+      "scripts\\hallucination\\stage2_python_wheel.py",
+      "scripts\\hallucination\\stage2_storage.py",
+      "scripts\\hallucination\\stage2_streaming.py",
+      "scripts\\hallucination\\streaming_store.py",
+      "scripts\\hallucination\\stage_schema.py",
+      "scripts\\hallucination\\python_stdlib.py"
+    ],
+    "files": [
+      {
+        "path": "scripts\\hallucination\\stage2_episode_linker.py",
+        "baseline_sha256": "f8c7a133c6bb05cfa933dc27ae486a7da3df19b6f4ce7b69aaa34b9434d46294",
+        "current_sha256": "5a3f43a7f14cf245cc04af3f3409905d39062eff56a92174864782274466d1a9",
+        "change": "Run documented Java identity resolver before legacy Java heuristic; preserve local scope and event links."
+      },
+      {
+        "path": "scripts/hallucination/stage2_java_identity.py",
+        "current_sha256": "c54ab8704b21bcf3d20b61c84e9e983c25ef0ba93bf4b72bc7a5754a7a4e851b",
+        "change": "Added exact class-to-artifact mapping with official-source provenance."
+      },
+      {
+        "path": "scripts/hallucination/java_class_catalog.json",
+        "current_sha256": "ecd1d73b59305051e3f45085f883476268771e35b9229ce56df7e8f58a4843f2",
+        "change": "Added exact class-to-artifact mapping with official-source provenance."
+      }
+    ],
+    "validation": "40 tests; complete Java rerun and results_final/verification.json",
+    "note": "Historical Java-only checkpoint; integrated_amendment records the current packaged code."
+  },
+  "public_export": {
+    "date": "2026-10-07",
+    "changes": "delivery/public_export_changes.json",
+    "note": "Earlier hashes describe historical source checkpoints. The public export translates documentation/report text and normalizes portable metadata paths; current file hashes are in package_manifest.json. Classification rules and experimental data are unchanged."
+  },
+  "committer_time_amendment": {
+    "version": "canonical_v3",
+    "scope": "Recovered raw commit dates, uniform committer main boundary, author sensitivity and updated classification/report.",
+    "stage12_unchanged": true,
+    "registry_evidence_unchanged": true,
+    "metadata_sha256": "c39a934180b982446dcb93d448ca274ade4afa3bdefaff0c5db48813a0aaaa1a"
+  }
+}

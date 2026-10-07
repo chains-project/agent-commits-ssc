@@ -1,0 +1,137 @@
+{
+  "dep_01361cad3e4f2b4073acc944c915cdf3": {
+    "local_only": false,
+    "manifest_witnesses": [
+      {
+        "event": {
+          "actual_language": "Gradle",
+          "ecosystem": "Maven",
+          "event_id": "evt_bef5684798e1bce1da63b7209a843499",
+          "event_ordinal": "0",
+          "event_status": "direct_manifest",
+          "event_type": "manifest_addition",
+          "new_line_number": "39",
+          "package_candidate": "org.mockito:mockito-core",
+          "path": "build.gradle",
+          "product_languages": [
+            "Java"
+          ],
+          "raw_target": "org.mockito:mockito-core",
+          "reason_codes": "",
+          "version_spec": "5.12.0"
+        },
+        "text": "    testImplementation 'org.mockito:mockito-core:5.12.0'"
+      }
+    ],
+    "mixed_scope": false,
+    "scope_source": "six_language_candidate_evidence.csv"
+  },
+  "dep_c0bd61627269e3d538d3bd8c62fc0fca": {
+    "local_only": false,
+    "manifest_witnesses": [
+      {
+        "event": {
+          "actual_language": "Gradle",
+          "ecosystem": "Maven",
+          "event_id": "evt_3bb356359e3b578dd7b0ad4f197e0679",
+          "event_ordinal": "0",
+          "event_status": "direct_manifest",
+          "event_type": "manifest_addition",
+          "new_line_number": "15",
+          "package_candidate": "com.tngtech.archunit:archunit-junit5",
+          "path": "sample-service/build.gradle.kts",
+          "product_languages": [
+            "Java"
+          ],
+          "raw_target": "com.tngtech.archunit:archunit-junit5",
+          "reason_codes": "",
+          "version_spec": "1.3.0"
+        },
+        "text": "    testImplementation(\"com.tngtech.archunit:archunit-junit5:1.3.0\")"
+      }
+    ],
+    "mixed_scope": false,
+    "scope_source": "six_language_candidate_evidence.csv"
+  },
+  "dep_4ad2aee500fcf73297c8cd79699c3c7b": {
+    "local_only": false,
+    "manifest_witnesses": [
+      {
+        "event": {
+          "actual_language": "Gradle",
+          "ecosystem": "Maven",
+          "event_id": "evt_4ad6ddd42b3d9d4dcbb979b9bb9656b2",
+          "event_ordinal": "0",
+          "event_status": "direct_manifest",
+          "event_type": "manifest_addition",
+          "new_line_number": "37",
+          "package_candidate": "net.openhft:chronicle-queue",
+          "path": "build.gradle.kts",
+          "product_languages": [
+            "Java"
+          ],
+          "raw_target": "net.openhft:chronicle-queue",
+          "reason_codes": "",
+          "version_spec": "2026.2"
+        },
+        "text": "    implementation(\"net.openhft:chronicle-queue:2026.2\") {"
+      }
+    ],
+    "mixed_scope": false,
+    "scope_source": "six_language_candidate_evidence.csv"
+  },
+  "dep_b8bb3d775b962f85a09cbe6c171e300e": {
+    "local_only": false,
+    "manifest_witnesses": [
+      {
+        "event": {
+          "actual_language": "Gradle",
+          "ecosystem": "Maven",
+          "event_id": "evt_a303768339bf4329ed40c195d000b5a1",
+          "event_ordinal": "0",
+          "event_status": "direct_manifest",
+          "event_type": "manifest_addition",
+          "new_line_number": "46",
+          "package_candidate": "org.slf4j:slf4j-api",
+          "path": "build.gradle.kts",
+          "product_languages": [
+            "Java"
+          ],
+          "raw_target": "org.slf4j:slf4j-api",
+          "reason_codes": "",
+          "version_spec": "2.0.16"
+        },
+        "text": "    implementation(\"org.slf4j:slf4j-api:2.0.16\")"
+      }
+    ],
+    "mixed_scope": false,
+    "scope_source": "six_language_candidate_evidence.csv"
+  },
+  "dep_0d3b3ebd18d23f4a0c4ad78d78d67f56": {
+    "local_only": false,
+    "manifest_witnesses": [
+      {
+        "event": {
+          "actual_language": "XML",
+          "ecosystem": "Maven",
+          "event_id": "evt_ccc320e73f56328c9057fb14ae038d6d",
+          "event_ordinal": "0",
+          "event_status": "direct_manifest",
+          "event_type": "manifest_addition",
+          "new_line_number": "184",
+          "package_candidate": "org.apache.poi:poi-ooxml",
+          "path": "pom.xml",
+          "product_languages": [
+            "Java"
+          ],
+          "raw_target": "org.apache.poi:poi-ooxml",
+          "reason_codes": "",
+          "version_spec": "5.2.5"
+        },
+        "text": "        <dependency>"
+      }
+    ],
+    "mixed_scope": false,
+    "scope_source": "six_language_candidate_evidence.csv"
+  }
+}

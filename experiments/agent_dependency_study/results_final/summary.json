@@ -1,0 +1,58 @@
+{
+  "episodes": 1747439,
+  "queryable": 1388441,
+  "labels": {
+    "out_of_scope": 69279,
+    "insufficient_evidence": 308269,
+    "hallucinated_dependency": 60992,
+    "present_at_commit": 1308899
+  },
+  "baseline_episodes": 1769653,
+  "baseline_queryable": 1364856,
+  "java": {
+    "commits": 12466,
+    "events": 541169,
+    "episodes": 155521,
+    "recovered_old_unresolved": 45817,
+    "labels": {
+      "insufficient_evidence": 106854,
+      "present_at_commit": 42829,
+      "hallucinated_dependency": 1199,
+      "out_of_scope": 4639
+    },
+    "queryable": 46148,
+    "elapsed_seconds": 534.0779999999795,
+    "old_episodes": 177735,
+    "old_queryable": 22563,
+    "old_labels": {
+      "insufficient_evidence": 152640,
+      "out_of_scope": 4639,
+      "present_at_commit": 19256,
+      "hallucinated_dependency": 1200
+    },
+    "input_sha256": "201dc5e9422a8390869941b429bbb591bb418022046aafbc99b12ad8c69b35e8",
+    "registry_input_sha256": "e3cf162ed2e5c5354384d5634e0224cbfac98eb4b6b2940a5929641c6f76ba54",
+    "catalog_sha256": "ecd1d73b59305051e3f45085f883476268771e35b9229ce56df7e8f58a4843f2",
+    "catalog_targets": 109,
+    "catalog_artifacts": 28,
+    "output_sha256": {
+      "episodes.csv.gz": "4998240705813d4942ef554fd882ac7ae611d9183ab6e2d4d8b7e32c82b68b7d",
+      "episode_event_links.csv.gz": "a7b5fcaa78425bc3387795effc086ffd45ca9803a0bab25e223f5e27caa4a2c4",
+      "event_bridge.csv.gz": "e3a7f128462e7e58addab751faffdc1a6eebcf143f1a79f44d39f7c1857d8531",
+      "label_counts.csv": "dd2c51e6f01775649a938d1d7583d8d861685c9d2ab2efb501d0a51e515f8824",
+      "mapping_witnesses.jsonl.gz": "3fbd9a035a80882b2c30e96f3cd283b06096acb8159751b629879042f2d80839",
+      "reasons.csv": "7526560230c5df03634fb533fca1b79dab368d7a2d48d5014b6817515235b812"
+    }
+  },
+  "method": "Entire baseline Maven slice replaced by repaired Stage2/Stage3 Java outputs; other ecosystems reused unchanged.",
+  "baseline_summary_sha256": "5a22a25aedb926773c4b40401ed32e2f24e93b3199455b4f5c8a7c2e2036d9f8",
+  "java_summary_sha256": "c431a2b0902ca167fe5f55c6f65c85e964df23fe2a5be417ae70e186aa88a95c",
+  "output_sha256": {
+    "episodes.csv.gz": "1b63c11e71389d27b2aa9bac3548009efa6a8ee665608b569aa61a934b35552d",
+    "label_counts.csv": "9f3e0f4d5d8726d2f9be1a156f640f0657d00b736d6a1e41dacba2d7591a0e1d",
+    "positive_sensitivity.csv": "cc0473323cea4131fe6fe85f67e752e543613d6a28090317f0ffc7c022993c22",
+    "proxy_sensitivity.csv": "9b96b2504e49ea845fb0b4645f8bbb76e308bee09edbb5d0a6fd04e1673fefef",
+    "reasons.csv": "e065ec06e45d08df43795f530aec4e811cc45a262944be3dcf02b8a093a5bdaf",
+    "time_boundaries.csv": "c75c73e0b29864fe46170a13dfec939ec744f822aaf51e48526129276d0e4eb7"
+  }
+}

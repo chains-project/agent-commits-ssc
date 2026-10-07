@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "episodes": 1769653,
+    "baseline_queryable": 1364856
+  },
+  "labels": {
+    "insufficient_evidence": 354055,
+    "hallucinated_dependency": 60993,
+    "present_at_commit": 1285326,
+    "out_of_scope": 69279
+  },
+  "ecosystems": {
+    "Cargo": 60051,
+    "Go": 66360,
+    "Maven": 177735,
+    "PyPI": 492385,
+    "npm": 973122
+  },
+  "time_comparisons": {
+    "present_at_commit|author_fallback": 1261480,
+    "hallucinated_dependency|committer": 2912,
+    "present_at_commit|committer": 23846,
+    "hallucinated_dependency|author_fallback": 52
+  },
+  "checks": "ordered identity and baseline equality; label/subtype/time/evidence invariants; global/ecosystem/summary closure; output hashes",
+  "status": "passed"
+}

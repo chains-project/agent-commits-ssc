@@ -1,0 +1,184 @@
+{
+  "counts": {
+    "episodes": 1769653,
+    "commits": 343756,
+    "observations": 89870,
+    "auxiliary": 16839,
+    "raw": 7395,
+    "old_labels": 74618
+  },
+  "input_sha256": "e3cf162ed2e5c5354384d5634e0224cbfac98eb4b6b2940a5929641c6f76ba54",
+  "sources": [
+    {
+      "bytes": 5502,
+      "path": ".Codex\\plans\\2026-08-15-rq2-six-language-hallucination-analysis\\six_language_hidden_postdate_commit_metadata.csv",
+      "sha256": "11325779a6990a6924beaadb67237792cff89049b0e85c0caf7322e4c1f7c042"
+    },
+    {
+      "bytes": 5843741,
+      "path": ".Codex\\plans\\2026-08-15-rq2-six-language-hallucination-analysis\\six_language_maven_artifact_times.csv",
+      "sha256": "948d0243637130bb2de43a4091f07558c105f30611d2e618b6d3826f06850032"
+    },
+    {
+      "bytes": 7913024,
+      "path": ".Codex\\plans\\2026-08-15-rq2-six-language-hallucination-analysis\\six_language_maven_official_requery.csv",
+      "sha256": "2a6effd97c4b0ee8096e2b39d663b841c9c1d821d109372eec76689cd8aed108"
+    },
+    {
+      "bytes": 1415052,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Go\\commits.csv",
+      "sha256": "6d9cdd6cadd02e344871686c1a270194397c17b38f1504439dd1be487ca7a6ae"
+    },
+    {
+      "bytes": 19961841,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Go\\episodes.csv",
+      "sha256": "8597d9700e1ebdabfc68f4381549c4724ead58437f6c7515717c4b421d70f1c1"
+    },
+    {
+      "bytes": 12131340,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Go\\evidence.jsonl",
+      "sha256": "084e3498b91851bcecc4a7525373b2f3c940ff637d6ed5f8b519527969b212c0"
+    },
+    {
+      "bytes": 50365931,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Go\\stage3_evidence_input.jsonl",
+      "sha256": "1ec0c55e7c405e1d6d9bd2cb8dd41db5aec3e7b600a3b69159836e42bfdc9824"
+    },
+    {
+      "bytes": 12567237,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\JavaScript\\commits.csv",
+      "sha256": "46f59133e3462a6927b84a89cee494963a0b2d73ec06e800b3a265da42ce83b9"
+    },
+    {
+      "bytes": 151556767,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\JavaScript\\episodes.csv",
+      "sha256": "0acae861caf16a5e49fd5328f056507cb21541cdf6d9c2b5cfd29a7b594fb93e"
+    },
+    {
+      "bytes": 38026008,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\JavaScript\\evidence.jsonl",
+      "sha256": "0c0dc6d49adcf27a4eb890d85716d8a8b17c7a64c7049aa1e7302f2ab5a47b33"
+    },
+    {
+      "bytes": 316692820,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\JavaScript\\stage3_evidence_input.jsonl",
+      "sha256": "cde0ed6b7bca4169af17351f335778468da682948ec181ef46667208fabb1bb5"
+    },
+    {
+      "bytes": 2021143,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\commits.csv",
+      "sha256": "7d507bcd2d84f244d8a0da68527ed01f54f4f8cf4137b8dfe582980e18a9cd28"
+    },
+    {
+      "bytes": 37094692,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\episodes.csv",
+      "sha256": "209b5b3d25c7909b4f0dce7d40ac410346f497402c2466818c894676319e77d9"
+    },
+    {
+      "bytes": 5066429,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\evidence.jsonl",
+      "sha256": "09a9de98dfdf40aa45e403de456e64140337d7cb8d96a554b6a6ea39637ccec9"
+    },
+    {
+      "bytes": 21993423,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\stage3_evidence_input.jsonl",
+      "sha256": "c41198ba293c640466de7cf7899f35fa462455e306300b8e9c4f4ceedf0b2941"
+    },
+    {
+      "bytes": 2404194,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Rust\\commits.csv",
+      "sha256": "e632cbfca6f609d47664108bbbc982d8cc58056ff12fe533561323bc1599f073"
+    },
+    {
+      "bytes": 17207605,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Rust\\episodes.csv",
+      "sha256": "861ca0b6e9ab63359ce9bb16684f2bb19f35c7a0fe8181682f4a613717dcd33c"
+    },
+    {
+      "bytes": 10537521,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Rust\\evidence.jsonl",
+      "sha256": "f6510fe89e1084d8330e3b95a157e61aa559b3f6f9c477c361233522d0b2ac97"
+    },
+    {
+      "bytes": 15274046,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Rust\\stage3_evidence_input.jsonl",
+      "sha256": "1e74fecb11951a2bf8c1e7083b29a60013f8b19a35b0a109136d4a3a29c32ab2"
+    },
+    {
+      "bytes": 31391078,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\TypeScript\\commits.csv",
+      "sha256": "955cf4b8b6802ba3c84cff3a5c406ceae23d6a4a218252a49cedf0f42bf9aeb9"
+    },
+    {
+      "bytes": 235882759,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\TypeScript\\episodes.csv",
+      "sha256": "3ff87e9f92d82a8a7bb5a219e4bccf608f46ad4f606039e1e460bfb540f5e226"
+    },
+    {
+      "bytes": 49626063,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\TypeScript\\evidence.jsonl",
+      "sha256": "d18fba7efeca4c56acd041ed783ad33a6790465bbcbc3b03860be60a0cdb3168"
+    },
+    {
+      "bytes": 378994422,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\TypeScript\\stage3_evidence_input.jsonl",
+      "sha256": "5b39bf1880272667643e2807a9975a193bef4f3c82a606304d04006194385aa3"
+    },
+    {
+      "bytes": 18098182,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_targeted_python_pep508_20260816_v2\\Python\\commits.csv",
+      "sha256": "e178f1ef0d54bf87fba086744fabcb4671919e3eba4d13ee6cedd6c1ed4f5ac7"
+    },
+    {
+      "bytes": 130468868,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_targeted_python_pep508_20260816_v2\\Python\\episodes.csv",
+      "sha256": "55abe0a0ed0f9c147425a280d41f89ef126dd0693a042c80085ee78ae727d6cf"
+    },
+    {
+      "bytes": 37279422,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_targeted_python_pep508_20260816_v2\\Python\\evidence.jsonl",
+      "sha256": "b30e70d94b876f34e1491e5a97ff5433d70526c611e8497c313bf6b4724529fa"
+    },
+    {
+      "bytes": 181864610,
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_targeted_python_pep508_20260816_v2\\Python\\stage3_evidence_input.jsonl",
+      "sha256": "d92ce8ade0d79fe2e6fb597b1d14c95a151ad730ad43e41e84e25ae927ef70ed"
+    },
+    {
+      "bytes": 207633834,
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\analysis\\six_language_candidate_evidence.csv",
+      "sha256": "6f1904ed84d5538a21df1eb89c8f2b107e9fb9f663121a822ba3f1f9a1bad3ae"
+    },
+    {
+      "bytes": 15410808,
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\analysis\\six_language_python_import_mapping.csv",
+      "sha256": "fa4f9895dde2d0938b50cc770695912246dc2650f7aca93857ececb6f787fd1e"
+    },
+    {
+      "bytes": 4581406,
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\analysis\\v2_current_absence_official_requery.csv",
+      "sha256": "bf41eaeb92f6129f4ffece778ca4a8eefa15ddf483bf825563fdede26f729ac0"
+    },
+    {
+      "bytes": 36695798,
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\analysis\\v2_native_adjudication.csv",
+      "sha256": "17572ec857b8e9ba6c3f2e040ca3cfc6479a221f824877244a3197e528ad8500"
+    },
+    {
+      "bytes": 11597961,
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\analysis\\v2_temporal_commit_metadata.csv",
+      "sha256": "ea0dda793278469270ef2bca508aabbd319eaeb07c07742272ee505e1e34bdcb"
+    },
+    {
+      "bytes": 367594,
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\analysis\\v2_temporal_official_requery.csv",
+      "sha256": "6ad6eff3579ffb5819d0a113bba926bd490fcff83f916373a7c4d3cbfb3c615c"
+    },
+    {
+      "bytes": 27154,
+      "path": "data_products\\rq2_phase9_targeted_pep508_six_language_20260816_v2\\canonical_source_manifest.json",
+      "sha256": "14179b833595a49b79c7a99942289b1ba87cfef00cf1b0d2c17e9b1049729104"
+    }
+  ],
+  "scope_union_corrections": 51492
+}

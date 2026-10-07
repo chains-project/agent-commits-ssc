@@ -1,0 +1,65 @@
+{
+  "counts": {
+    "fetch_manifest_rows": 348475,
+    "ok_index_rows": 1650139,
+    "snapshot_index_rows": 181739,
+    "commits": 343756,
+    "events": 343756,
+    "snapshots": 348475,
+    "patches": 181739
+  },
+  "sources": [
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\TypeScript\\commits.csv",
+      "sha256": "955cf4b8b6802ba3c84cff3a5c406ceae23d6a4a218252a49cedf0f42bf9aeb9"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\TypeScript\\events.csv",
+      "sha256": "e19be22aaf562bca2c329fd55d308c5add2626fe75090a79308a0841e39d8685"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_targeted_python_pep508_20260816_v2\\Python\\commits.csv",
+      "sha256": "e178f1ef0d54bf87fba086744fabcb4671919e3eba4d13ee6cedd6c1ed4f5ac7"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_targeted_python_pep508_20260816_v2\\Python\\events.csv",
+      "sha256": "bd8f9469f14afcc989eca9afdf990025169798aa7f9e4365ad73238e3915dcd0"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\JavaScript\\commits.csv",
+      "sha256": "46f59133e3462a6927b84a89cee494963a0b2d73ec06e800b3a265da42ce83b9"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\JavaScript\\events.csv",
+      "sha256": "c814eeda47cc803a180aaf295cb279a6fde0cf079e795590aada0cb23d1c4bce"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Rust\\commits.csv",
+      "sha256": "e632cbfca6f609d47664108bbbc982d8cc58056ff12fe533561323bc1599f073"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Rust\\events.csv",
+      "sha256": "ea14917a0ca6d55f1559967b3d6053cbd77c7d625490191cddd690350b00291e"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Go\\commits.csv",
+      "sha256": "6d9cdd6cadd02e344871686c1a270194397c17b38f1504439dd1be487ca7a6ae"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Go\\events.csv",
+      "sha256": "9dcb7b7490bf7c6e674789dc2a1f6e31069b147d3f08bca48a0a6cd1d59297df"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\commits.csv",
+      "sha256": "7d507bcd2d84f244d8a0da68527ed01f54f4f8cf4137b8dfe582980e18a9cd28"
+    },
+    {
+      "path": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\events.csv",
+      "sha256": "fcd3cf5496331df741b0a6725692e76ed4cf405bfff25e0ad890906d2a00af76"
+    }
+  ],
+  "sha256": "564e49024b4789e00e91460c7014da63a978924b8603df02a2985eb05111b95d",
+  "canonical": "data_products/rq2_phase9_targeted_pep508_six_language_20260816_v2/canonical_source_manifest.json",
+  "patch_index": "D:\\MasterThesis\\thesis-work-data\\diff_corpus\\commit_json_diffs_by_language\\commit_index.csv",
+  "wave": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_hallucinated_unlimited_overnight_20260710\\wave01_nall"
+}

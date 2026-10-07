@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "original_historical_agent_margins": true,
+  "original_overlap_counts": true,
+  "independent_sql_repository_and_commit_unions": true,
+  "exact_query_total": true,
+  "file_hashes": true,
+  "verification_code_sha256": "be23c2fee478f27bc392a31d83a53541dadc44f06e5cbd5cd93e5a2a8ae12d3d"
+}

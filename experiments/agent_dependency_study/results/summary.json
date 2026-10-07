@@ -1,0 +1,21 @@
+{
+  "episodes": 1769653,
+  "elapsed_seconds": 998.0,
+  "input_sha256": "e3cf162ed2e5c5354384d5634e0224cbfac98eb4b6b2940a5929641c6f76ba54",
+  "policy_sha256": "eb8b8ec4b664137707e48ed78bd75b61eb8f8f519b9aad7e5eae657a0f7733a5",
+  "labels": {
+    "insufficient_evidence": 354055,
+    "hallucinated_dependency": 60993,
+    "present_at_commit": 1285326,
+    "out_of_scope": 69279
+  },
+  "output_sha256": {
+    "coverage.csv": "7476d58bde8a3cfe2b7e9d8ceecc6cba55273c224b969695d4326a95aa37b8aa",
+    "episodes.csv.gz": "b75effd87c6fc059412bea179ef82e8f5c8afe50ee2e2d31c19050cec1ce4a45",
+    "label_counts.csv": "e17b3c8506539382895c49494867c99b282ff523709447c0e6e60440f367c24f",
+    "positive_sensitivity.csv": "649cd37169e20840ff96479441d741a73f11567c7ea3e7a82b76dbe403ce69b2",
+    "proxy_sensitivity.csv": "744d7aa127d57b97df59d7986746f26cec3733007033835fed9f2f879da84922",
+    "reasons.csv": "ef6c945aba5bbcbfbc45bd9c93573eec427e6bcdc69299c67b54b5050a5cc559",
+    "transitions.csv": "5ba4b9edb32c840bf6d7420a5d01cdcfe079505bfcdb6d1caf1a6f090fa3927d"
+  }
+}

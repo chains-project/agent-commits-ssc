@@ -1,0 +1,23 @@
+{
+  "rows": 1747439,
+  "labels": {
+    "insufficient_evidence": 308269,
+    "hallucinated_dependency": 60992,
+    "present_at_commit": 1308899,
+    "out_of_scope": 69279
+  },
+  "non_maven_rows_identical": 1591918,
+  "events": 541169,
+  "old_episode_event_pairs": 541799,
+  "new_episode_event_pairs": 541734,
+  "recovered_old_unresolved": 45817,
+  "recovered_labels": {
+    "present_at_commit": 45512,
+    "insufficient_evidence": 295,
+    "hallucinated_dependency|present_at_commit": 1,
+    "insufficient_evidence|present_at_commit": 7,
+    "hallucinated_dependency": 2
+  },
+  "status": "passed",
+  "java_episodes": 155521
+}

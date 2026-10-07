@@ -1,0 +1,116 @@
+{
+  "scope": "English presentation, portable paths and public data-access documentation; classifications unchanged",
+  "files": [
+    {
+      "path": "DATA_ACCESS.md",
+      "source_sha256": null,
+      "public_sha256": "f013d3176cbb705dfa4eb737e1a06f685b968515fe02ad2c27a5d833b1945c56"
+    },
+    {
+      "path": "inputs/replay.manifest.json",
+      "source_sha256": "1f0ef63d2bbe5e4ff28b98f659c2299c8e13199000f8ece58cc5d770a082e8fa",
+      "public_sha256": "2bc80d61dcb2bb6c2b68e60232d4425b81effc93cc37d0f845ed0d1aa01c0442"
+    },
+    {
+      "path": "prepare_delivery.py",
+      "source_sha256": "cf19b38b332d0cf573ce2448191939af243af9987513e455a79f4821a905febf",
+      "public_sha256": "79152febf7fb5feacaa03456643ed8923aa59d063ec2420d2d56de669509a49c"
+    },
+    {
+      "path": "README.md",
+      "source_sha256": "f398df535ab7e72891a83429b8cca9b6f158b8e93f20f441c90c350ce3718e87",
+      "public_sha256": "c897a81861424a3ca640850a3bb173ce21e1f8b0f75ec3cf91f940a1f63d3481"
+    },
+    {
+      "path": "REPORT.md",
+      "source_sha256": "e13fd0e2db9842989c0224516ae171cc51ae32710ec1b215aa1cf8605a8aa14e",
+      "public_sha256": "723e932f90d2103b6c351eba0b64ba48909d698a962b31c447c84065c969ec0f"
+    },
+    {
+      "path": "results_integrated/summary.json",
+      "source_sha256": "3dbf9d44858140ad1a4078382b71e4f54259a064c5015d8c7152602deaaacda6",
+      "public_sha256": "78839b1acbedd6577bee806d6478298cc4d7596254ba6c74a7f1a4b45baee5aa"
+    },
+    {
+      "path": "sample/commit_index.csv",
+      "source_sha256": "3d133decf06b02ee92e922a4e1273c8bc77d5f97fd4d07def51ef611eef5ef7f",
+      "public_sha256": "54b751f6f262718e3877df106b519df764ba0464012e7c6d105b2962180b832e"
+    },
+    {
+      "path": "scripts/hallucination/repair_stage3_metadata.py",
+      "source_sha256": "98a84f072fd3afc40d77039c9e0439a5cbcf44559b3c79f7a71f7796f1f79205",
+      "public_sha256": "aa7ab60d2a7e9f52128a69fb6029f2fa90305a3c32ed8d749fbb41f271f7ed2b"
+    },
+    {
+      "path": "scripts/hallucination/run_phase9_experiment.py",
+      "source_sha256": "db6dd36de05e78da385d2260a7cb73cd5b32c30055a129e1f7153f63984ffac4",
+      "public_sha256": "0c76858ff0325de09a0a7f87ca3adfd79095d082f125f6a27795a6bce7eafb8c"
+    },
+    {
+      "path": "scripts/hallucination/stage1_extract.py",
+      "source_sha256": "ffe9e764ded0702184b4787a4cde60e5ddbbb0053a31ddfa34bbe7608cf9bdef",
+      "public_sha256": "88b43d901e29afedf011f4eba19c12ef01e61d84d7483e9d94d40d41d0225f9f"
+    },
+    {
+      "path": "scripts/hallucination/stage2_build.py",
+      "source_sha256": "0bd82f870b5a58c862423e4f3a18ed5c516b13d709bd27bb11fadbf166970fc4",
+      "public_sha256": "d05953f330e20ccb685a73344737f8c676abcd68007578bd392fffcf8ab445d9"
+    },
+    {
+      "path": "scripts/hallucination/stage2_context.py",
+      "source_sha256": "6e221f7a73157e1427615130ca04c8a460d2809abda6930448f9e8e6c40f91c3",
+      "public_sha256": "50a29de414a307943e756a345d60787f6b4a6d5a819dcbdb578e69d39d77c712"
+    },
+    {
+      "path": "scripts/hallucination/stage3_advisory_evidence.py",
+      "source_sha256": "20732714af6adbeb75b995082ed6ae5700be87f8fbf2f5a90c58a3aad95aa2bc",
+      "public_sha256": "5139c62095417fc66a3e77554ab8822557ee68687191eecbfc7131e4a86d9655"
+    },
+    {
+      "path": "scripts/hallucination/stage3_apply.py",
+      "source_sha256": "12eee494740033919cb02de6a2815100eb8d1ac6d30cf05672addd9334dcb61c",
+      "public_sha256": "403d3d6167532f566a2901dfb98af14263f06bc3a28efb9da63d90fbcf1ff3cb"
+    },
+    {
+      "path": "scripts/hallucination/stage3_collect.py",
+      "source_sha256": "3a2ac9247494f4ff96ba56483cbc9046e79f762601f7098da09e514da9a9e025",
+      "public_sha256": "20a60f29825f166caf902544ccd4fb56feec342c6a06d35ee4491edf1aef89a5"
+    },
+    {
+      "path": "scripts/hallucination/STAGE3_EVIDENCE_INPUT.md",
+      "source_sha256": null,
+      "public_sha256": "a52e08c5b9dff29ac2614a25b9bf651b8f02b022db6c4fdec59581cbdc9c7a0d"
+    },
+    {
+      "path": "scripts/hallucination/stage3_legacy_evidence.py",
+      "source_sha256": "2ff489692df603c6d4327ce62961261defed043854f695a907ba832f1dcd6770",
+      "public_sha256": "bcbcc9cbb5563ca1261e524c7ed2f12135a35ca98a0e7753cfdb4e5a141ceef7"
+    },
+    {
+      "path": "scripts/hallucination/stage3_osv_collector.py",
+      "source_sha256": "6998a4ea8bbb1c5d85c756b9516af0eee7231baa50c0e296eaac099532305a33",
+      "public_sha256": "0bf499a7003b0521278230c8ec61f0f1c68decca170fc25349abc9f9b4c99927"
+    },
+    {
+      "path": "scripts/hallucination/stage3_registry_collector.py",
+      "source_sha256": "5744682fabe2c04529b5457f0fe1050a4c6a96e22bffb8253b5ab7f6ddc03e69",
+      "public_sha256": "08100c861d45ec816b66ca09aebba81fecf78c4d1f886542b88dcb727345983b"
+    },
+    {
+      "path": "source_preservation.json",
+      "source_sha256": "6af981f5d1106440bb790ab47b4bb1020e7122db0c1108cf6dfeb72a01ca29b0",
+      "public_sha256": "90233d2f1ab59d59f7949ae4ed50c39223082f9add4904304ad116c446bfbd2c"
+    },
+    {
+      "path": "src/integrated_report.py",
+      "source_sha256": "ea1d6b41df3c261cf1bb03418eeffff05d5d0215bf425a2dfd0ccbd350807a33",
+      "public_sha256": "3c6b482268a29544f47bec3f0dfdfa795cb72235d01da9d632432d3b446a6bac"
+    },
+    {
+      "path": "vendor/pyparsing/unicode.py",
+      "source_sha256": "d102e383cdcf42cb120ba764699466f700a1135d260e2f246043b812f0c1f2a8",
+      "public_sha256": "e83a0f771a539295c971496608aa9612f1ccfb3b6820fb0df8e938c543a95475"
+    }
+  ],
+  "current_result_version": "canonical_v3"
+}

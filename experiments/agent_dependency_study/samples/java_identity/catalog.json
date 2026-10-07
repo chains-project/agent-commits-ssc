@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-10-07",
+  "scope": "Exact documented import targets mapped to their upstream Maven artifact; version evidence comes from the commit context or saved registry observations.",
+  "rules": [
+    {
+      "id": "lombok_core_annotations_v1",
+      "coordinate": "org.projectlombok:lombok",
+      "targets": ["lombok.Data", "lombok.RequiredArgsConstructor", "lombok.extern.slf4j.Slf4j"],
+      "sources": [
+        "https://projectlombok.org/setup/maven",
+        "https://projectlombok.org/api/lombok/Data",
+        "https://projectlombok.org/api/lombok/RequiredArgsConstructor",
+        "https://projectlombok.org/api/lombok/extern/slf4j/Slf4j"
+      ]
+    },
+    {
+      "id": "slf4j_logging_api_v1",
+      "coordinate": "org.slf4j:slf4j-api",
+      "targets": ["org.slf4j.Logger", "org.slf4j.LoggerFactory"],
+      "sources": ["https://www.slf4j.org/manual.html"]
+    },
+    {
+      "id": "junit_jupiter_core_api_v1",
+      "coordinate": "org.junit.jupiter:junit-jupiter-api",
+      "targets": [
+        "org.junit.jupiter.api.Test", "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.AfterEach", "org.junit.jupiter.api.BeforeAll",
+        "org.junit.jupiter.api.AfterAll", "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Assertions", "org.junit.jupiter.api.Assumptions",
+        "org.junit.jupiter.api.Assertions.*", "org.junit.jupiter.api.Assertions.fail",
+        "org.junit.jupiter.api.Assertions.assertAll", "org.junit.jupiter.api.Assertions.assertEquals",
+        "org.junit.jupiter.api.Assertions.assertNotNull", "org.junit.jupiter.api.Assertions.assertThrows",
+        "org.junit.jupiter.api.Assertions.assertTimeout", "org.junit.jupiter.api.Assertions.assertTimeoutPreemptively",
+        "org.junit.jupiter.api.Assertions.assertTrue", "org.junit.jupiter.api.Assumptions.assumeTrue"
+      ],
+      "sources": ["https://docs.junit.org/5.12.0/user-guide/index.html"]
+    }
+  ]
+}

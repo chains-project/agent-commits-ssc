@@ -1,0 +1,242 @@
+{
+  "status": "passed",
+  "episodes": 2,
+  "cases": {
+    "dep_67e095e323d048643165f0d76ef4b8da": {
+      "result": {
+        "episode_id": "dep_67e095e323d048643165f0d76ef4b8da",
+        "repo": "jdubois/boot-ui",
+        "sha": "b5eaadca29ea11642f3089260a38ad4013ce577c",
+        "ecosystem": "Maven",
+        "package_name": "org.springframework.security:spring-security-core",
+        "effective_package": "org.springframework.security:spring-security-core",
+        "query_kind": "exact",
+        "query_value": "7.0.5",
+        "baseline_queryable": "0",
+        "label": "hallucinated_dependency",
+        "subtype": "version_no_match",
+        "reason": "version_no_match",
+        "boundary": "2026-05-26T00:00:11.000+02:00",
+        "boundary_source": "author_fallback",
+        "matching_version": "",
+        "matching_time": "",
+        "delta_seconds": "",
+        "time_type": "",
+        "proxy_time": "False",
+        "proxy_excluded_label": "hallucinated_dependency",
+        "proxy_excluded_subtype": "version_no_match",
+        "conflict_observed": "False",
+        "evidence_ids": "82da3568057c517b79a321e96933a09ea661a8dde2825018b10fa003db39db6f",
+        "auxiliary_ref": "",
+        "upstream_reasons": "curated_java_identity|source_class_9ae51ba00179",
+        "historical_advisory_flag": "False",
+        "final_queryable": "1",
+        "baseline_id_present": "False",
+        "languages": "Java"
+      },
+      "mapping_witnesses": [
+        {
+          "coordinate": "org.springframework.security:spring-security-core",
+          "declarations": [
+            {
+              "context": {
+                "alignment_status": "matched_manifest",
+                "dependency_group": "dependency;maven.dependency_management",
+                "dependency_path": "bootui-autoconfigure/pom.xml",
+                "ecosystem": "Maven",
+                "import_root": "org.springframework.security:spring-security-core",
+                "package_name": "org.springframework.security:spring-security-core",
+                "raw_target": "org.springframework.security:spring-security-core",
+                "reason_codes": "",
+                "repo": "jdubois/boot-ui",
+                "resolution_source": "manifest",
+                "resolved_version": "",
+                "sha": "b5eaadca29ea11642f3089260a38ad4013ce577c",
+                "source_path": "bootui-autoconfigure/pom.xml",
+                "version_spec": "7.0.5"
+              },
+              "path": "bootui-autoconfigure/pom.xml",
+              "version": "7.0.5"
+            }
+          ],
+          "episode_ids": [
+            "dep_67e095e323d048643165f0d76ef4b8da"
+          ],
+          "event_id": "evt_1098e33a6888478eb92e7426b4970c7c",
+          "raw_target": "org.springframework.security.core.Authentication",
+          "rule_id": "source_class_9ae51ba00179",
+          "source_path": "bootui-autoconfigure/src/main/java/io/github/bootui/autoconfigure/web/SecurityController.java",
+          "sources": [
+            "https://github.com/spring-projects/spring-security/blob/6.4.4/core/src/main/java/org/springframework/security/core/Authentication.java"
+          ],
+          "version_basis": "nearest_same_coordinate"
+        }
+      ],
+      "registry_summary": [
+        {
+          "scope": "enumeration",
+          "lookup_status": "ok",
+          "versions": 247,
+          "origin": {
+            "file": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\stage3_evidence_input.jsonl",
+            "payload_sha256": "dc7a00b31f9af7a7d66e86264ee1e567d185ef65fbdeec9ff96d75ef8f024692"
+          }
+        }
+      ]
+    },
+    "dep_c7104b4e04947b94a6fcd2dcbdcd00aa": {
+      "result": {
+        "episode_id": "dep_c7104b4e04947b94a6fcd2dcbdcd00aa",
+        "repo": "DIGI-UW/OpenELIS-Global-2",
+        "sha": "60e602a448e0139051b97672276b6b69f6a1b37d",
+        "ecosystem": "Maven",
+        "package_name": "org.springframework:spring-beans",
+        "effective_package": "org.springframework:spring-beans",
+        "query_kind": "exact",
+        "query_value": "6.2.17",
+        "baseline_queryable": "0",
+        "label": "hallucinated_dependency",
+        "subtype": "version_no_match",
+        "reason": "version_no_match",
+        "boundary": "2026-05-07T23:52:20.000-07:00",
+        "boundary_source": "author_fallback",
+        "matching_version": "",
+        "matching_time": "",
+        "delta_seconds": "",
+        "time_type": "",
+        "proxy_time": "False",
+        "proxy_excluded_label": "hallucinated_dependency",
+        "proxy_excluded_subtype": "version_no_match",
+        "conflict_observed": "False",
+        "evidence_ids": "a6fc2890bcb7ea3f6a5635e60b19ac837d8605494b9b2145cfad16b0cff3cb6a",
+        "auxiliary_ref": "",
+        "upstream_reasons": "curated_java_identity|source_class_9ff61830243d",
+        "historical_advisory_flag": "False",
+        "final_queryable": "1",
+        "baseline_id_present": "False",
+        "languages": "Java"
+      },
+      "mapping_witnesses": [
+        {
+          "coordinate": "org.springframework:spring-beans",
+          "declarations": [
+            {
+              "context": {
+                "alignment_status": "matched_manifest",
+                "dependency_group": "dependency",
+                "dependency_path": "pom.xml",
+                "ecosystem": "Maven",
+                "import_root": "org.springframework:spring-beans",
+                "package_name": "org.springframework:spring-beans",
+                "raw_target": "org.springframework:spring-beans",
+                "reason_codes": "",
+                "repo": "DIGI-UW/OpenELIS-Global-2",
+                "resolution_source": "manifest",
+                "resolved_version": "6.2.17",
+                "sha": "60e602a448e0139051b97672276b6b69f6a1b37d",
+                "source_path": "pom.xml",
+                "version_spec": "6.2.17"
+              },
+              "path": "pom.xml",
+              "version": "6.2.17"
+            }
+          ],
+          "episode_ids": [
+            "dep_c7104b4e04947b94a6fcd2dcbdcd00aa"
+          ],
+          "event_id": "evt_aeb83009d346515fe95a4c269c1c06bf",
+          "raw_target": "org.springframework.beans.factory.annotation.Autowired",
+          "rule_id": "source_class_9ff61830243d",
+          "source_path": "src/main/java/org/openelisglobal/configuration/controller/ConfigurationReloadRestController.java",
+          "sources": [
+            "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-beans/src/main/java/org/springframework/beans/factory/annotation/Autowired.java"
+          ],
+          "version_basis": "nearest_same_coordinate"
+        },
+        {
+          "coordinate": "org.springframework:spring-beans",
+          "declarations": [
+            {
+              "context": {
+                "alignment_status": "matched_manifest",
+                "dependency_group": "dependency",
+                "dependency_path": "pom.xml",
+                "ecosystem": "Maven",
+                "import_root": "org.springframework:spring-beans",
+                "package_name": "org.springframework:spring-beans",
+                "raw_target": "org.springframework:spring-beans",
+                "reason_codes": "",
+                "repo": "DIGI-UW/OpenELIS-Global-2",
+                "resolution_source": "manifest",
+                "resolved_version": "6.2.17",
+                "sha": "60e602a448e0139051b97672276b6b69f6a1b37d",
+                "source_path": "pom.xml",
+                "version_spec": "6.2.17"
+              },
+              "path": "pom.xml",
+              "version": "6.2.17"
+            }
+          ],
+          "episode_ids": [
+            "dep_c7104b4e04947b94a6fcd2dcbdcd00aa"
+          ],
+          "event_id": "evt_cc0f91cea201fb968fed42f2c7402160",
+          "raw_target": "org.springframework.beans.factory.annotation.Autowired",
+          "rule_id": "source_class_9ff61830243d",
+          "source_path": "src/main/java/org/openelisglobal/siteinformation/service/SiteInformationConfigurationHandler.java",
+          "sources": [
+            "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-beans/src/main/java/org/springframework/beans/factory/annotation/Autowired.java"
+          ],
+          "version_basis": "nearest_same_coordinate"
+        },
+        {
+          "coordinate": "org.springframework:spring-beans",
+          "declarations": [
+            {
+              "context": {
+                "alignment_status": "matched_manifest",
+                "dependency_group": "dependency",
+                "dependency_path": "pom.xml",
+                "ecosystem": "Maven",
+                "import_root": "org.springframework:spring-beans",
+                "package_name": "org.springframework:spring-beans",
+                "raw_target": "org.springframework:spring-beans",
+                "reason_codes": "",
+                "repo": "DIGI-UW/OpenELIS-Global-2",
+                "resolution_source": "manifest",
+                "resolved_version": "6.2.17",
+                "sha": "60e602a448e0139051b97672276b6b69f6a1b37d",
+                "source_path": "pom.xml",
+                "version_spec": "6.2.17"
+              },
+              "path": "pom.xml",
+              "version": "6.2.17"
+            }
+          ],
+          "episode_ids": [
+            "dep_c7104b4e04947b94a6fcd2dcbdcd00aa"
+          ],
+          "event_id": "evt_e92142d4428288891b9d169c36eb69ea",
+          "raw_target": "org.springframework.beans.factory.annotation.Autowired",
+          "rule_id": "source_class_9ff61830243d",
+          "source_path": "src/main/java/org/openelisglobal/configuration/controller/ConfigurationReloadRefreshServiceImpl.java",
+          "sources": [
+            "https://github.com/spring-projects/spring-framework/blob/v6.2.5/spring-beans/src/main/java/org/springframework/beans/factory/annotation/Autowired.java"
+          ],
+          "version_basis": "nearest_same_coordinate"
+        }
+      ],
+      "registry_summary": [
+        {
+          "scope": "enumeration",
+          "lookup_status": "ok",
+          "versions": 304,
+          "origin": {
+            "file": "D:\\MasterThesis\\thesis-work-data\\data_products\\rq2_phase9_hardened_full_20260811_v1\\Java\\.phase16_stage12_repair_v3\\stage3_evidence_input.jsonl",
+            "payload_sha256": "b6c7ada86ac923111faf625ca2d307385dd71f183b42d723ae9997d60fe214a8"
+          }
+        }
+      ]
+    }
+  }
+}

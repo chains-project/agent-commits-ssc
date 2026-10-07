@@ -1,0 +1,16 @@
+ecosystem,package_name,episodes,versions,advisory_ids
+PyPI,emergentintegrations,1,0.1.0,MAL-2026-2702
+npm,02-echo,1,0.0.7,MAL-2025-191025
+npm,@tanstack/react-router,1,1.169.8,MAL-2026-3465
+npm,@tanstack/react-start,1,1.167.71,MAL-2026-3468
+npm,axios,1,1.14.1,MAL-2026-2307
+npm,com.unity.2d.common,1,13.0.1,MAL-2025-1265
+npm,com.unity.ide.visualstudio,1,2.0.25,MAL-2022-2064
+npm,com.unity.modules.uielements,1,1.0.0,MAL-2022-2084
+npm,com.unity.nuget.newtonsoft-json,2,3.0.2|3.2.1,MAL-2025-17358
+npm,com.unity.settings-manager,1,2.1.1,MAL-2022-2104
+npm,com.unity.shadergraph,1,12.0.0,MAL-2025-17363
+npm,com.unity.test-framework,1,1.0.16,MAL-2025-17365
+npm,com.unity.textmeshpro,2,3.0.6,MAL-2022-2105
+npm,com.unity.ugui,2,1.0.0|2.0.0,MAL-2025-17367
+npm,fs,1,0.0.1-security,MAL-2025-21003

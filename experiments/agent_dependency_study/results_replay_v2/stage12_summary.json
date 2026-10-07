@@ -1,0 +1,37 @@
+{
+  "counts": {
+    "commits": 343790,
+    "events": 5254894,
+    "episodes": 1679785,
+    "links": 5290230,
+    "events_added": 27003,
+    "events_removed": 105,
+    "events_changed_commits": 11827,
+    "new_commits": 34,
+    "queryable": 1335133,
+    "changed_manifest_files": 121232,
+    "snapshot_applied": 63882,
+    "empty_after_extraction": 5302,
+    "manifest_snapshot_not_indexed": 57133,
+    "snapshot_text_mismatch": 181,
+    "snapshot_parse_failed": 36
+  },
+  "elapsed_seconds": 3611.84300000011,
+  "input_sha256": "564e49024b4789e00e91460c7014da63a978924b8603df02a2985eb05111b95d",
+  "output_sha256": "8eb8a3ed1fc4b11704985ffdfb6c6ecba04c3411391e0a24d4fa0e5416a1b7e1",
+  "manifest_witnesses_sha256": "8494810514f4585c1f8508d5b59f9e2aa8a0b1a5af1c1fa8552f0c96f5d9e247",
+  "context_repair": {
+    "candidate_commits": 2215,
+    "repaired_commits": 513,
+    "old_episodes": 17880,
+    "new_episodes": 17983,
+    "linker_sha256": "d7d48ead8a0db9b9c3b463482197b63de7f22f59ddbdf9f9ea0585e489a363ab"
+  },
+  "scope_repair": {
+    "candidate_commits": 66897,
+    "repaired_commits": 1555,
+    "old_episodes": 50320,
+    "new_episodes": 52035,
+    "linker_sha256": "1a12515a46d0d6eace9cfc139e7c467ccb92be93038926054a44dc9b429a5f8f"
+  }
+}
