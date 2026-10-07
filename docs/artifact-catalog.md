@@ -140,3 +140,18 @@ corpora are not part of this tree.
 | tests/test_rq2_stage_schema.py | RQ2 | unit/scenario test or synthetic fixture | tests/test_rq2_stage_schema.py | no |
 | tests/test_rq2_streaming_store.py | RQ2 | unit/scenario test or synthetic fixture | tests/test_rq2_streaming_store.py | no |
 | tests/test_rq2_synthetic_oracle_v2.py | RQ2 | unit/scenario test or synthetic fixture | tests/test_rq2_synthetic_oracle_v2.py | no |
+
+
+## Integrated dependency study, 7 October 2026
+
+The current `canonical_v3` update uses recovered committer dates for all 343,790 commits. Author time is a separate sensitivity comparison; episode identities and queryable denominators are unchanged.
+
+The [integrated study](../experiments/agent_dependency_study/README.md) contains
+the complete code workflow, tests, compact results and the current
+[report](../experiments/agent_dependency_study/REPORT.md). Its operational
+four-label analysis covers 1,679,785 episodes and 1,335,133 queryable episodes.
+Earlier canonical Confirmed/Probable results remain a separate historical product.
+Large inputs and the four structural CSV tables are distributed separately;
+see the [data-access guide](../experiments/agent_dependency_study/DATA_ACCESS.md) and
+file hashes under `experiments/agent_dependency_study/delivery/`.
+Download this version from [Google Drive](https://drive.google.com/drive/folders/1Qp-xgDnHjzgSQWFrJgoIo_5FvHnEq7Ta?usp=sharing).

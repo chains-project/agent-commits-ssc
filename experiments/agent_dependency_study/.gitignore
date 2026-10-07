@@ -1,0 +1,13 @@
+# Large regenerable data stay in the local delivery folder; fingerprints are tracked.
+/inputs/*.sqlite*
+/results/episodes.csv.gz
+/results_*/episodes.csv.gz
+/demo_output/
+/results_*/stage12.sqlite*
+*.sqlite-wal
+*.sqlite-shm
+# Row-level archives and cached source trees are distributed separately.
+*.csv.gz
+*.jsonl.gz
+/research/java_high_frequency/trees/
+!/inputs/commit_times/commit_times.csv.gz

@@ -1,0 +1,21 @@
+{
+  "policy_id": "unified_assumption_committer_v2_20261007",
+  "labels": ["present_at_commit", "hallucinated_dependency", "insufficient_evidence", "out_of_scope"],
+  "hallucinated_subtypes": ["package_no_match", "version_no_match", "postdate"],
+  "boundary": "committer_only_from_recovered_raw_metadata",
+  "author_time": "separate sensitivity comparison; no author fallback in current integrated main results",
+  "missing_committer": "retain commit_time_missing where a temporal comparison is needed",
+  "historical_reproduction": "stage3_run.py preserves the former baseline's legacy committer-or-author mode; current run_stage3_replay.py explicitly selects committer",
+  "npm_semver": "7.6.3",
+  "npm_loose": false,
+  "npm_include_prerelease": false,
+  "cargo_ranges": "comma-intersected semver comparators; bare numeric implies caret; unsupported syntax remains insufficient",
+  "snapshot_assumption": "Applicable observed public registry records represent satisfying releases at commit time, absent concrete contrary evidence; unobserved deletions, migrations and omissions may violate this assumption.",
+  "proxy_times": ["go_module_time", "maven_index_timestamp", "http_last_modified", "legacy_unspecified_time"],
+  "scope": "Public-registry dependency references in the episode population recorded by each run summary.",
+  "empty_history": "insufficient_evidence",
+  "legacy_omission": "insufficient_evidence",
+  "source_episode_population": 1769653,
+  "baseline_queryable": 1364856,
+  "population_note": "source_episode_population and baseline_queryable describe the original frozen baseline. Rebuilt runs record their own episode population and queryable denominator in summary.json."
+}

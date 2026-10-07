@@ -1,0 +1,2 @@
+# Preserve exact bytes for the fingerprinted experiment delivery.
+/experiments/agent_dependency_study/** -text

@@ -1,0 +1,81 @@
+{
+  "source_stage12_sha256": "8eb8a3ed1fc4b11704985ffdfb6c6ecba04c3411391e0a24d4fa0e5416a1b7e1",
+  "tables": [
+    {
+      "path": "commits.csv.gz",
+      "rows": 343790,
+      "bytes": 28616412,
+      "sha256": "b7af898fe00e4a4c42ee151341e10df2b5e5a1063296a0e2e66a3e813f175142",
+      "fields": [
+        "commit_id",
+        "repo",
+        "sha",
+        "author_date",
+        "agent",
+        "repo_primary_language",
+        "actual_changed_languages",
+        "import_event_count",
+        "manifest_event_count",
+        "dependency_quadrant",
+        "schema_version"
+      ]
+    },
+    {
+      "path": "events.csv.gz",
+      "rows": 5254894,
+      "bytes": 241475541,
+      "sha256": "cb4bb86ee34dddb224f1bad0880a031b05c66680b56a92ff5a93a98193a598a1",
+      "fields": [
+        "event_id",
+        "commit_id",
+        "event_type",
+        "path",
+        "actual_language",
+        "ecosystem",
+        "new_line_number",
+        "event_ordinal",
+        "raw_target",
+        "package_candidate",
+        "version_spec",
+        "event_status",
+        "reason_codes",
+        "schema_version"
+      ]
+    },
+    {
+      "path": "episodes.csv.gz",
+      "rows": 1679785,
+      "bytes": 100022260,
+      "sha256": "4f5a6c8e0eb8677c8cca4f3142cec2e10ad754a56ee3f1aac20073ae18afaa8a",
+      "fields": [
+        "episode_id",
+        "commit_id",
+        "ecosystem",
+        "package_name",
+        "dependency_quadrant",
+        "alignment_status",
+        "query_kind",
+        "query_value",
+        "resolution_source",
+        "registry_status",
+        "advisory_status",
+        "reason_codes",
+        "evidence_ids",
+        "schema_version"
+      ]
+    },
+    {
+      "path": "episode_event_links.csv.gz",
+      "rows": 5290230,
+      "bytes": 159719519,
+      "sha256": "2eab0c4baf4da73083947f153958f9ea9709374cfc0384ba82614af035f2a913",
+      "fields": [
+        "episode_id",
+        "event_id",
+        "link_method",
+        "schema_version"
+      ]
+    }
+  ],
+  "verification": "All CSV headers, row widths, row counts and gzip streams passed; source DB hash matches the verified integrated run."
+}

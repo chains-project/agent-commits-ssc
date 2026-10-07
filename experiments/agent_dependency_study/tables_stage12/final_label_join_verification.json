@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "episodes": 1679785,
+  "queryable": 1335133,
+  "source_stage12_sha256": "8eb8a3ed1fc4b11704985ffdfb6c6ecba04c3411391e0a24d4fa0e5416a1b7e1",
+  "structural_episodes_sha256": "4f5a6c8e0eb8677c8cca4f3142cec2e10ad754a56ee3f1aac20073ae18afaa8a",
+  "final_labels_sha256": "44b56250f623da2ad246192702cb992c3d79e76dc4be7b449e01182efec4a6f3",
+  "check": "Structural hashes and original exact ID-set check are unchanged. Full pairwise old/new episode identity equality is verified in results_integrated/time_update_verification.json; current labels also match the complete Stage1/2 episode sequence.",
+  "compared_previous_final_labels_sha256": "bce190014cb0fc5ff02e5fb9a24249dda315b39689562cb43c50aafd38c48afc"
+}
