@@ -2,6 +2,13 @@
 import json
 from collections import Counter
 from final_report import BASE,LABELS,rows,table,result_tables
+from postdate_summary import report_section
+
+
+def postdate_section(directory):
+    if not (directory/'postdate_intervals.csv').is_file():
+        return ''
+    return report_section(rows(directory,'postdate_intervals.csv'))
 
 
 def commit_time_section(directory,summary):
@@ -111,6 +118,8 @@ The hallucinated-dependency indicator assumes that the selected public registry 
 {overall}
 
 {subtypes}
+
+{postdate_section(directory)}
 
 {ecosystems}
 

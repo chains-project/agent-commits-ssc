@@ -73,6 +73,18 @@ The hallucinated-dependency indicator assumes that the selected public registry 
 | postdate | 2,938 |
 | version_no_match | 1,343 |
 
+For the 2,938 `postdate` episodes, the interval is the recorded matching-release time minus committer time. The groups below do not overlap; upper boundaries are inclusive. Percentages use all postdate episodes as the denominator and retain the main analysis's timestamp proxies.
+
+| Release time after commit | Episodes | Share of postdate |
+| --- | ---: | ---: |
+| 0–2 hours | 299 | 10.18% |
+| >2–24 hours | 312 | 10.62% |
+| >24 hours–7 days | 600 | 20.42% |
+| >7–30 days | 546 | 18.58% |
+| >30 days | 1,181 | 40.20% |
+
+Cumulative coverage: within 2 hours: 299 (10.18%); within 24 hours: 611 (20.80%); within 7 days: 1,211 (41.22%); within 30 days: 1,757 (59.80%). These intervals describe the time differences and do not change the final labels.
+
 | Ecosystem | Queryable | present_at_commit | hallucinated_dependency | insufficient_evidence | out_of_scope | H / queryable |
 | --- | --- | --- | --- | --- | --- | --- |
 | Cargo | 47,648 | 37,460 | 7,738 | 2,225 | 225 | 16.2399% |

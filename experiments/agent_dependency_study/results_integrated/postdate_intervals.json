@@ -1,0 +1,13 @@
+{
+  "result_version": "canonical_v3",
+  "input_sha256": "44b56250f623da2ad246192702cb992c3d79e76dc4be7b449e01182efec4a6f3",
+  "episodes_scanned": 1679785,
+  "postdate_episodes": 2938,
+  "boundary": "committer",
+  "denominator": "all global postdate episodes; per-ecosystem postdate episodes for ecosystem rows",
+  "intervals": "positive gap; upper limits inclusive; bins mutually exclusive",
+  "proxies_included": true,
+  "output_sha256": "5ce6c5958acb26fdc9d6277066ea008f3379d725ddd906ad7cff1c462d1a6d21",
+  "label_changes": false,
+  "network": false
+}

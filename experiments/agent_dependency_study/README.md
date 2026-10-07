@@ -153,3 +153,14 @@ python summarize_paper_tables.py --output reproduced_paper_tables
 ```
 
 The complete commit-agent relation and stable repository identities are included in Git as `inputs/analysis_membership/commits.csv.gz`. No additional large data download is needed.
+
+
+## Postdate intervals
+
+`results_integrated/postdate_intervals.csv` reports global and ecosystem release-to-committer
+intervals, with shares within the postdate population. `postdate_intervals.json` binds
+the summary to the final episode file. Regenerate from downloaded results with:
+
+```bash
+python summarize_postdate_intervals.py --output reproduced_postdate_intervals
+```
