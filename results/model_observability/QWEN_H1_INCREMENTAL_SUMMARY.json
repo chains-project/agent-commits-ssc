@@ -1,0 +1,10 @@
+{
+  "schema_version": "qwen-h1-incremental-v1.0",
+  "signal_id": "h1_qwen_code_coauthor_trailer",
+  "counts_unique_repository_sha": {
+    "matched_10min": 1,
+    "supplementary_4h": 23,
+    "merged_expanded": 24
+  },
+  "interpretation": "Producer-documented exact H1 signature hits in the frozen selected corpus; no registry promotion followed. Not prevalence or recall."
+}

@@ -18,6 +18,9 @@ work is not included as a formal result.
   separately distributed canonical tables.
 - results contains compact RQ1/RQ2 summaries and machine-readable validation
   records.
+- scripts/exploration/model_observability, data/model_observability, and
+  results/model_observability contain the exploratory harness-signature and
+  underlying-model observability supplement.
 - docs/artifact-catalog.md describes every public file.
 - docs/claude-linked-author-exploration.md reports the exploratory RQ1
   linked-author Top-10, public profile context, sensitivity checks, and
@@ -52,8 +55,29 @@ token or external data is required for the offline test suites below.
 The validation surface consists of code tests, 49 Stage 4 synthetic scenarios,
 nine final-adjudication scenarios, nine recorded legacy/current equivalence
 comparisons, and 80 final-analysis consistency checks. These checks validate
-implementation behavior and data-product consistency; they are not an
-independent human gold standard.
+implementation behavior and data-product consistency; they do not establish
+external ground truth.
+
+## Exploratory model-attribution feasibility
+
+The [exploratory report](docs/harness-model-observability.md) asks whether public
+commit artifacts can identify the model that actually executed a coding task.
+It distinguishes harness signatures, declared models and execution evidence.
+The 120-case check found model declarations but did not establish actual
+execution; existing diff/config inspection added no accepted model-binding
+label beyond message/trailer evidence. This finding applies to the inspected
+material, not to every possible source of attribution evidence.
+
+Run its offline tests and descriptive sample-count replay with:
+
+    python -m unittest discover -s tests -p "test_*.py"
+    python scripts/exploration/model_observability/summarize_attribution_feasibility.py --root .
+
+The [codebook](docs/model-observability-codebook.md) defines the frozen labels.
+The [five-slide presentation](docs/presentations/harness-model-observability.pptx)
+illustrates the signature and keyword-discovery results; read it alongside the
+report for the model-attribution conclusion. Compact tables support count
+replay. Full scans and evidence reinspection require separately held inputs.
 
 ## RQ2 result boundary
 

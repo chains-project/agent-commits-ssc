@@ -1,0 +1,121 @@
+selection_rank,x_level,granularity,model_family,consensus_rule,provider,exact_model,source_type
+1,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+2,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.7,commit_trailer
+3,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+4,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+5,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+6,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+7,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+8,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+9,X3,model_family,claude,exact_agent_agreement,anthropic,unknown,commit_message;commit_trailer
+10,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+11,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+12,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+13,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+14,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.5,commit_message;commit_trailer
+15,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+16,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.5,commit_trailer
+17,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+18,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+19,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+20,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+21,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+22,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.7,commit_trailer
+23,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+24,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.6,commit_trailer
+25,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+26,X3,model_family,claude,exact_agent_agreement,anthropic,unknown,commit_message;commit_trailer
+27,X3,exact_model,claude,exact_agent_agreement,anthropic,claude-haiku-4-5-20251001,commit_message;commit_trailer
+28,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+29,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+30,X3,model_family,claude,exact_agent_agreement,anthropic,unknown,commit_message;commit_trailer
+31,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+32,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+33,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.7,commit_message
+34,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+35,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+36,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+37,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+38,XC,unknown,uncertain,disagreement_to_XC,uncertain,uncertain,uncertain
+39,X3,exact_model,gpt,exact_agent_agreement,openai,gpt-5.4,commit_message
+40,XC,unknown,uncertain,disagreement_to_XC,uncertain,uncertain,uncertain
+41,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+42,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+43,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+44,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+45,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+46,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+47,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+48,X2,exact_model,claude,exact_agent_agreement,anthropic,claude-opus-4-20250514,commit_message
+49,X2,exact_model,gpt,exact_agent_agreement,openai,gpt-5.4,commit_message
+50,X2,exact_model,gpt,exact_agent_agreement,openai,gpt-5.4,commit_message
+51,X2,exact_model,gpt,exact_agent_agreement,openai,gpt-5.4,commit_message
+52,X2,exact_model,claude,exact_agent_agreement,anthropic,claude-opus-4-6,commit_message
+53,X2,exact_model,claude,exact_agent_agreement,anthropic,claude-opus-4-20250514,commit_message
+54,X2,exact_model,gpt,exact_agent_agreement,openai,gpt-5.4,commit_message
+55,XC,unknown,uncertain,disagreement_to_XC,uncertain,uncertain,uncertain
+56,XC,unknown,uncertain,disagreement_to_XC,uncertain,uncertain,uncertain
+57,XC,unknown,uncertain,disagreement_to_XC,uncertain,uncertain,uncertain
+58,X2,exact_model,gpt,exact_agent_agreement,openai,gpt-5,commit_message
+59,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+60,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+61,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+62,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+63,X3,exact_model,claude,exact_agent_agreement,anthropic,claude sonnet 4.6,commit_trailer
+64,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+65,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+66,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+67,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+68,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+69,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+70,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+71,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+72,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+73,X3,exact_model,claude,exact_agent_agreement,anthropic,claude opus 4.7,commit_trailer
+74,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+75,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+76,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+77,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+78,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+79,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+80,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+81,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+82,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+83,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+84,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+85,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+86,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+87,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+88,XC,unknown,uncertain,disagreement_to_XC,uncertain,uncertain,uncertain
+89,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+90,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+91,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+92,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+93,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+94,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+95,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+96,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+97,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+98,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+99,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+100,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+101,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+102,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+103,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+104,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+105,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+106,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+107,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+108,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+109,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+110,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+111,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+112,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+113,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+114,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+115,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+116,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+117,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+118,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+119,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none
+120,X0,unknown,unknown,exact_agent_agreement,unknown,unknown,none

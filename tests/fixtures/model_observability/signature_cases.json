@@ -1,0 +1,19 @@
+[
+  {"signal_id":"h1_claude_code_generated_line","field":"full_commit_message","positive":"Generated with Claude Code","negative":"Generated with Claude Code extra","excluded":"Documentation says Generated with Claude Code"},
+  {"signal_id":"h1_codex_coauthor_trailer","field":"trailer_line","positive":"Co-authored-by: Codex <noreply@openai.com>","negative":"Discuss Co-authored-by: Codex","excluded":"Quoted: Co-authored-by: Codex"},
+  {"signal_id":"h1_codex_author_email","field":"author_email","positive":"codex@openai.com","negative":"human@openai.com","excluded":"prefix-codex@openai.com"},
+  {"signal_id":"h1_copilot_swe_agent_login","field":"author_login","positive":"copilot-swe-agent[bot]","negative":"copilot-swe-agent","excluded":"x-copilot-swe-agent[bot]"},
+  {"signal_id":"h1_copilot_coauthor_trailer","field":"trailer_line","positive":"Co-authored-by: GitHub Copilot <copilot@github.com>","negative":"Discuss Co-authored-by: Copilot","excluded":"Quoted: Co-authored-by: Copilot"},
+  {"signal_id":"h1_cursor_agent_email","field":"author_email","positive":"cursoragent@cursor.com","negative":"agent@cursor.com","excluded":"prefix-cursoragent@cursor.com"},
+  {"signal_id":"h1_cursor_coauthor_trailer","field":"trailer_line","positive":"Co-authored-by: Cursor Agent <cursoragent@cursor.com>","negative":"Co-authored-by: Cursor Agent <human@example.com>","excluded":"Quoted: Co-authored-by: Cursor <cursoragent@cursor.com>"},
+  {"signal_id":"h0_qwen_code_name","field":"full_commit_message","positive":"Qwen Code","negative":"QwenCoder","excluded":"documentation about Qwen only"},
+  {"signal_id":"h0_kimi_code_name","field":"full_commit_message","positive":"Kimi Code","negative":"Kimi Coder","excluded":"documentation about Kimi only"},
+  {"signal_id":"h0_zcode_name","field":"full_commit_message","positive":"ZCode","negative":"ZCodebase","excluded":"AZCodeB"},
+  {"signal_id":"h0_glm_coding_name","field":"full_commit_message","positive":"GLM Coding","negative":"GLM CodingHelper","excluded":"documentation about GLM only"},
+  {"signal_id":"m0_deepseek_name","field":"full_commit_message","positive":"DeepSeek-V4","negative":"DeepSeeker","excluded":"deep search"},
+  {"signal_id":"m0_qwen_model_name","field":"full_commit_message","positive":"Qwen2.5","negative":"Qwencoder","excluded":"Qwen Code"},
+  {"signal_id":"m0_kimi_model_name","field":"full_commit_message","positive":"Kimi","negative":"Kimiko","excluded":"Kimi Code"},
+  {"signal_id":"m0_glm_model_name","field":"full_commit_message","positive":"GLM-4.5","negative":"GLM","excluded":"GLM Coding"},
+  {"signal_id":"m0_claude_named_model","field":"full_commit_message","positive":"Claude Opus 4.5","negative":"Claude Code","excluded":"Claude only"},
+  {"signal_id":"m1_claude_model_coauthor_self_report","field":"trailer_line","positive":"Co-authored-by: Claude Sonnet 4.6 <noreply@anthropic.com>","negative":"Claude Sonnet 4.6","excluded":"Co-authored-by: Claude Sonnet 4.6 <human@example.com>"}
+]

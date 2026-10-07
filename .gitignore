@@ -27,6 +27,8 @@ htmlcov/
 /data/*
 !/data/rq2/
 !/data/rq2/**
+!/data/model_observability/
+!/data/model_observability/**
 /cache/
 /database/
 *.sqlite
